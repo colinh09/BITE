@@ -54,19 +54,30 @@ def isEnglish(s):
 for zipcode in zipcodes:
     location = geolocator.geocode(zipcode)
     # Make the API request
-    places = client.places(query='restaurant', location=(location.latitude, location.longitude), radius = 1000, type='restaurant')
+    places = client.places(
+            query='restaurant', 
+            location=(location.latitude, location.longitude), 
+            radius=100000, 
+            type='restaurant', 
+            region='ny'
+        )
     # Loop through each result and write to the CSV file
     with open(output_file, 'a', newline='') as file:
             writer = csv.writer(file)
             for place in places['results']:
-                if not place['name'] in restaurants_seen and isEnglish(place['name']) and isEnglish(place['formatted_address']):
-                    restaurants_seen.append(place['name'])
-                    writer.writerow([place['name'], place['formatted_address']])
+                if place.get('formatted_address') is None:
+                    if not place['name'] in restaurants_seen and isEnglish(place['name']):
+                        restaurants_seen.append(place['name'])
+                        writer.writerow([place['name'], 'No address available'])
+                else:
+                    if not place['name'] in restaurants_seen and isEnglish(place['name']) and isEnglish(place['formatted_address']):
+                        restaurants_seen.append(place['name'])
+                        writer.writerow([place['name'], place['formatted_address']])                     
     
     # get more results, but the API will only allow for 40 so only do it once
     page_token = places['next_page_token']
     time.sleep(2)
-    places = client.places(query='restaurant', location=(location.latitude, location.longitude), radius = 1000, type='restaurant', page_token=page_token)
+    places = client.places(query='restaurant', location=(location.latitude, location.longitude), radius = 1000, type='restaurant', region='ny', page_token=page_token)
     with open(output_file, 'a', newline='') as file:
             writer = csv.writer(file)
             for place in places['results']:
