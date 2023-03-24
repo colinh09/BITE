@@ -52,7 +52,7 @@ def isEnglish(s):
 
 # Loop through each zipcode and rating
 for zipcode in zipcodes:
-    location = geolocator.geocode(zipcode)
+    location = geolocator.geocode(str(zipcode))
     # Make the API request
     places = client.places(
             query='restaurant', 
@@ -75,15 +75,15 @@ for zipcode in zipcodes:
                         writer.writerow([place['name'], place['formatted_address']])                     
     
     # get more results, but the API will only allow for 40 so only do it once
-    page_token = places['next_page_token']
-    time.sleep(2)
-    places = client.places(query='restaurant', location=(location.latitude, location.longitude), radius = 1000, type='restaurant', region='ny', page_token=page_token)
-    with open(output_file, 'a', newline='') as file:
-            writer = csv.writer(file)
-            for place in places['results']:
-                if not place['name'] in restaurants_seen and isEnglish(place['name']) and isEnglish(place['formatted_address']):
-                    restaurants_seen.append(place['name'])
-                    writer.writerow([place['name'], place['formatted_address']])
+    # page_token = places['next_page_token']
+    # time.sleep(2)
+    # places = client.places(query='restaurant', location=(location.latitude, location.longitude), radius = 1000, type='restaurant', region='ny', page_token=page_token)
+    # with open(output_file, 'a', newline='') as file:
+    #         writer = csv.writer(file)
+    #         for place in places['results']:
+    #             if not place['name'] in restaurants_seen and isEnglish(place['name']) and isEnglish(place['formatted_address']):
+    #                 restaurants_seen.append(place['name'])
+    #                 writer.writerow([place['name'], place['formatted_address']])
 print(restaurants_seen)
 print("Length of list")
 print(len(restaurants_seen))
