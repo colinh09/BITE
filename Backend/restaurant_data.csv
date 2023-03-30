@@ -1,4 +1,4 @@
-Name,Address,Rating [1-5],Price Level [1-4],Opening Hours
+Name,Address,Rating [1-5],Price Level [1-4]
 Bistro 72,"1830 W Main St, Riverhead, NY 11901",4.2,2
 Turkuaz Grill,"40 McDermott Ave, Riverhead, NY 11901",4.6,2
 Dark Horse Restaurant,"1 E Main St, Riverhead, NY 11901",4.4,2
@@ -43,24 +43,25 @@ Jacob Soul Food Restaurant,"373 Malcolm X Blvd, New York, NY 10027",4.4,2
 Charlie's Restaurant,"5904 Bergenline Ave, West New York, NJ 07093",4.4,1
 Family Meal at Blue Hill,"75 Washington Pl, New York, NY 10011",4.6,4
 Chazz Palminteri Italian Restaurant,"30 W 46th St, New York, NY 10036",4.5,3
-El Tina Harlem Restaurant,"511 W 125th St, New York, NY 10027",4.3,1
 Lhasa Fast Food,"76-03 37th Ave, Queens, NY 11372",4.4,1
+El Tina Harlem Restaurant,"511 W 125th St, New York, NY 10027",4.3,1
 Honey Badger | Fine Dining Restaurant,"67 Fenimore St, Brooklyn, NY 11225",4.7,N/A
 Golden Blue Bar & Restaurant Inc,"2172 Clarendon Rd, Brooklyn, NY 11226",4.4,N/A
 Mi Casa,"372 Communipaw Ave, Jersey City, NJ 07304",4.3,1
 Royal Restaurant & Grill,"1075 Liberty Ave, Brooklyn, NY 11208",3.8,N/A
 The Avenue Restaurant & Bar,"71-22 Myrtle Ave, Queens, NY 11385",4.3,1
 The Williamsburg Restaurant,"96 Wythe Ave, Brooklyn, NY 11249",4.3,N/A
-PASTA ZONE,"1140 Utica Ave, Brooklyn, NY 11203",0,N/A
-IL Carino Restaurant,"1710 2nd Ave, New York, NY 10128",4.5,2
-Campos Grill,"256 Marcus Garvey Blvd, Brooklyn, NY 11221",4.8,N/A
-Brooklyn,"8012 West 17th Street, Brooklyn, NY 11214",0,N/A
-Kitchen Grill,"914 a Fulton St, Brooklyn, NY 11238",4.6,2
-Gotham Restaurant,"12 E 12th St, New York, NY 10003",4.5,4
-Resto,"Van Siclen Ave, Brooklyn, NY 11207",0,N/A
 Rosemary's East,"350 1st Ave., New York, NY 10010",4.3,2
 Oxalis,"791 Washington Ave, Brooklyn, NY 11238",4.7,3
+IL Carino Restaurant,"1710 2nd Ave, New York, NY 10128",4.5,2
+Brooklyn,"8012 West 17th Street, Brooklyn, NY 11214",0,N/A
 Balthazar,"80 Spring St, New York, NY 10012",4.4,3
+Gramercy Tavern,"42 E 20th St, New York, NY 10003",4.6,4
+Kitchen Grill,"914 a Fulton St, Brooklyn, NY 11238",4.6,2
+Resto,"Van Siclen Ave, Brooklyn, NY 11207",0,N/A
+PASTA ZONE,"1140 Utica Ave, Brooklyn, NY 11203",0,N/A
+Campos Grill,"256 Marcus Garvey Blvd, Brooklyn, NY 11221",4.8,N/A
+Gotham Restaurant,"12 E 12th St, New York, NY 10003",4.5,4
 Paola's,"1361 Lexington Ave, New York, NY 10128",4.5,3
 Zoralie,"449 W 51st St, New York, NY 10019",4.5,1
 Soco,"509 Myrtle Ave, Brooklyn, NY 11205",4.1,2
@@ -69,7 +70,6 @@ Tu Delicia Restaurant and Seafood,"1441 Edward L Grant Hwy, Bronx, NY 10452",4.5
 Los Amigos Restaurant,"674 E 180th St, Bronx, NY 10457",4.3,1
 Step In,"1309 Metropolitan Ave, Bronx, NY 10462",4.4,2
 Melba's Restaurant,"300 W 114th St, New York, NY 10026",4.3,2
-Butter,"70 W 45th St, New York, NY 10036",4.3,4
 Cafe Colonial Restaurant,"2072 White Plains Rd, Bronx, NY 10462",4,2
 El Valle Restaurant,"3535 Jerome Ave, Bronx, NY 10467",3.4,1
 Ivy Inn Restaurant & Bar,"268 Terrace Ave, Hasbrouck Heights, NJ 07604",4.3,2
@@ -79,6 +79,7 @@ Caridad & Louie's Restaurant,"1660 E Gun Hill Rd, Bronx, NY 10469",4.2,2
 Sabrosito Restaurant,"200 Baychester Avenue The Mall At Bay Plaza, Bronx, NY 10475",3.5,N/A
 Golden Grill Restaurant,"1379 Queen Anne Rd, Teaneck, NJ 07666",4.5,N/A
 Andy's Restaurant,"2262 3rd Ave, New York, NY 10035",4.3,N/A
+Betos Restaurant Inc,"835 E 152nd St # 4, Bronx, NY 10455",4.4,N/A
 la estrella restaurant,"2051 Webster Ave, Bronx, NY 10457",4.5,N/A
 Restaurant and Bar,"215 E 170th St, Bronx, NY 10456",0,N/A
 Morena II Restaurant,"935 E 163rd St, Bronx, NY 10459",4.5,N/A
@@ -86,7 +87,8 @@ Mado Restaurant,"570 Kinderkamack Rd, River Edge, NJ 07661",4.7,2
 Restaurant Cuisine Bar,"Briggs Ave, Bronx, NY 10458",0,N/A
 Restaurant,"Morrison Ave, Bronx, NY 10472",0,N/A
 Samdan Mediterranean Restaurant,"178 Piermont Rd, Cresskill, NJ 07626",4.6,2
-Gramercy Tavern,"42 E 20th St, New York, NY 10003",4.6,4
+TRIPLE A1 RESTAURANT,"2061 2nd Ave # 106, New York, NY 10029",4,1
+Butter,"70 W 45th St, New York, NY 10036",4.3,4
 La Chonta Cevicheria Restaurant,"543 Elizabeth Ave, Elizabeth, NJ 07206",4.6,N/A
 New Dyker Restaurant,"8505 18th Ave, Brooklyn, NY 11214",4.3,2
 Maizal Restaurant,"990 Bay St, Staten Island, NY 10305",4.4,2
@@ -136,18 +138,14 @@ The Latin Grill Restaurant,"586 Amboy Ave, Perth Amboy, NJ 08861",4.1,2
 Deluca's Italian Restaurant,"7324 Amboy Rd, Staten Island, NY 10307",4.5,2
 The Armory NJ,"200 Front St, Perth Amboy, NJ 08861",4.3,2
 Twenty Nine Forty Five Restaurant,"2945 Arthur Kill Rd, Staten Island, NY 10309",5,N/A
+Edison Family Restaurant,"1900 Oak Tree Rd, Edison, NJ 08820",4.3,1
 El Clasico Restaurant,"233 New Brunswick Ave, Perth Amboy, NJ 08861",4.4,N/A
 Seasons 52,"217 Lafayette Ave, Edison, NJ 08837",4.5,2
 Classique Restaurant,"Sayreville, NJ 08872",4.8,N/A
-Piccolino Restaurant NY,"3935 Amboy Rd, Staten Island, NY 10308",4.5,2
+La Petite Corniche,"3972 Hylan Blvd, Staten Island, NY 10308",4.8,N/A
 Meson Tropical,"23 E Elizabeth Ave, Linden, NJ 07036",4,1
 GRILL NUNOS BBQ RESTAURANT,"300 Roselle St, Linden, NJ 07036",4.1,2
-Stancia Peruvian Fusion Restaurant,"216 N Wood Ave, Linden, NJ 07036",4.4,2
-Da Noi,"138 Fingerboard Rd, Staten Island, NY 10305",4.5,2
-La Catracha,"68 Van Riper St, Staten Island, NY 10302",3.9,N/A
-Nino's Restaurant,"1110 Hylan Blvd, Staten Island, NY 10305",4.6,2
 Casserole Restaurant,"124 Locust St, Roselle, NJ 07203",4.5,N/A
-La Petite Corniche,"3972 Hylan Blvd, Staten Island, NY 10308",4.8,N/A
 Market Place Restaurant Cocktail,"355 Food Center Dr, Bronx, NY 10474",4.5,N/A
 Anthony's Restaurant,"273 City Island Ave, Bronx, NY 10464",4.9,N/A
 Maria Restaurant,"11 Huguenot St, New Rochelle, NY 10801",4.7,2
@@ -164,11 +162,11 @@ Los Primos Restaurant,"698 Allerton Ave, Bronx, NY 10467",3.7,1
 Restaurant X,"170 Main St, Port Washington, NY 11050",4.8,N/A
 Modern Restaurant & Lounge,"310 Huguenot St, New Rochelle, NY 10801",4.5,2
 El Fogon Restaurant,"80 Gramatan Ave, Mt Vernon, NY 10550",3.8,N/A
+Sevan Restaurant & Catering,"216-07 Horace Harding Expy, Oakland Gardens, NY 11364",4.6,2
 Lammy's Restaurant,"987 E 233rd St, Bronx, NY 10466",4,1
 El Tunnel Restaurant & Tapas Bar,"2026 Webster Ave, Bronx, NY 10457",4.7,2
 Montespino,"1309 Bronx River Ave, Bronx, NY 10472",4.5,N/A
 Buon Gusto Restaurant,"534 Durie Ave, Closter, NJ 07624",4.6,2
-Sevan Restaurant & Catering,"216-07 Horace Harding Expy, Oakland Gardens, NY 11364",4.6,2
 Barnwood Grill,"2 Old Tomahawk St, Yorktown Heights, NY 10598",4.5,2
 Monarca Restaurant & Bar,"37 S Moger Ave, Mt Kisco, NY 10549",4.8,N/A
 Le Fontane,"137 Somerstown Turnpike, Katonah, NY 10536",4.5,2
@@ -243,7 +241,6 @@ La Cremaillere,"46 Bedford-Banksville Rd, Bedford, NY 10506",4.4,4
 The Turk,"20 S Moger Ave, Mt Kisco, NY 10549",4.4,2
 The Don Juan Mexican Restaurant,"2 Broadway, Pleasantville, NY 10570",4.2,2
 Spaccarelli's,"238 Saw Mill River Rd #7, Millwood, NY 10546",4.5,3
-Bedford Post Dining,"954 Old Post Rd, Bedford, NY 10506",3.6,4
 Southeast Grille House,"2459 US-6, Brewster, NY 10509",4.5,2
 Mimi's Kitchen,"1946 US-6, Carmel Hamlet, NY 10512",4.9,N/A
 Limni - Mediterranean Kitchen,"47 NY-311, Carmel Hamlet, NY 10512",4.5,2
@@ -298,6 +295,7 @@ The Park,"451 Main St, Highland Falls, NY 10928",4.5,2
 Tikal Grill Restaurant,"505 Main St, Highland Falls, NY 10928",4.4,N/A
 Hacienda Restaurant,"145 Main St, Highland Falls, NY 10928",4.2,1
 One Twenty Three,"407 Smith Ridge Rd, South Salem, NY 10590",4.7,2
+Bedford Post Dining,"954 Old Post Rd, Bedford, NY 10506",3.6,4
 Peppino's Ristorante,"116 Katonah Ave, Katonah, NY 10536",4.5,3
 La Camelia,"234 N Bedford Rd, Mt Kisco, NY 10549",4.3,2
 North Star,"85 Westchester Ave, Pound Ridge, NY 10576",4.5,N/A
@@ -334,19 +332,21 @@ Caridad & Louie's Restaurant,"241 North Ave, New Rochelle, NY 10801",4.2,2
 Ambar Restaurant,"60 Clinton St, Sleepy Hollow, NY 10591",4.6,1
 Zapata,"779 NY-340, Palisades, NY 10964",4.3,2
 Tilly's Table,"100 NY-312, Brewster, NY 10509",4.5,N/A
+Bangkok Spice,"1161 E Main St, Shrub Oak, NY 10588",4.4,2
+Napoli's Pizza Restaurant,"1012 E Main St, Mohegan Lake, NY 10547",4.6,N/A
 La Bussola Restaurant,"40 School St, Glen Cove, NY 11542",4.6,3
 La Vicharra Peruvian Restaurant,"72 School St, Glen Cove, NY 11542",4.4,N/A
 La Ginestra,"50 Forest Ave, Glen Cove, NY 11542",4.6,N/A
 "Fish N' Ting Restaurant, Bar & Lounge","4063 Boston Rd, Bronx, NY 10466",4.2,2
 Fino,"1 Baltic Pl, Croton-On-Hudson, NY 10520",4.5,2
-Napoli's Pizza Restaurant,"1012 E Main St, Mohegan Lake, NY 10547",4.6,N/A
-Bangkok Spice,"1161 E Main St, Shrub Oak, NY 10588",4.4,2
 Himalaya Restaurant,"34 Triangle Center, Yorktown Heights, NY 10598",4.6,2
 Gavi Restaurant,"15 Old Rte 22, Armonk, NY 10504",4.5,2
 Chatterbox Pleasantville,"75 Cooley St, Pleasantville, NY 10570",4.2,N/A
 The Taco Project,"465 Bedford Rd, Pleasantville, NY 10570",4.5,N/A
 The Beehive,"30 Old Rte 22, Armonk, NY 10504",4.5,2
 Solimar Grill Restaurant,"1800 Archer St, Bronx, NY 10460",3.7,N/A
+Hudson Social,"RR Station, 11 Station Plaza, Dobbs Ferry, NY 10522",4.4,2
+Sapori Restaurant Scarsdale,"2 Chase Rd, Scarsdale, NY 10583",4.4,N/A
 Bani Restaurant,"1056 Bronx River Ave, Bronx, NY 10472",4,2
 Kibberia,"93 Mill Plain Rd, Danbury, CT 06811",4.6,1
 Rosy Tomorrow's,"15 Old Mill Plain Rd, Danbury, CT 06811",4.5,2
@@ -356,7 +356,6 @@ Della Francesca,"46 Mill Plain Rd, Danbury, CT 06811",4.5,3
 Dolce Restaurant & Wine Bar,"39B Mill Plain Rd, Danbury, CT 06811",4.5,2
 Greek Village,"1856 US-6, Carmel Hamlet, NY 10512",4.4,2
 140 GRAND,"140 Grand St, Croton-On-Hudson, NY 10520",4.7,N/A
-Tiffany's Cafe,"901 Main St, Peekskill, NY 10566",4.5,N/A
 Kanopi,"1 Renaissance Square, White Plains, NY 10601",4.5,N/A
 Turkish Cuisine White Plains,"116 Mamaroneck Ave, White Plains, NY 10601",4.2,2
 Madonia Restaurant & Bar,"1297 Long Ridge Rd, Stamford, CT 06903",4.4,2
@@ -387,7 +386,7 @@ Barbarie's Grill,"7 Backus Ave, Danbury, CT 06810",4.4,N/A
 21 Lake Restaurant and Bar,"21 Lake Ave Ext, Danbury, CT 06811",4.1,N/A
 Olive Garden Italian Restaurant,"36 Backus Ave, Danbury, CT 06810",4.2,2
 Rraci's Restaurant,"3670 Danbury Rd, Brewster, NY 10509",4.6,3
-Hudson Social,"RR Station, 11 Station Plaza, Dobbs Ferry, NY 10522",4.4,2
+IL FORNO,"343 US-202, Somers, NY 10589",4.6,2
 Tawabel restaurant,"5999 Broadway, Bronx, NY 10471",4.7,N/A
 Mirador restaurant,"44 W Kingsbridge Rd, Bronx, NY 10468",4.1,N/A
 Beccofino,"5704 Mosholu Ave, Bronx, NY 10471",4.6,2
@@ -396,6 +395,7 @@ Fratelli,"2507 Eastchester Rd, Bronx, NY 10469",4.5,2
 Sear House,"411 Piermont Rd, Closter, NJ 07624",4.3,3
 Cassie's Restaurant,"18 S Dean St, Englewood, NJ 07631",4.4,2
 La Masa Restaurant,"2542 E Tremont Ave, Bronx, NY 10461",4.1,2
+Ventanas Restaurant and Lounge,"200 Park Ave, Fort Lee, NJ 07024",4.2,2
 Mario's Restaurant,"2342 Arthur Ave, Bronx, NY 10458",4.4,2
 Morena Restaurant,"2151 Jerome Ave, Bronx, NY 10453",0,N/A
 Raices del Valle Restaurant,"1846 Jerome Ave, Bronx, NY 10453",4.1,1
@@ -440,12 +440,9 @@ PIZZARAMA,"371 NY-17M, Monroe, NY 10950",4.5,1
 Marina,"76 NY-17M, Harriman, NY 10926",4.6,2
 Banchetto Feast,"75 West Route 59 &, S Middletown Rd, Nanuet, NY 10954",4.5,2
 Nanuet Hotel,"132 Main St, Nanuet, NY 10954",4.5,2
-Alondra's Cuisine,"14 North St, Middletown, NY 10940",4.5,1
 Barrel 28,"28 N Main St, Florida, NY 10921",4.5,2
 Bee Soulful Restaurant,"29 Center St, Middletown, NY 10940",4.3,N/A
 Oak & Reed,"45-53 North St Unit 1, Middletown, NY 10940",4.7,2
-J's Place,"39 W Main St, Middletown, NY 10940",4.8,N/A
-Delancey's,"40 Park Pl, Goshen, NY 10924",4.4,2
 Copper Bottom An American Grill & Bar,"162 N Main St, Florida, NY 10921",4.5,2
 Pimiento Latin American Restaurant,"265 Route 211 East, Suite 101 & 102, Middletown, NY 10940",4.2,2
 Jackie's Latin Kitchen,"Inside Valero, 76 E Main St, Middletown, NY 10940",4.6,1
@@ -460,6 +457,9 @@ El Bandido Mexican Restaurant,"536 E Main St, Middletown, NY 10940",4.3,2
 Pizza E Birra,"287 NY-211, Middletown, NY 10940",4.4,2
 Casa Mia Latin Kitchen,"2040 Goshen Turnpike, Middletown, NY 10941",4.5,2
 El Tapatio Mexican Food Middletown NY,"252 NY-211, Middletown, NY 10940",4.2,N/A
+Hacienda,"1700 NY-17M, Goshen, NY 10924",4.3,2
+Amore's Pizzeria & Restaurant,"182 W Main St, Goshen, NY 10924",4.7,1
+Cheryl's Fried Fish,"24 E Main St, Middletown, NY 10940",4.1,2
 Communal Kitchen,"162 Main St, Nyack, NY 10960",4.6,2
 Mezza,"22 Jefferson Ave, Westwood, NJ 07675",4.5,2
 Bellissimo Restaurant,"12 S Kinderkamack Rd, Montvale, NJ 07645",4.6,2
@@ -469,11 +469,10 @@ The Table,"73 Clinton St, Montgomery, NY 12549",4.6,N/A
 Strada Grill,"1011 NY-17K, Montgomery, NY 12549",4.5,N/A
 Antonio's Family Restaurant,"118 Clinton St, Montgomery, NY 12549",4.9,N/A
 The Restaurant at Winding Hills,"1847 NY-17K, Montgomery, NY 12549",3.9,N/A
+Delancey's,"40 Park Pl, Goshen, NY 10924",4.4,2
 Ward's Bridge Inn,"135 Ward St, Montgomery, NY 12549",4.6,2
 Carmela's Restaurant Pizzeria,"1021 NY-17K, Montgomery, NY 12549",4.4,2
-Hacienda,"1700 NY-17M, Goshen, NY 10924",4.3,2
 RoseMary's Pub & Grub,"11 Union St, Montgomery, NY 12549",4.8,N/A
-Amore's Pizzeria & Restaurant,"182 W Main St, Goshen, NY 10924",4.7,1
 Country Pride,"125 Neelytown Rd, Montgomery, NY 12549",3.8,N/A
 Bistro Du Mexique,"65 Main St, Pine Bush, NY 12566",4.8,2
 Sabroso Mexican Restaurant,"72 Main St, Pine Bush, NY 12566",4.6,N/A
@@ -494,6 +493,8 @@ Mario's,"503 NY-32, Highland Mills, NY 10930",4.5,2
 Amalfi Pizzeria & Restaurant,"200 NY-32, Central Valley, NY 10917",4.2,2
 Yossies Cafe & Restaurant,"131 Acres Rd UNIT 111, Monroe, NY 10950",4.7,2
 Millpond Cafe,"60 Millpond Pkwy, Monroe, NY 10950",4.2,N/A
+Alondra's Cuisine,"14 North St, Middletown, NY 10940",4.5,1
+J's Place,"39 W Main St, Middletown, NY 10940",4.8,N/A
 Wurtsboro Diner and Cafe,"60 Sullivan St, Wurtsboro, NY 12790",4.5,1
 Pasta D'oro,"90 Sullivan St, Wurtsboro, NY 12790",4.6,3
 Franco Di Roma,"357 NY-211, Middletown, NY 10940",4.4,2
@@ -526,13 +527,10 @@ Chilitos Mexican Restaurant,"82 Lafayette Ave, Suffern, NY 10901",4.2,N/A
 Mezza Luna Bistro,"96 W Allendale Ave, Allendale, NJ 07401",4.5,2
 Novino Ristorante,"64 Ramapo Valley Rd, Mahwah, NJ 07430",4.4,2
 Two Friends Restaurant and Bar,"23 Seven Lakes Dr, Sloatsburg, NY 10974",4.4,N/A
-Cheryl's Fried Fish,"24 E Main St, Middletown, NY 10940",4.1,2
 Nelly Latin Restaurant,"215 Wickham Ave, Middletown, NY 10940",3.7,N/A
 La Rancherita,"240 Wickham Ave, Middletown, NY 10940",4.2,N/A
 Camila's Pizzeria & Restaurant,"420 NY-211, Middletown, NY 10940",4.6,N/A
 Hanami Japanese Restaurant,"21 W Main St, Middletown, NY 10940",4.5,2
-Quisqueya,"3 South St, Middletown, NY 10940",4.1,N/A
-La Esquina,"112 North St, Middletown, NY 10940",4.1,1
 Westtown Fare Restaurant & Bar,"795 NY-284, Westtown, NY 10998",4.5,3
 Cuchifrito,"4 E Main St, Middletown, NY 10940",4.6,N/A
 Holydog,"44 W Main St, Middletown, NY 10940",4.8,1
@@ -546,7 +544,11 @@ Zulimar restaurant,"286 Washington St, Newburgh, NY 12550",4.4,N/A
 Talavera Restaurant,"1008 Little Britain Rd, New Windsor, NY 12553",4.7,1
 Duck Town Restaurant,"246 Walsh Ave, New Windsor, NY 12553",4.5,1
 Temple Hill Tavern,"171 Temple Hill Rd, New Windsor, NY 12553",4.4,2
+Nyack Diner Family Restaurant,"41 NY-59, Nyack, NY 10960",4.3,1
+BJ's Restaurant & Brewhouse,"1119 Fashion Dr, Nanuet, NY 10954",4.1,2
 El Zapata,"16 E Main St, Middletown, NY 10940",4.4,N/A
+Quisqueya,"3 South St, Middletown, NY 10940",4.1,N/A
+La Esquina,"112 North St, Middletown, NY 10940",4.1,1
 Latino Restaurant Inc,"148 North St, Middletown, NY 10940",4.3,N/A
 Caborcas Mexican restaurant,"90 North St, Middletown, NY 10940",4.5,N/A
 El Azteca Mexican Restaurant,"122-126 North St, Middletown, NY 10940",4.2,2
@@ -580,6 +582,7 @@ West Milford Thai Restaurant,"179 Cahill Cross Rd, West Milford, NJ 07480",4.5,2
 The Grill,"125 Windermere Ave, Greenwood Lake, NY 10925",4.6,N/A
 Pasta Cucina of Stony Point NY,"32 S Liberty Dr, Stony Point, NY 10980",4.5,2
 Restaurant X & Bully Boy Bar,"117 NY-303, Congers, NY 10920",4.4,4
+Tiffany's Cafe,"901 Main St, Peekskill, NY 10566",4.5,N/A
 Hoot Owl,"26 Awosting Rd, Pine Bush, NY 12566",4.8,2
 Babe's,"73 Railroad Ave, West Haverstraw, NY 10993",4.6,2
 El Patron Mexican Restaurant,"104 US-6, Port Jervis, NY 12771",4.5,2
@@ -596,6 +599,7 @@ La Hidalguense,"32 N Main St, Florida, NY 10921",4.8,N/A
 Limoncello at the Orange Inn,"159 Main St, Goshen, NY 10924",4.4,1
 Sabor A Casa,"123 Main St, Chester, NY 10918",4.3,2
 El Zapata Restaurant,"69 Brookside Ave suite 213, Chester, NY 10918",4.9,N/A
+Docas,"125 Main St Suite 1, Ossining, NY 10562",4.5,2
 FANNIE'S,"28 Railroad Ave, Warwick, NY 10990",4.5,2
 Crabtree's Restaurant,"226 Jericho Turnpike, Floral Park, NY 11001",4.6,2
 Social Corner Restaurant,"243-24 Merrick Blvd, Queens, NY 11422",4.1,2
@@ -641,26 +645,26 @@ Good Eats Bistro,"100-15 Ditmars Blvd, Queens, NY 11369",3.6,N/A
 Sapeda Restaurant,"102-43 Queens Blvd, Queens, NY 11375",5,N/A
 LabadI Restaurant & Lounge (CORMIER),"207-13 Jamaica Ave, Queens Village, NY 11428",4,2
 The Cottage restaurant bar,"10807 72nd Ave, Queens, NY 11375",4.5,N/A
+Cupido's Restaurant,"609 Sutter Ave, Brooklyn, NY 11207",2.9,N/A
 New Lots Restaurant,"429 New Lots Ave, Brooklyn, NY 11207",4.3,N/A
 Avocados Mexican Grill,"428 Kings Hwy, Brooklyn, NY 11223",4.6,2
-Cupido's Restaurant,"609 Sutter Ave, Brooklyn, NY 11207",2.9,N/A
-Compadres Mexican Restaurant,"92-21 Liberty Ave, Queens, NY 11417",4.3,1
 CZEN Restaurant,"4410 Avenue H, Brooklyn, NY 11234",4.4,2
+Nino's Restaurant,"1110 Hylan Blvd, Staten Island, NY 10305",4.6,2
 M & K Spanish Restaurant,"56 Richmond Terrace, Staten Island, NY 10301",4.2,1
+El Tololoche mexican restaurant,"7201 16th Ave, Brooklyn, NY 11204",4.3,2
+Compadres Mexican Restaurant,"92-21 Liberty Ave, Queens, NY 11417",4.3,1
 15 Fox Place,"15 Fox Pl, Jersey City, NJ 07306",4.8,N/A
 Sofia Mexican Restaurant,"187 Suydam St, Brooklyn, NY 11221",4.4,1
-M & K,"190 Bay St, Staten Island, NY 10301",4.2,1
-The Soul Spot,"302 Atlantic Ave, Brooklyn, NY 11201",4.2,2
-El Tololoche mexican restaurant,"7201 16th Ave, Brooklyn, NY 11204",4.3,2
 Zanmi,"1206 Nostrand Ave., Brooklyn, NY 11225",4.3,2
+The Soul Spot,"302 Atlantic Ave, Brooklyn, NY 11201",4.2,2
 Golden 11 Seafood Restaurant,"6508-10 11th Ave, Brooklyn, NY 11219",3.8,N/A
-A Gusto,"1450 Fulton St, Brooklyn, NY 11216",3.9,2
 Woodzzy Bar & Restaurant,"1133 Clarkson Ave, Brooklyn, NY 11212",4.6,N/A
 Mama Tala Restaurant,"582 Morris Ave, Bronx, NY 10451",4.1,N/A
 Mateus' Restaurant & Bar,"22207 Jamaica Ave, Queens Village, NY 11428",4.4,2
 Flowing,"Queens, NY 11366",0,N/A
-Linda's Restaurant,"71 Main St, Hempstead, NY 11550",4.2,1
+Village Pizzeria and Restaurant,"169 Tulip Ave, Floral Park, NY 11001",4.5,2
 The Hills Restaurant,"4706 Church Ave, Brooklyn, NY 11203",4.2,2
+Linda's Restaurant,"71 Main St, Hempstead, NY 11550",4.2,1
 L.I. Valle Grill,"1204 Hempstead Turnpike, Franklin Square, NY 11010",4.6,N/A
 Chef B's,"124 N Central Ave, Valley Stream, NY 11580",4.8,2
 Double T Restaurant NY,"148-81 262nd Pl, Jamaica, NY 11422",0,N/A
@@ -677,8 +681,8 @@ Mi Tierrita Restaurant,"31 N Franklin St, Hempstead, NY 11550",4.1,2
 Makondo Restaurant Hempstead,"140 Front St, Hempstead, NY 11550",4.7,N/A
 Majules Deli & Restaurant,"974 Hempstead Turnpike, Franklin Square, NY 11010",4.6,N/A
 Kreyol Taste Restaurant,"498 Uniondale Ave, Uniondale, NY 11553",3.9,1
-The Royale Restaurant and Bar,"369 Old Country Rd, Carle Place, NY 11514",4.5,2
 Me & You Restaurant,"326 Broadway, Bethpage, NY 11714",4.6,2
+The Royale Restaurant and Bar,"369 Old Country Rd, Carle Place, NY 11514",4.5,2
 Cala Luna Restaurant,"149 Mineola Blvd, Mineola, NY 11501",4.8,N/A
 La Finca Restaurant,"170 S Broadway, Hicksville, NY 11801",4.2,1
 Venus Restaurant,"546 Hempstead Ave, West Hempstead, NY 11552",4.4,1
@@ -708,6 +712,7 @@ Brooklyn Waffle House,"1551 Nostrand Ave., Brooklyn, NY 11226",3.4,2
 MCG Grand Cafe,"1199 Nostrand Ave., Brooklyn, NY 11225",4.5,2
 Best Bites Restaurant,"4601 Church Ave, Brooklyn, NY 11203",4,2
 DiVino Pizzeria Restaurant,"164-02 Cross Bay Blvd, Queens, NY 11414",4.4,2
+Red Brick Cafe,"1114 Nostrand Ave., Brooklyn, NY 11225",4.1,N/A
 Village Cafe,"1968 Coney Island Ave, Brooklyn, NY 11223",4.5,2
 New Ruan's Restaurant,"1955 86th St, Brooklyn, NY 11214",4.4,2
 Mikeys Restaurant & Lounge,"9712 Seaview Ave, Brooklyn, NY 11236",4.2,N/A
@@ -718,15 +723,14 @@ Besito Mexican Restaurant,"399 Montauk Hwy, West Islip, NY 11795",4.5,2
 Calda Pizzeria & Restaurant,"191 W Old Country Rd, Hicksville, NY 11801",4.4,2
 Cebollines Mexican Restaurant & Grill,"170 E Montauk Hwy, Lindenhurst, NY 11757",4.4,2
 Rincon Guanaco Restaurants,"492 Oak St, Copiague, NY 11726",3.9,2
-Island Soul Restaurant & Bar,"105 W Sunrise Hwy, Lindenhurst, NY 11757",4.3,2
 Adventureland Restaurant,"2245 Broadhollow Rd, Farmingdale, NY 11735",4.3,N/A
+Island Soul Restaurant & Bar,"105 W Sunrise Hwy, Lindenhurst, NY 11757",4.3,2
 Lindy's Restaurant,"161 S Wellwood Ave, Lindenhurst, NY 11757",4.5,1
 Mama's Copiague,"922 Montauk Hwy, Copiague, NY 11726",4.5,2
 Alletto's Restaurant,"218 E Montauk Hwy, Lindenhurst, NY 11757",3.8,2
 Tricia's Cafe,"26 E Main St, Babylon, NY 11702",4.5,2
 Tre Scalini Italian Restaurant,"196 Main St, Farmingdale, NY 11735",4.5,2
 Rosemarie's Pizzeria & Restaurant,"188 Merritts Rd, Farmingdale, NY 11735",4.5,2
-Samovar Restaurant,"27 Woodbury Rd, Hicksville, NY 11801",4.8,N/A
 Butera's Restaurant of Bay Shore,"8 Third Ave, Bay Shore, NY 11706",4.6,2
 ITA Kitchen,"45 W Main St, Bay Shore, NY 11706",4.4,N/A
 Cafe Gio,"761 Sunrise Hwy, West Babylon, NY 11704",4.2,2
@@ -813,6 +817,7 @@ Faraday's Of Smithtown,"17 W Main St, Smithtown, NY 11787",4.5,2
 Alitalia Pizzeria & Restaurant,"999 Montauk Hwy, West Babylon, NY 11704",4.5,2
 Mulberry Street Babylon,"30 E Main St, Babylon, NY 11702",4.2,N/A
 Goccia D'Oro Italian Restaurant,"118 S Wellwood Ave, Lindenhurst, NY 11757",4.2,2
+Umberto's Restaurant & Pizzeria,"1180 Wantagh Ave, Wantagh, NY 11793",4.4,2
 Le Dock,"60 Bay Walk, Bay Shore, NY 11706",3.9,N/A
 Maroni Cuisine,"18 Woodbine Ave, Northport, NY 11768",4.7,4
 Red,"417 New York Ave, Huntington, NY 11743",4.5,3
@@ -953,16 +958,16 @@ Country Pride,"40 Riverside Dr, Fultonville, NY 12072",5,N/A
 Michael's Diner,"26 S Main St, Fultonville, NY 12072",4.6,1
 Pizzalano,"22 W Main St, Fonda, NY 12068",4.5,N/A
 Dairy Bar,"22 Bridge St S, Fonda, NY 12068",4.5,N/A
-Pino's Italian Restaurant,"326 W Clinton St, Johnstown, NY 12095",4.1,N/A
 PJ Fresh Marketplace,"164 Riverside Dr, Fultonville, NY 12072",0,N/A
 Subway,"37 W Main St, Fonda, NY 12068",4.2,1
 Taco Bell,"128 Riverside Dr, Fultonville, NY 12072",3.2,1
-The Village Restaurant,"59 Church St, Canajoharie, NY 13317",4.4,N/A
+Pino's Italian Restaurant,"326 W Clinton St, Johnstown, NY 12095",4.1,N/A
 La Palma Mexican Grill,"22 N Market St, Johnstown, NY 12095",4,N/A
+The Village Restaurant,"59 Church St, Canajoharie, NY 13317",4.4,N/A
 Pete's Snack Bar,"51 E Main St, Johnstown, NY 12095",4.8,1
+McDonald's,"37 Riverside Dr, Fultonville, NY 12072",3.3,1
 Miss Johnstown Diner,"28 E Main St, Johnstown, NY 12095",4.5,1
 Brittany's Diner,"105 NY-67, Fort Plain, NY 13339",4.5,1
-Taco 29,"36 Church St, Canajoharie, NY 13317",4.6,N/A
 Hot Dog Hut Cafe,"4 E Main St, Johnstown, NY 12095",4.7,1
 Lagonias Bistro,"15 Hudson Ave, Chatham, NY 12037",4.4,2
 Local 111,"111 Main St, Philmont, NY 12565",4.7,N/A
@@ -993,9 +998,9 @@ Pancho's,"740 Hoosick Rd #6, Troy, NY 12180",4.1,2
 Paolo Lombardi's Ristorante,"104 W Sand Lake Rd, Wynantskill, NY 12198",4.5,2
 Jack Kelly's Tavern by the Green,"162 Totem Lodge Rd, Averill Park, NY 12018",4.7,N/A
 CrossRoads American Grille,"43 Mall Way, West Sand Lake, NY 12196",4.3,2
-Ali Baba,"2243 15th St, Troy, NY 12180",4.6,2
 Park Pub Restaurant & Catering,"2701 Lavin Ct Suite 1, Troy, NY 12180",4.5,2
 Plum Blossom,"685 Hoosick Rd, Troy, NY 12180",4.5,2
+Ali Baba,"2243 15th St, Troy, NY 12180",4.6,2
 "The Towne Tavern, Averill Park, NY","2850 NY-43, Averill Park, NY 12018",4.4,2
 Country View Diner,"855 Hoosick Rd, Troy, NY 12180",4,1
 Carol's Place,"536 Pawling Ave, Troy, NY 12180",4.2,1
@@ -1030,11 +1035,10 @@ The Turf Terrace,"267 Union Ave, Saratoga Springs, NY 12866",4.6,N/A
 Pennell's Restaurant,"284 Jefferson St, Saratoga Springs, NY 12866",4.6,2
 Village Pizzeria & Ristorante,"2727 NY-29, Middle Grove, NY 12850",4.4,2
 Andy's Adirondack Grille at Malta Ridge,"2872 US-9, Malta, NY 12020",4.5,2
+Iron's Edge,"1366 NY-67, Ballston Spa, NY 12020",4.4,N/A
 Dunning Street Station,"2853 State Hwy 9, Malta, NY 12020",4.4,2
+Alaturco Gyro,"142 Milton Ave, Ballston Spa, NY 12020",4.5,2
 Putnam's Restaurant & Bar,"24 Gideon Putnam Rd, Saratoga Springs, NY 12866",3.7,N/A
-Augie's Family Style Italian Restaurant,"17 Low St, Ballston Spa, NY 12020",4.6,2
-Nanola,"2639 US-9, Malta, NY 12020",4.1,2
-Ribbon Cafe,"11 Prospect St, Ballston Spa, NY 12020",4.6,1
 The W Bar + Grill,"137 New Ashford Rd, Williamstown, MA 01267",4.2,N/A
 Mezze Bistro + Bar,"777 Cold Spring Rd Route 7, Williamstown, MA 01267",4.6,3
 Cozy Corner Restaurant,"850 Simonds Rd, Williamstown, MA 01267",4.4,2
@@ -1056,9 +1060,9 @@ The Babbling Brook Watering Hole & Eatery,"2320 Helderberg Trail, Berne, NY 1202
 Shell Inn,"4520 NY-85, Rensselaerville, NY 12147",4.5,2
 Paisano's Pizza Villa,"187 Main St, Altamont, NY 12009",3.4,N/A
 The Farmers Beef and Brew,"305 Main St, Schoharie, NY 12157",4.7,N/A
-Village Pizza,"101 Prospect Terrace, Altamont, NY 12009",4,N/A
-Your Way Cafe,"434 N Main St, Schoharie, NY 12157",4.5,1
 El Taco Shack,"307 Main St, Schoharie, NY 12157",4.5,2
+Your Way Cafe,"434 N Main St, Schoharie, NY 12157",4.5,1
+Village Pizza,"101 Prospect Terrace, Altamont, NY 12009",4,N/A
 Middle Village Pasta & Grill,"334 Main St, Middleburgh, NY 12122",4.4,2
 Middleburgh Diner,"122 Main St, Middleburgh, NY 12122",4.3,1
 Country Cafe,"295 Main St, Schoharie, NY 12157",4.7,1
@@ -1096,11 +1100,11 @@ Fritz's Pizza & Subs,"3717 NY-30, Broadalbin, NY 12025",4.3,1
 Vicki's Pizzeria,"5831 Sacandaga Rd, Galway, NY 12074",3.8,1
 The River Road House,"989 River Rd, Schenectady, NY 12306",4.7,2
 J&T's Family Cafe,"158 Sacandaga Rd, Scotia, NY 12302",4.7,1
-Iron's Edge,"1366 NY-67, Ballston Spa, NY 12020",4.4,N/A
-Alaturco Gyro,"142 Milton Ave, Ballston Spa, NY 12020",4.5,2
 The Flats Restaurant & Tavern,"675 Grooms Rd Suite 101, Clifton Park, NY 12065",4.4,N/A
 Nani's Indian Kitchen,"256 Milton Ave, Ballston Spa, NY 12020",4.7,N/A
+Augie's Family Style Italian Restaurant,"17 Low St, Ballston Spa, NY 12020",4.6,2
 Applebee's Grill + Bar,"268 Saratoga Rd, Glenville, NY 12302",3.8,2
+Ribbon Cafe,"11 Prospect St, Ballston Spa, NY 12020",4.6,1
 Bistro 42,"42 Classic St, Hoosick Falls, NY 12090",4.9,N/A
 BYTE,"15 John St, Hoosick Falls, NY 12090",4.8,2
 Guiseppe's,"3680 NY-7, Hoosick Falls, NY 12090",4.4,1
@@ -1111,13 +1115,12 @@ Sand Bar,"21 Lyman St, Hoosick Falls, NY 12090",4.4,1
 Man of Kent Tavern,"4452 NY-7, Hoosick, NY 12090",4.6,2
 Great Wall Chinese Restaurant,"61 Church St, Hoosick Falls, NY 12090",3.9,2
 Sammy Cohen's,"188 Main St, Schaghticoke, NY 12154",4.3,2
-Cheeseburger Bob's,"242 Powder Mill Rd, Valley Falls, NY 12185",5,N/A
 Benson's,"175 NY-67, Eagle Bridge, NY 12057",4.5,1
-Danny Freedom & the Last,"184 LeBarron Rd, Hoosick Falls, NY 12090",0,N/A
+Cheeseburger Bob's,"242 Powder Mill Rd, Valley Falls, NY 12185",5,N/A
 Brunswick BBQ & Brew,"3925 NY-2, Troy, NY 12180",4.1,2
 Schag A Val,"61 Main St #3900, Schaghticoke, NY 12154",4.4,1
 Richie's Pizza,"61 Main St, Schaghticoke, NY 12154",4.3,1
-Subway,"4744 NY-7, Hoosick Falls, NY 12090",3.5,1
+Danny Freedom & the Last,"184 LeBarron Rd, Hoosick Falls, NY 12090",0,N/A
 Verdile's Restaurant,"572 2nd Ave, Troy, NY 12182",4.5,2
 Anna's,"175 Lebanon Mountain Rd, Pittsfield, MA 01201",4.5,1
 Bellflower Restaurant and Terrace,"10 Richmond Mountain Rd, Lenox, MA 01240",0,N/A
@@ -1225,16 +1228,18 @@ Magdalena's,"3018 Main St, Valatie, NY 12184",4.6,N/A
 The Hill,"133 Scott Ave, Castleton-On-Hudson, NY 12033",4.5,N/A
 Bento Sushi,"2967 US-9, Valatie, NY 12184",0,N/A
 Sophie's II,"3321 US-9, Valatie, NY 12184",3.7,N/A
+Okenny's Express,"3321 US-9, Valatie, NY 12184",4.4,1
 Columbia Diner,"3333 NY-9H, Valatie, NY 12184",4.2,1
-Dyad Wine Bar,"16 Hudson St, Kinderhook, NY 12106",4.6,2
 R Pizza House,"1182 Rte 9W, Selkirk, NY 12158",4.4,N/A
 Illusive Restaurant & Bar,"3 Ferry St, Rensselaer, NY 12144",4.6,2
 Yono's,"25 Chapel St, Albany, NY 12210",4.5,4
 June's Restaurant,"501 East St, Rensselaer, NY 12144",4.7,1
+Kitchen 216,"161 Washington Ave Ext, Albany, NY 12205",4.2,2
 Restaurant 605,"605 New Scotland Ave, Albany, NY 12208",4.7,N/A
 The Almadinah Restaurant,"1401 Broadway, Watervliet, NY 12189",4.8,1
 Moliendo Cafe,"791 Madison Ave, Albany, NY 12208",4.5,1
 Albany Stadium Restaurant & Bar,"51 S Pearl St, Albany, NY 12207",4,N/A
+Lanie's Cafe,"471 Albany Shaker Rd, Loudonville, NY 12211",4.6,2
 Casey's Restaurant,"77 Washington Ave, Rensselaer, NY 12144",4.6,2
 IL FARO restaurant & bar,"698 N Pearl St, Menands, NY 12204",4.7,2
 Mamoun's Restaurant,"206 Washington Ave, Albany, NY 12210",4.5,2
@@ -1244,8 +1249,6 @@ Restaurant Navona,"289 New Scotland Ave, Albany, NY 12208",4.5,2
 P. Brillos,"9 Troy Rd, East Greenbush, NY 12061",4.5,2
 Charter Restaurant,"40 Lodge St, Albany, NY 12207",0,N/A
 Mr. D's Restaurant & Lounge,"The Desmond Hotel, 660 Albany Shaker Rd, Albany, NY 12211",4,N/A
-El Loco Mexican Cafe,"465 Madison Ave, Albany, NY 12210",4.4,2
-Sheba al-yemen restaurant,"340 Central Ave, Albany, NY 12206",4.5,N/A
 BackBar,"347 Warren St, Hudson, NY 12534",4.3,2
 Swoon Kitchenbar,"340 Warren St, Hudson, NY 12534",4.2,3
 Kozel's Restaurant,"1006 NY-9H, Ghent, NY 12075",4.2,2
@@ -1257,7 +1260,6 @@ Applebee's Grill + Bar,"420 Fairview Ave, Hudson, NY 12534",3.7,2
 Hudson Curry House,"350 Fairview Ave, Hudson, NY 12534",4.5,2
 Patrick Henry's,"48 S River St, Coxsackie, NY 12051",0,N/A
 Stella's IV Pizzeria,"1225 US-9, Hudson, NY 12534",4.2,N/A
-Indian Flame,"51 Main Ave, Wynantskill, NY 12198",4.8,2
 Bear's Steakhouse,"8254 Duanesburg Rd, Duanesburg, NY 12056",4.8,4
 The Landing On 20,"5055 Western Turnpike, Duanesburg, NY 12056",3.2,N/A
 Apple Barrel Store + Cafe,"115 NY-30A, Schoharie, NY 12157",4.7,N/A
@@ -1267,7 +1269,9 @@ Armondo's Villa Tuscan Grill,"273 Duanesburg Rd, Schenectady, NY 12306",4.6,2
 Tara Kitchen,"1785 Western Ave, Albany, NY 12203",4.8,N/A
 Wellington's,"144 State St, Albany, NY 12207",4.2,3
 Cafe Calabria II,"1736 Western Ave, Albany, NY 12203",4.5,2
+El Loco Mexican Cafe,"465 Madison Ave, Albany, NY 12210",4.4,2
 Athos Restaurant,"1814 Western Ave, Albany, NY 12203",4.7,3
+Sheba al-yemen restaurant,"340 Central Ave, Albany, NY 12206",4.5,N/A
 The Standard Restaurant and Lounge,"1 Crossgates Mall Rd, Albany, NY 12203",4.1,2
 Barcelona Restaurant-Wine Bar,"1192 Western Ave, Albany, NY 12203",4.5,2
 El Patron,"198 Central Ave, Albany, NY 12206",4.4,2
@@ -1275,7 +1279,6 @@ El Mariachi Restaurant,"289 Hamilton St Unit 291, Albany, NY 12210",4.4,2
 Grappa '72,"818 Central Ave, Albany, NY 12206",4.6,2
 Umana Yana,"240 Washington Ave, Albany, NY 12210",4.6,2
 Better Bite,"99 Washington Ave, Albany, NY 12210",4.1,2
-Kitchen 216,"161 Washington Ave Ext, Albany, NY 12205",4.2,2
 Tesoro,"2080 Western Ave, Guilderland, NY 12084",4.3,N/A
 110 Grill Albany,"1 Crossgates Mall Rd, Albany, NY 12203",4.3,2
 MezzaNotte Ristorante,"2026 Western Ave, Albany, NY 12203",4.7,3
@@ -1298,19 +1301,19 @@ La Placita Cantina,"25 E Main St, Cambridge, NY 12816",3.9,N/A
 Country Gals Cafe',"9 E Main St, Cambridge, NY 12816",4.8,1
 Kevin's,"27 Main St, North Bennington, VT 05257",4.3,2
 Los Lobos Food Truck,"22 N Park St, Cambridge, NY 12816",0,N/A
-Clark's Pizzeria,"63 W Main St, Cambridge, NY 12816",3.9,1
-Shift Wood Fired LLC.,"Broad St, Cambridge, NY 12816",5,N/A
 Chili's Grill & Bar,"24 Hannaford Square, Bennington, VT 05201",4.1,2
-China King,"39 W Main St, Cambridge, NY 12816",4.4,1
 The Dutchman's Tavern,"135 Depot St, Bennington, VT 05201",4.5,2
 The Publyk House,"782 Harwood Hill Rd, Bennington, VT 05201",4.5,2
+Clark's Pizzeria,"63 W Main St, Cambridge, NY 12816",3.9,1
+China Wok,"67 N Bennington Rd, Bennington, VT 05201",4,2
+Shift Wood Fired LLC.,"Broad St, Cambridge, NY 12816",5,N/A
 Red Rooster Bar & Grill,"845 Main St, Cairo, NY 12413",4.4,1
 Angels Pizza Restaurant INC,"4318 NY-23, Cairo, NY 12413",4.2,2
 Log Cabin Cafe,"795 Mountain Ave, Purling, NY 12470",4.6,1
 Two Brothers Pizza,"55 Co Rd 84, Cairo, NY 12413",4.2,N/A
 Bamboo Garden,"187 Main St, Altamont, NY 12009",3.8,1
 Refuel Sandwiches & More,"2 Northeastern Industrial Park, Guilderland Center, NY 12009",4.8,1
-Northern Barrell,"10 N Main St Bld. 6, Voorheesville, NY 12186",4.5,2
+Sage Bistro,"2050 Western Ave #108, Guilderland, NY 12084",4.3,2
 Thai Orchid,"19 2nd Ave, Rensselaer, NY 12144",4.7,2
 Salsa Latina,"10 Troy Rd, East Greenbush, NY 12061",4.4,2
 Pearl Street Diner,"40 N Pearl St, Albany, NY 12207",4.2,1
@@ -1325,7 +1328,6 @@ Sharon Tavern,"1522 US-20, Sharon Springs, NY 13459",4.6,2
 Rose & Kettle Restaurant,"4 Lancaster St, Cherry Valley, NY 13320",4.7,2
 GreenView Restuarant,"154 Golf Club Rd, Canajoharie, NY 13317",4.6,N/A
 Mel's at 22,"22 Chestnut St, Cooperstown, NY 13326",4.5,2
-204 Main Bar & Bistro,"204 Main St, Sharon Springs, NY 13459",4.8,N/A
 Scarboroughs Restaurant,"497 Old Niskayuna Rd, Latham, NY 12110",4.4,2
 Bill's Restaurant,"155 Ontario St, Cohoes, NY 12047",4.6,1
 Innovo Kitchen,"1214 Troy-Schenectady Rd, Latham, NY 12110",4.4,2
@@ -1339,8 +1341,8 @@ Babes Cafe And Catering,"38 1/2 Bedford Street, Cohoes, NY 12047",4.7,1
 Bangkok Kitchen,"1207 Troy-Schenectady Rd, Latham, NY 12110",4.7,2
 M Cafe,"1754 State St, Schenectady, NY 12304",4.5,N/A
 Scotti's Restaurant & Pizzeria,"1730 Union St # 4, Schenectady, NY 12309",4.7,2
-South 30 Diner,"5854 NY-30, Amsterdam, NY 12010",4.5,1
 Charleston 4 Corners Store,"1957 NY-162, Sprakers, NY 12166",0,N/A
+South 30 Diner,"5854 NY-30, Amsterdam, NY 12010",4.5,1
 Dairy Carnival,"3673 US-20, Sloansville, NY 12160",4.8,N/A
 Delmar Bistro,"180 Delaware Ave, Delmar, NY 12054",4.6,2
 Sawa Sushi Bistro,"392 Feura Bush Rd, Glenmont, NY 12077",4.8,2
@@ -1361,24 +1363,25 @@ Applebee's Grill + Bar,"223 N Comrie Ave, Johnstown, NY 12095",3.9,2
 Railside Cafe,"454 N Perry St, Johnstown, NY 12095",4.7,1
 Sam's Seafood Steakhouse,"281 N Comrie Ave, Johnstown, NY 12095",4.3,2
 Vintage Cafe,"21 W Main St, Johnstown, NY 12095",4.7,1
-McDonald's,"37 Riverside Dr, Fultonville, NY 12072",3.3,1
+Taco 29,"36 Church St, Canajoharie, NY 13317",4.6,N/A
 Gino's Restaurant,"49 Church St, Canajoharie, NY 13317",4.3,1
 Tinney's Tavern,"498 Lake Desolation Rd, Middle Grove, NY 12850",4.7,1
 The Cock 'n Bull Restaurant,"5342 Parkis Mills Rd, Galway, NY 12074",4.5,2
 The Dugout Galway,"5049 Sacandaga Rd, Galway, NY 12074",4.5,N/A
 Justin's Pizza,"3775 Lewis Rd, Ballston Spa, NY 12020",4,1
+Dyad Wine Bar,"16 Hudson St, Kinderhook, NY 12106",4.6,2
 Sundaes Restaurant And Tasty Freeze,"36422 NY-23, Grand Gorge, NY 12434",4.4,1
 The Horseshoe Cafe,"2102 NY-30, North Blenheim, NY 12131",4.9,N/A
-Pizza Plus,"37249 NY-23, Grand Gorge, NY 12434",4.3,1
 Prattsville Diner,"14582 NY-23, Prattsville, NY 12468",4.4,1
+Pizza Plus,"37249 NY-23, Grand Gorge, NY 12434",4.3,1
 Bistro Brie & Bordeaux,"5386 NY-23, Windham, NY 12496",4.2,3
 Brandywine,"11157 NY-23, Windham, NY 12496",4.4,2
 Chicken Run Family Restaurant and Steak House,"5639 NY-23, Windham, NY 12496",4.4,2
 The Old Mill,"2318 Co Rd 41, Roxbury, NY 12474",4.2,N/A
 The Windham Local,"5410 NY-23, Windham, NY 12496",4.5,N/A
+Vesuvio Restaurant,"49 Co Rd 65, Hensonville, NY 12439",4.3,2
 WINDHAM DINER,"5339 NY-23, Windham, NY 12496",4.5,1
 Millrock Restaurant,"5398 NY-23, Windham, NY 12496",4.7,2
-Vesuvio Restaurant,"49 Co Rd 65, Hensonville, NY 12439",4.3,2
 The Fierce Grizzly,"53530 NY-30, Roxbury, NY 12474",4.8,N/A
 Lilly's Steaks & Cocktails,"5335 NY-23, Windham, NY 12496",4.2,N/A
 Qin-Fang Garden Restaurant,"5448 NY-23, Windham, NY 12496",4.6,N/A
@@ -1389,6 +1392,7 @@ Tavern 23,"5220 NY-23, Windham, NY 12496",3.9,N/A
 Asian Delight,"50 Elmwood Ave # 1, Gloversville, NY 12078",4.3,1
 MT.Fuji Japanese Restaurant,"65 Arterial Plaza, Gloversville, NY 12078",4.6,2
 Tommy's Pizza,"3991 NY-2, Cropseyville, NY 12052",3.7,N/A
+Subway,"4744 NY-7, Hoosick Falls, NY 12090",3.5,1
 Green Hill Cafe Pizzeria,"5915 NY-81, Norton Hill, NY 12083",4.6,1
 Best Wok,"241 Main St, Cairo, NY 12413",3.6,N/A
 Mateo's Pizza,"247 Main St, Cairo, NY 12413",4.5,N/A
@@ -1435,11 +1439,10 @@ Long View Lodge Restaurant,"681 Deerland Rd, Long Lake, NY 12847",4.8,N/A
 Over Rock Cafe,"1529 NY-30, Wells, NY 12190",4.5,1
 Basil and Wick's,"3195 NY-28, North Creek, NY 12853",4.3,2
 Marsha's Family Restaurant,"268 Main St, North Creek, NY 12853",4.3,1
-Billy's Restaurant,"3047 NY-28, Old Forge, NY 13420",4.6,2
 The Caboose,"151 NY-28, Inlet, NY 13360",4.6,N/A
 The Overlook,"148 NY-28, Inlet, NY 13360",2.5,N/A
+Billy's Restaurant,"3047 NY-28, Old Forge, NY 13420",4.6,2
 Milano,"594 Loudon Rd, Latham, NY 12110",4.1,2
-Lanie's Cafe,"471 Albany Shaker Rd, Loudonville, NY 12211",4.6,2
 Four Brothers Pizza Inn Restaurant,"2960 US-9, Valatie, NY 12184",4.3,2
 Pizza Trails LLC,"1685 US-9, Castleton-On-Hudson, NY 12033",4.8,N/A
 Jackie's Restaurant,"3688 NY-28, Milford, NY 13807",4.6,1
@@ -1487,9 +1490,7 @@ Subway,"340 Main St, Middleburgh, NY 12122",4.2,1
 The Bishop,"90 N Pearl St, Albany, NY 12207",4.3,N/A
 Emmanuel Thai Restaurant,"35 Maiden Ln, Albany, NY 12207",4.5,2
 dp An American Brasserie,"25 Chapel St, Albany, NY 12210",4.4,3
-Okenny's Express,"3321 US-9, Valatie, NY 12184",4.4,1
 Tammy's Candy Kettle,"5154 NY-7, Hoosick Falls, NY 12090",4.8,N/A
-China Wok,"67 N Bennington Rd, Bennington, VT 05201",4,2
 The Local Dining and Spirits,"132 S Main St, Northville, NY 12134",4.6,N/A
 Timeless Tavern,"162 S Main St, Northville, NY 12134",4.5,2
 Dragon City,"112 S Main St, Northville, NY 12134",4.4,2
@@ -1497,7 +1498,6 @@ Jay's Village Cafe & Pizzeria,"172 S Main St, Northville, NY 12134",4.3,2
 Cristiano's Pizza,"662 NY-30, Northville, NY 12134",4.7,1
 Northampton Diner,"1205 NY-30, Mayfield, NY 12117",4.8,1
 Sport Island Pub & Restaurant,"108 Riverside Dr, Northville, NY 12134",4.4,2
-ADK Blend,"131 S Main St, Northville, NY 12134",5,N/A
 Mark's Pizza,"3017 Main St, Valatie, NY 12184",4.6,2
 Our Daily Bowl,"Schenectady, NY 12306",4.8,N/A
 Star's Cafe,"1365 NY-5S, Amsterdam, NY 12010",4.1,1
@@ -1506,6 +1506,7 @@ PJ Fresh Marketplace,"1128 Duanesburg Rd, Rotterdam, NY 12306",0,N/A
 MKT,"New York State Thruway, Mile, Post 168 West, Pattersonville, NY 12137",2.1,N/A
 Alpine Grille,"920 NY-30, Northville, NY 12134",4.9,2
 Haskells Inn,"3655 NY-8, Cold Brook, NY 13324",4.6,1
+Indian Flame,"51 Main Ave, Wynantskill, NY 12198",4.8,2
 HMS Host,"335 NY-144, New Baltimore, NY 12124",4,N/A
 Trackside Pizza & More,"1 Railroad Ave, Ravena, NY 12143",4.4,1
 Tipsy Moose Tap & Tavern,"62 Vandenburgh Ave, Troy, NY 12180",4.4,2
@@ -1562,14 +1563,13 @@ Southwok,"326 Glenmont Rd, Glenmont, NY 12077",4.1,1
 Jim's Irish Harbor Pub,"20 Little Mohawk St, Canajoharie, NY 13317",4.3,1
 Mediterranean Kitchen,"18 Canal St, Fort Plain, NY 13339",4.7,N/A
 Table At Fort Plain,"70 Canal St, Fort Plain, NY 13339",4.8,N/A
-Gardner's Coffee Shoppe,"15879 NY-22, Stephentown, NY 12168",4.4,1
 Proprietor's Lodge,"22 Waubeek Rd, Pittsfield, MA 01201",4.3,N/A
+Gardner's Coffee Shoppe,"15879 NY-22, Stephentown, NY 12168",4.4,1
 Trattoria Rustica,"27 Mc Kay St, Pittsfield, MA 01201",4.3,2
 101 Restaurant & Bar,"1 West St, Pittsfield, MA 01201",4.4,N/A
 Zucchini's,"1331 North St, Pittsfield, MA 01201",4.4,2
 Casual Dining Banquets,"1354 North St, Pittsfield, MA 01201",4,N/A
 Biggins Diggins,"545 South Main Street 75 South Church St pittsfield, Lanesborough, MA 01237",4.6,N/A
-Highland,"100 Fenn St, Pittsfield, MA 01201",4.5,1
 Olde Bryan Inn,"123 Maple Ave, Saratoga Springs, NY 12866",4.6,2
 Solevo Kitchen,"55 Phila St, Saratoga Springs, NY 12866",4.6,N/A
 Scallions,"44 Lake Ave, Saratoga Springs, NY 12866",4.6,2
@@ -1582,7 +1582,6 @@ Plaza Diner,"300 Fairview Ave, Hudson, NY 12534",4.1,2
 Charlie O'Neill's Cafe,"7 Co Rd 85, Cairo, NY 12413",4.7,1
 Tony's Pizza and Pasta,"9495 NY-32, Freehold, NY 12431",4.8,N/A
 Brunswick Cream,"1333 Hoosick Rd, Troy, NY 12180",4.6,N/A
-Sage Bistro,"2050 Western Ave #108, Guilderland, NY 12084",4.3,2
 Orchard Tavern West,"2050 Western Ave, Guilderland, NY 12084",4.2,N/A
 The Greek House,"27 3rd St, Troy, NY 12180",4.3,N/A
 Kismet Mediterranean Grill,"1116 Madison Ave, Albany, NY 12208",4.6,2
@@ -1731,6 +1730,7 @@ Arianna's,"2 Market St, Ellenville, NY 12428",4.3,1
 Dominican latin restaurant,"54 N Main St, Ellenville, NY 12428",4.6,N/A
 Sook House Restaurant,"72 Center St, Ellenville, NY 12428",4.5,2
 Maine Black Bear Seafood Co,"NY-28, Arkville, NY 12406",4.5,2
+Albergo Allegria Hotel & Breakfast Restaurant,"43 NY-296, Windham, NY 12496",4.9,N/A
 Van Winkles,"62 Liftside Dr, Hunter, NY 12442",4.2,N/A
 Prospect,"13 Scribner Hollow Rd, Hunter, NY 12442",4.3,N/A
 Hunter Tavern,"7433 Main St, Hunter, NY 12442",4.5,N/A
@@ -1775,7 +1775,6 @@ Main St Pizza,"5202 Main St, South Fallsburg, NY 12779",4.7,2
 Ming Moon,"5202 Main St, South Fallsburg, NY 12779",3.9,1
 Loca Pannini Pizza I,"5108 NY-42, South Fallsburg, NY 12779",4.1,N/A
 New China one,"71 Center St, Ellenville, NY 12428",3.1,N/A
-Panino Toasty Delicious,"437 NY-52, Woodbourne, NY 12788",4.5,N/A
 Food Shack,"37126 NY-10, Hamden, NY 13782",3.9,N/A
 Hamden Inn,"35769 NY-10, Hamden, NY 13782",4.8,2
 JUMBO JUMBO,"3 Main St Unit 50, Delhi, NY 13753",3.9,2
@@ -1783,16 +1782,16 @@ Eian's Outback Shack,"514 Ed Wright Rd, Delancey, NY 13752",0,N/A
 EIGHTYMain,"80 Main St, Delhi, NY 13753",5,N/A
 Delhi Diner,"95 Main St, Delhi, NY 13753",4.4,1
 Tuna III,"82 Main St, Delhi, NY 13753",4.4,2
-McDonald's,"3 Main St, Delhi, NY 13753",3.6,1
 Delhi Pizza Company,"83 Main St, Delhi, NY 13753",4.1,1
 Blue Bee Cafe,"114 Main St, Delhi, NY 13753",4.7,2
-PICCS Pub,"66 Main St, Delhi, NY 13753",4.3,1
 Downsville Diner,"15185 NY-30, Downsville, NY 13755",4.3,N/A
+PICCS Pub,"66 Main St, Delhi, NY 13753",4.3,1
+McDonald's,"3 Main St, Delhi, NY 13753",3.6,1
 Brushland Eating House,"1927 County Hwy 6, Bovina Center, NY 13740",4.8,2
-Hollow,"84 Main Street Storefront #3, Delhi, NY 13753",4.8,N/A
 The Old Schoolhouse Inn & Restaurant,"28218 NY-206, Downsville, NY 13755",4.4,N/A
-Subway,"54 Elm St, Delhi, NY 13753",3.8,1
+Hollow,"84 Main Street Storefront #3, Delhi, NY 13753",4.8,N/A
 Rosalino's,"85 Main St, Andes, NY 13731",4.8,N/A
+Subway,"54 Elm St, Delhi, NY 13753",3.8,1
 Dana's Place,"103 Main St, Andes, NY 13731",4.9,N/A
 The Table at Wiltwyck,"404 Steward Ln, Kingston, NY 12401",5,N/A
 Creekside Bar & Bistro,"1128 NY-32, Rosendale, NY 12472",4.6,N/A
@@ -1832,15 +1831,17 @@ Il Paradiso Pizza & Restaurant,"110 Shoprite Blvd, Ellenville, NY 12428",4.2,2
 Carmen's Sabor Latino,"7610 US-209, Napanoch, NY 12458",4.7,N/A
 M & C JAMAICAN CUISINE,"28 N Main St, Ellenville, NY 12428",5,N/A
 The Shamrock House,"2388 NY-145, East Durham, NY 12423",4.6,N/A
+Pomodoro's Italian Eatery,"90 Catskill Cmns, Catskill, NY 12414",4.3,2
 Santa Fe,"1802 NY-28, Woodstock, NY 12498",4.4,2
 Bia,"22 Garden St, Rhinebeck, NY 12572",4.8,N/A
 Coppola's,"4167 Albany Post Rd, Hyde Park, NY 12538",4.1,2
+Tetta's Market and Pizzeria,"2082 Co Rd 3, Olivebridge, NY 12461",4.7,N/A
 Woodstock Pizza Theater,"138 Tinker St, Woodstock, NY 12498",4.4,2
-Pomodoro's Italian Eatery,"90 Catskill Cmns, Catskill, NY 12414",4.3,2
 Village Pizza II,"416 Main St, Catskill, NY 12414",4.4,2
 Danny's,"178 Kingston Ave, Wurtsboro, NY 12790",4.2,2
 Pizza Star,"346 NY-212, Saugerties, NY 12477",4.5,N/A
 Essie's Restaurant,"14 Mt Carmel Pl, Poughkeepsie, NY 12601",4.6,2
+Duces Grill,"10 Crannell St, Poughkeepsie, NY 12601",4.7,N/A
 River Station,"1 N Water St, Poughkeepsie, NY 12601",4.2,2
 Milanese Italian Restaurant,"115 Main St, Poughkeepsie, NY 12601",4.4,2
 Cosimo's,"120 Delafield St, Poughkeepsie, NY 12601",4.5,2
@@ -1852,8 +1853,6 @@ Lola's Cafe,"131 Washington St, Poughkeepsie, NY 12601",4.7,2
 Restaurant At Apple Greens,"161 South St, Highland, NY 12528",4.3,N/A
 Guelaguetza Grill,"123 Parker Ave, Poughkeepsie, NY 12601",4.1,N/A
 Vigneto Cafe,"80 Vineyard Ave, Highland, NY 12528",4.5,2
-Duces Grill,"10 Crannell St, Poughkeepsie, NY 12601",4.7,N/A
-Albergo Allegria Hotel & Breakfast Restaurant,"43 NY-296, Windham, NY 12496",4.9,N/A
 SHORTHillS Restaurant & Diner,"2517 US-44, Salt Point, NY 12578",4.2,2
 Cafe Les Baux,"152 Church St, Millbrook, NY 12545",4.6,2
 Barbaro,"3279 Franklin Ave, Millbrook, NY 12545",4.3,N/A
@@ -1877,9 +1876,9 @@ Madison's Pizza & Catering,"17 North Ave, Pleasant Valley, NY 12569",4.5,1
 Champetre,"2938 Church St, Pine Plains, NY 12567",4.9,N/A
 Pond Restaurant,"711 Co Rd 3, Ancramdale, NY 12503",4.6,2
 El Guacamole,"7795-7797 S Main St, Pine Plains, NY 12567",4.2,2
+West Taghkanic Diner,"1016 NY-82, Ancram, NY 12502",4.2,1
 Tower Pizza,"2947 Church St, Pine Plains, NY 12567",4.3,2
 Stissing House,"7801 S Main St, Pine Plains, NY 12567",4.4,3
-West Taghkanic Diner,"1016 NY-82, Ancram, NY 12502",4.2,1
 North Star,"7519 NY-22, Copake, NY 12516",5,N/A
 Rosey's,"2987 Church St, Pine Plains, NY 12567",4.9,N/A
 Dad's Copake Diner,"178 County Rte 7A, Copake, NY 12516",4.5,1
@@ -1900,7 +1899,6 @@ Taro's,"18 Main St, Millerton, NY 12546",4.5,2
 Oakhurst Diner,"19 Main St, Millerton, NY 12546",4.4,1
 Avocado Cafe,"208 US-44, Millerton, NY 12546",4.3,N/A
 Prutting + Compa,"Millerton, NY 12546",0,N/A
-Golden Wok,"2 Main St #5165, Millerton, NY 12546",4.1,1
 Landmark Grill,"1520 State Rte 55, Lagrangeville, NY 12540",4.2,2
 Jason Patricks on 44,"1112 US-44, Poughkeepsie, NY 12603",4.4,N/A
 Athena Gyro,"1167 State Rte 55, Lagrangeville, NY 12540",4.7,2
@@ -1925,23 +1923,23 @@ Sonny's,"1610 NY-82, Lagrangeville, NY 12540",4.5,1
 Orange Hill Restaurant,"82 NY-17K, Newburgh, NY 12550",4.7,N/A
 North Plank Road Tavern,"30 Plank Rd, Newburgh, NY 12550",4.7,N/A
 Oda Restaurant,"1099 US-9, Fishkill, NY 12524",4.9,N/A
+Double O Grill,"1536 US-9, Wappingers Falls, NY 12590",4.3,2
 Cafe Maya,"2776 W Main St, Wappingers Falls, NY 12590",4.5,2
 Big Taste Restaurant,"267 1st St, Newburgh, NY 12550",0,N/A
 God's Grace Restaurant,"238 Broadway, Newburgh, NY 12550",4.3,N/A
 Farm to Table Bistro,"1083 US-9, Fishkill, NY 12524",4,2
 Primos diner & restaurant,"410 Broadway, Newburgh, NY 12550",4.2,N/A
+AJ Cafe,"2555-2557 South Ave, Wappingers Falls, NY 12590",4.5,1
 Anna's Restaurant,"491 Broadway, Newburgh, NY 12550",4.5,1
-Bella Italia Restaurant,"1605 US-9, Wappingers Falls, NY 12590",4.4,2
-Fish & Chikzz Restaurant,"238 Broadway, Newburgh, NY 12550",4.3,2
-El Valle De Anais Restaurant,"444 Broadway, Newburgh, NY 12550",4.5,N/A
 Iron & Grass,"3521 US-9, Hudson, NY 12534",4.3,N/A
 TASTE OF INDIA,"124 Fairview Ave, Hudson, NY 12534",4.8,N/A
 Il Cuore,"6090 NY-82, Stanfordville, NY 12581",4.2,N/A
 Julien's Curbside Kitchen,"5 Washington Ave, Millbrook, NY 12545",4.5,N/A
+China Tokyo,"3292 Franklin Ave, Millbrook, NY 12545",3.7,N/A
 Le Petit Bistro,"2-8 E Market St, Rhinebeck, NY 12572",4.4,3
 CJ's Italian Restaurant,"353 Old Post Rd, Rhinebeck, NY 12572",4.2,2
-China Tokyo,"3292 Franklin Ave, Millbrook, NY 12545",3.7,N/A
 Jade Palace,"6797 US-9, Rhinebeck, NY 12572",4,2
+Babette's Kitchen,"3293 Franklin Ave, Millbrook, NY 12545",4.6,2
 La Cucina Rosalie,"6 Merlot Dr, Highland, NY 12528",4.8,2
 Nu-Cavu,"857 Plains Rd, Wallkill, NY 12589",4.5,2
 Shadows on the Hudson,"176 Rinaldi Blvd, Poughkeepsie, NY 12601",4.3,2
@@ -1955,16 +1953,18 @@ John Andrews Farmhouse,"224 Hillsdale Rd, Egremont, MA 01230",4.6,3
 Bert's Inn,"4221 County Rd 7, Craryville, NY 12521",4.6,N/A
 Four Brothers Pizza Inn,"2828 NY-23, Hillsdale, NY 12529",4.3,2
 Tommy B's Slice Shop,"1817 NY-23, Craryville, NY 12521",5,N/A
+Little Cat Lodge,"37 Catamount Rd, Hillsdale, NY 12529",4.8,N/A
+Roe Jan Brewing Co.,"32 Anthony St, Hillsdale, NY 12529",4.6,2
 Old Mill,"53 Main St, Egremont, MA 01230",4.8,3
 Martindale Chief Diner,"1000 New York 23 Exit (88)on the, Taconic State Parkway, Craryville, NY 12521",4.4,1
 Mom's Country Cafe,"65 Main St, South Egremont, MA 01258",4.5,2
 Lafiesta Tex-Mex Restaurant,"284 Main St, Great Barrington, MA 01230",4.4,N/A
-Little Cat Lodge,"37 Catamount Rd, Hillsdale, NY 12529",4.8,N/A
-Naji's Mediterranean Cuisine & Catering,"401 Stockbridge Rd # B, Great Barrington, MA 01230",4.6,2
 Twins Eating House,"30 Quaker Ave, Cornwall, NY 12518",4.4,N/A
+Fish & Chikzz Restaurant,"238 Broadway, Newburgh, NY 12550",4.3,2
+El Valle De Anais Restaurant,"444 Broadway, Newburgh, NY 12550",4.5,N/A
+Don Fernando's,"362 Broadway, Newburgh, NY 12550",4.1,2
 Chilito's Restaurant,"1401 NY-300, Newburgh, NY 12550",4.3,2
 Sal & Pimienta,"640 Broadway, Newburgh, NY 12550",4.2,N/A
-El Metapaneco Restaurant,"207 Broadway, Newburgh, NY 12550",4.6,N/A
 Quinnie's New York,"834 NY-66, Hudson, NY 12534",4.7,N/A
 A&W Restaurant,"177 Union Turnpike, Hudson, NY 12534",3.9,1
 Serevan Restaurant,"6 Autumn Ln, Amenia, NY 12501",4.4,N/A
@@ -1982,7 +1982,6 @@ Tomas Tapas Bar & Restaurant,"900 NY-376, Wappingers Falls, NY 12590",4.5,2
 Blue Fountain Restaurant,"826 NY-376, Hopewell Junction, NY 12533",4.5,2
 Mahoneys Restaurant at Casperkill Country Club,"110 Golf Club Lane, Poughkeepsie, NY 12601",4,N/A
 Anthony's Restaurant,"799 NY-82, Hopewell Junction, NY 12533",4.7,N/A
-Nelly's,"400 Main St, Poughkeepsie, NY 12601",4.4,1
 Parkview House Restaurant & Tavern,"23 Main St, Wallkill, NY 12589",4.3,2
 Lombardi's,"2808 Benton Cors, Gardiner, NY 12525",4.6,2
 Grill,"219 Plattekill Ardonia Rd, Plattekill, NY 12568",3.8,N/A
@@ -1995,7 +1994,7 @@ Santa Fe Tivoli,"52 Broadway, Tivoli, NY 12583",4.5,2
 Palatine Park Pizza,"85 Palatine Park Rd, Germantown, NY 12526",4.2,N/A
 Broadway Pizza,"49 Broadway, Tivoli, NY 12583",4.4,N/A
 Jaeger Haus,"5084 NY-9G, Tivoli, NY 12583",4.6,2
-Double O Grill,"1536 US-9, Wappingers Falls, NY 12590",4.3,2
+Nelly's,"400 Main St, Poughkeepsie, NY 12601",4.4,1
 Purple orchid restaurant,"766 Main St, Poughkeepsie, NY 12603",0,N/A
 Creole Flavor,"37 May St, Poughkeepsie, NY 12603",0,N/A
 Fireside Dining Caribbean Restaurant,"442 Main St, Poughkeepsie, NY 12601",4.3,N/A
@@ -2016,6 +2015,8 @@ Tios Restaurant & Cantina,"3161 NY-22, Patterson, NY 12563",4.4,2
 Asian Temptation,"718 Dutchess Turnpike, Poughkeepsie, NY 12603",4.3,2
 food 4 your soul llc,"375 Salt Point Turnpike #1G, Poughkeepsie, NY 12603",0,N/A
 Dimoran Pizza & Deli,"51 Burnett Blvd, Poughkeepsie, NY 12603",4.8,2
+The Pandorica,"165 Main St, Beacon, NY 12508",4.4,2
+Heritage Food and Drink,"1379 US-9, Wappingers Falls, NY 12590",4.2,2
 American Bounty,"1946 Campus Dr, Hyde Park, NY 12538",4.6,2
 Lady K's Southern Comfort,"870 Violet Ave Suite 2, Hyde Park, NY 12538",4.4,N/A
 Ronzoni,"960 Violet Ave, Hyde Park, NY 12538",4.4,1
@@ -2029,9 +2030,10 @@ J&J Smokehouse BBQ,"550 Main St, Catskill, NY 12414",4.6,N/A
 Great Wall,"16 Grandview Ave, Catskill, NY 12414",4.4,2
 New Century,"387 Main St, Catskill, NY 12414",4.2,1
 New Long River,"206 W Bridge St, Catskill, NY 12414",4.1,1
-AJ Cafe,"2555-2557 South Ave, Wappingers Falls, NY 12590",4.5,1
+Bella Italia Restaurant,"1605 US-9, Wappingers Falls, NY 12590",4.4,2
 El Gallito,"537 Main St, Poughkeepsie, NY 12601",4.1,1
 Crew Restaurant & Bar,"2290 South Rd, Poughkeepsie, NY 12601",4.6,2
+Thai Spice Restaurant,"28 Raymond Ave, Poughkeepsie, NY 12603",4.2,2
 Isaan Thai Star,"41 N 7th St, Hudson, NY 12534",4.7,N/A
 Bella Noche,"3997 NY-22, Wassaic, NY 12592",4.2,N/A
 The Lantern,"10 Main St, Wassaic, NY 12592",4.5,2
@@ -2069,14 +2071,12 @@ Bull's Bridge Inn,"333 Kent Rd, Kent, CT 06757",4.5,2
 Stella's Pizzeria,"69 Fairview Ave, Hudson, NY 12534",4.2,1
 Mei Cheung,"606 Columbia Turnpike, Hudson, NY 12534",0,N/A
 Round III,"5523 NY-22, Millerton, NY 12546",4.5,1
-Four Brothers Pizza Inn,"5952 N Elm Ave, Millerton, NY 12546",4.2,2
 Villa Italia Ristorante,"1663 NY-300, Newburgh, NY 12550",4.3,2
 Retro Pizza,"18 W Rd suite 5, Pleasant Valley, NY 12569",5,N/A
 Stormville Pizza and More,"198 NY-216, Stormville, NY 12582",4.4,N/A
 Empire Wok,"817 Beekman Rd G, Hopewell Junction, NY 12533",4.1,N/A
 Coyote Flaco Poughkeepsie,"230 Salt Point Turnpike, Poughkeepsie, NY 12603",4.1,2
 Mike and Joe's Brick Oven Pizza and Italian Restaurant,"64 Creek Rd, Poughkeepsie, NY 12601",4.6,2
-Babette's Kitchen,"3293 Franklin Ave, Millbrook, NY 12545",4.6,2
 Cosimo's,"1217 NY-300, Newburgh, NY 12550",4.5,2
 Gavilan Bar & Restaurant,"778 Broadway, Newburgh, NY 12550",4.4,N/A
 Los Amigos Mexican Restaurant + Bar,"640 Broadway, Newburgh, NY 12550",4.3,1
@@ -2227,7 +2227,6 @@ Chinatown Kitchen,"40 Main St, Livingston Manor, NY 12758",4.1,N/A
 Tedy by the falls,"99 Ferndale Rd, Ferndale, NY 12734",0,N/A
 Robin Hood Diner,"Rock Ave, Livingston Manor, NY 12758",4.2,1
 Golf Club House Villa Roma Resort,"Callicoon, NY 12723",4,N/A
-Dining Hall,"199 Bouchoux Brook Rd, Hancock, NY 13783",0,N/A
 Luna Rossa Restaurant and Pizzeria,"102 Milford Landing Dr, Milford, PA 18337",4.2,2
 Peking Garden Restaurant,"111 Hulst Dr #711, Matamoras, PA 18336",4,1
 Mamma Grace Pizzeria & Deli,"32 Main St, Sparrow Bush, NY 12780",4.7,N/A
@@ -2240,6 +2239,7 @@ The Cacklin' Hen,"4054 NY-52, Youngsville, NY 12791",4.9,N/A
 Dahlia's Delights,"NY-52, White Sulphur Springs, NY 12787",4.6,N/A
 All you can eat,"28 Sacks Rd, Harris, NY 12742",0,N/A
 Little North | Kitchen + Market,"430 Old Rte 17, Livingston Manor, NY 12758",4.8,N/A
+Dining Hall,"199 Bouchoux Brook Rd, Hancock, NY 13783",0,N/A
 Eagle View Saloon,"2923 Hancock Hwy, Equinunk, PA 18417",4.4,N/A
 New China,"1148 NY-52, Loch Sheldrake, NY 12759",4.2,N/A
 Kels on the Lake,"1132 NY-52, Loch Sheldrake, NY 12759",4.4,N/A
@@ -2247,6 +2247,7 @@ Carini Pizza,"112 Kirks Rd, Narrowsburg, NY 12764",3.7,N/A
 Hot Diggity Dawg NY,"6595 NY-97, Narrowsburg, NY 12764",0,N/A
 The Laundrette,"20 5th St, Narrowsburg, NY 12764",4.6,2
 White Owl,"318 Welcome Lake Rd, Beach Lake, PA 18405",4.5,2
+Three Wishes,"1418 Beach Lake Hwy, Beach Lake, PA 18405",4.6,2
 Wing Street,"22 Sullivan Ave, Liberty, NY 12754",5,N/A
 Pancho's Pizza & Wings,"25 Sullivan Ave, Liberty, NY 12754",4.1,N/A
 Liberty Kosher Pizza a/k/a Liberty Pizza,"1885 NY-52, Liberty, NY 12754",4.5,1
@@ -2258,7 +2259,6 @@ Chan Fu,"57 State St, Otisville, NY 10963",3.2,1
 Sullivan House Bar & Grill,"544 Wurtsboro Mountain Rd, Wurtsboro, NY 12790",4.5,N/A
 Nicks Pizza,"61 State St, Otisville, NY 10963",4.3,1
 Pizza Mania,"9 Main St, Otisville, NY 10963",4,2
-MT Plate,"238 Rock Hill Dr, Rock Hill, NY 12775",4.8,N/A
 Tilly's Diner,"34 Raceway Rd, Monticello, NY 12701",4.4,1
 Buona Fortuna Pizzeria,"46 Forestburgh Rd, Monticello, NY 12701",0,N/A
 Wan Bo Buffet,"36 Forestburgh Rd #1833, Monticello, NY 12701",3.7,1
@@ -2380,11 +2380,12 @@ Greenwich Panda,"1251 NY-29, Greenwich, NY 12834",4.5,N/A
 Greenwich House of Pizza,"1251 NY-29, Greenwich, NY 12834",4,2
 Main Street Cafe,"27 NY-372, Greenwich, NY 12834",4.6,1
 Greenwich Village Cafe,"2 Washington Square, Greenwich, NY 12834",4.7,1
-Jay's Pizza,"1169 NY-29, Greenwich, NY 12834",4.2,1
 Auction Barn Restaurant,"4016 NY-40, Argyle, NY 12809",4.5,1
 Green Acres Tavern,"1120 NY-29, Greenwich, NY 12834",4.7,N/A
+Jay's Pizza,"1169 NY-29, Greenwich, NY 12834",4.2,1
 Pizza World,"NY-22, Salem, NY 12865",4.6,N/A
 The Basin Grill,"1 Ferry St, Schuylerville, NY 12871",4.3,N/A
+China King,"39 W Main St, Cambridge, NY 12816",4.4,1
 Number 1 Pizza,"509 Canada St, Lake George, NY 12845",4.2,1
 Ashes Pub & Grill,"85 Hudson St, Warrensburg, NY 12885",4.1,N/A
 Champs Corner Pub and Grill,"1 Main St, Whitehall, NY 12887",4.9,N/A
@@ -2404,9 +2405,9 @@ Lilianna's Ristorante,"11752 NY-22, Comstock, NY 12821",0,N/A
 Rathbun's Maple Sugar House,"1208 Hatch Hill Rd, Whitehall, NY 12887",4.8,1
 Granville Family Diner,"70 Quaker St, Granville, NY 12832",4,N/A
 Pine Grove Diner,"68 Quaker St, Granville, NY 12832",4.5,1
+Dancing Ewe Farm,"181 County Rte 12, Granville, NY 12832",4.6,N/A
 No-1 chinese restaurant,"8648 NY-22, Granville, NY 12832",4.5,N/A
 On The Rocks Pub,"22 W Main St, Granville, NY 12832",4.6,N/A
-Poultney House of Pizza,"245 Main St, Poultney, VT 05764",4.6,2
 Vested Veteran Grill,"126 Maple St, Corinth, NY 12822",4.7,N/A
 Melba Mae's Riverview Inn,"4025 N Shore Rd, Hadley, NY 12835",4.4,N/A
 Rocco's II,"98 Lake Ave, Lake Luzerne, NY 12846",4.3,N/A
@@ -2439,7 +2440,7 @@ Sans Souci of Cleverdale,"92 Mason Rd, Cleverdale, NY 12820",4.2,2
 The Trap,"5 Buttermilk Falls Rd, Fort Ann, NY 12827",4.6,N/A
 Scrappy's Diner,"10338 NY-149, Fort Ann, NY 12827",4.6,1
 Heidelberg Inn Restaurant,"352 Quaker Rd, Queensbury, NY 12804",4.5,2
-Mandy's Pizza & Subs,"1229 Burgoyne Ave, Hudson Falls, NY 12839",4.5,1
+Doreens Soup Kitchen & Food Pantry,"298 Main St, Hudson Falls, NY 12839",5,N/A
 Pizza Shack,"1338 Saratoga Rd, Gansevoort, NY 12831",4.4,1
 Fitzgeralds Steakhouse,"1393 US-9, Fort Edward, NY 12828",4.1,2
 SGF Family Diner,"1737 US-9, South Glens Falls, NY 12803",5,N/A
@@ -2452,11 +2453,11 @@ The Halftime Bar & Grill,"1498 US-9, Fort Edward, NY 12828",4.6,N/A
 Scarlotta's Car Hop,"45 Quaker St, Granville, NY 12832",5,N/A
 Miley E's Pizza LLC,"24 W Main St, Granville, NY 12832",4.8,N/A
 The Pawlet Station Restaurant,"50 School St, Pawlet, VT 05761",4.7,N/A
-The Barn,"5581 VT-30, Pawlet, VT 05761",4.5,2
 Subway,"8642 NY-22, Granville, NY 12832",4,1
-Fairways Restaurant & Tavern,"2395 VT-30, Poultney, VT 05764",0,N/A
 McDonald's,"8644 NY-22, Granville, NY 12832",3.1,1
-Dancing Ewe Farm,"181 County Rte 12, Granville, NY 12832",4.6,N/A
+The Barn,"5581 VT-30, Pawlet, VT 05761",4.5,2
+Fairways Restaurant & Tavern,"2395 VT-30, Poultney, VT 05764",0,N/A
+Poultney House of Pizza,"245 Main St, Poultney, VT 05764",4.6,2
 Fierro's Pizzeria,"2524 State Hwy 9N, Greenfield Center, NY 12833",4.5,1
 The Kettle,"445 Church St, Saratoga Springs, NY 12866",4.2,2
 The Brick At 2 West,"2 West Ave, Saratoga Springs, NY 12866",4.1,N/A
@@ -2470,16 +2471,18 @@ The Hitching Post,"1256 State Hwy 9N, Lake Luzerne, NY 12846",4.9,N/A
 Eddie's Restaurant,"68 State Hwy 9N, Ticonderoga, NY 12883",4.5,2
 Fort View Inn,"325 NY-22, Ticonderoga, NY 12883",4.3,2
 Emeralds II,"872 State Hwy 9N, Ticonderoga, NY 12883",3.8,N/A
-Burgoyne Grill,"260 Burgoyne Rd, Ticonderoga, NY 12883",4.1,N/A
 America's Fort Cafe,"100 Fort Ti Rd, Ticonderoga, NY 12883",3.2,N/A
+Burgoyne Grill,"260 Burgoyne Rd, Ticonderoga, NY 12883",4.1,N/A
 802 Longshots,"133 Montcalm St, Ticonderoga, NY 12883",4.5,N/A
 House of Pizza,"115 Montcalm St, Ticonderoga, NY 12883",4.2,1
 Burleigh's Luncheonette,"121 Montcalm St, Ticonderoga, NY 12883",4.6,1
 Hot Biscuit Diner,"14 Montcalm St, Ticonderoga, NY 12883",4.3,1
+Happy Star,"189 Montcalm St, Ticonderoga, NY 12883",3.3,1
 Poultney Pub,"158 Main St #1, Poultney, VT 05764",4.6,2
 Toad's Burger Bar,"25 Main St, Poultney, VT 05764",4.8,N/A
 Big Apple Diner,"11850 US-4, Whitehall, NY 12887",4.3,1
 Fair Haven Inn,"5 Adams St, Fair Haven, VT 05743",4.5,2
+Mandy's Pizza & Subs,"1229 Burgoyne Ave, Hudson Falls, NY 12839",4.5,1
 Stumpy's Pizzeria,"165 Broadway, Fort Edward, NY 12828",4.6,1
 Sushi Wa,"368 Broadway, Fort Edward, NY 12828",4.6,N/A
 The Pizza Shop,"3918 Main St, Warrensburg, NY 12885",4.6,1
@@ -2488,7 +2491,9 @@ Dragon Lee,"3740 Main St, Warrensburg, NY 12885",4.4,1
 Sulla Terra Bistro & Bakery,"3915 Main St, Warrensburg, NY 12885",4.8,N/A
 Stony Creek Inn & Rest,"6 Roaring Branch Rd, Stony Creek, NY 12878",4.7,N/A
 The Long View Lodge,"681 Deerland Rd, Long Lake, NY 12847",4.7,N/A
+Main Street Restaurant,"79 Main St, Tupper Lake, NY 12986",4.3,2
 Amado,"10 Cliff Ave, Tupper Lake, NY 12986",4.5,2
+Pine Grove Restaurant,"166 Main St, Tupper Lake, NY 12986",4.5,2
 The Cellar,"3 Kickerville Rd, Long Lake, NY 12847",4.5,N/A
 Turner's,"4590 Newcomb Rd, Long Lake, NY 12847",4.9,N/A
 Reandeau's Swiss Kitchen,"92 Park St, Tupper Lake, NY 12986",4.4,N/A
@@ -2496,7 +2501,6 @@ Little Italy,"146 Park St, Tupper Lake, NY 12986",4.4,2
 La Bella Ristorante,"564 Lake Flower Ave, Saranac Lake, NY 12983",4.4,2
 Campfire Adirondack Grill + Bar,"100 Main St, Saranac Lake, NY 12983",4,N/A
 Red Fox Restaurant,"5034 State Rte 3, Saranac Lake, NY 12983",4.7,2
-Dack Shack,"2099 Saranac Ave, Lake Placid, NY 12946",4.3,2
 The Alley Bar and Grill,"886 US-4, Schuylerville, NY 12871",4.8,N/A
 "ALMA'S KITCHEN, AND CAKES,","3 Pearl St, Schuylerville, NY 12871",5,N/A
 Joy Wok,"25 Spring St, Schuylerville, NY 12871",3.8,1
@@ -2512,6 +2516,7 @@ Smoke Signals,"2489 Main St, Lake Placid, NY 12946",4.6,2
 The Great Room & Mackenzie Restaurant,"101 Olympic Dr, Lake Placid, NY 12946",4,N/A
 Dancing Bears Restaurant,"2404 Main St, Lake Placid, NY 12946",4,2
 The Pickled Pig,"2639 Main St, Lake Placid, NY 12946",3.8,2
+Dack Shack,"2099 Saranac Ave, Lake Placid, NY 12946",4.3,2
 Salt of the Earth Bistro,"5956 Sentinel Rd, Lake Placid, NY 12946",4.7,N/A
 Eleanor's Pasta KITCHEN,"2525 Main St, Lake Placid, NY 12946",4.4,N/A
 The View,"77 Mirror Lake Dr, Lake Placid, NY 12946",4.4,4
@@ -2531,7 +2536,6 @@ Frontier Town Gateway,"4010 Blue Ridge Rd, North Hudson, NY 12855",4.4,2
 Schroon Sandwich Shop,"1073 US-9, Schroon Lake, NY 12870",4.5,N/A
 The Bridge Restaurant,"8013 VT-17, Addison, VT 05491",4.3,2
 Halfway House,"450 VT-22A, Shoreham, VT 05770",4.7,1
-Happy Star,"189 Montcalm St, Ticonderoga, NY 12883",3.3,1
 Wind-Chill Factory,"794 State Hwy 9N, Ticonderoga, NY 12883",4.5,1
 Subway,"1135 Wicker St, Ticonderoga, NY 12883",4.3,1
 McDonald's,"1148 Wicker St, Ticonderoga, NY 12883",3.5,1
@@ -2572,15 +2576,15 @@ Zachary's Original,"1785 Military Turnpike, Plattsburgh, NY 12901",4.1,2
 Pizza Palace,"334 Tom Miller Rd, Plattsburgh, NY 12901",4.4,2
 Applebee's Grill + Bar,"80 Centre Dr, Plattsburgh, NY 12901",4,2
 Ronnie's Michigans,"1265 State Rte 3, Morrisonville, NY 12962",4.4,1
+Giuseppe's Pizza & Pub,"1161 Cook St, Dannemora, NY 12929",3.8,2
 McSweeney's Red Hots,"600 State Rte 3, Plattsburgh, NY 12901",4.6,1
+Dino's Pizza,"605 State Rte 3, Plattsburgh, NY 12901",3.8,2
 Sawatdee Restaurant,"386 State Rte 3, Plattsburgh, NY 12901",4.5,2
 99 Restaurants,"446 State Rte 3, Plattsburgh, NY 12901",4.3,2
-Dino's Pizza,"605 State Rte 3, Plattsburgh, NY 12901",3.8,2
-Giuseppe's Pizza & Pub,"1161 Cook St, Dannemora, NY 12929",3.8,2
+Subway,"685 State Rte 3, Plattsburgh, NY 12901",4.2,1
 Cheech,"34 Plattsburgh Plaza, Plattsburgh, NY 12901",5,N/A
 Country Corner Drive In,"146 Fiske Rd, West Chazy, NY 12992",4.9,1
 Indian Grill,"43 Smithfield Blvd, Plattsburgh, NY 12901",4.8,N/A
-Restaurant,"313 Cornelia St, Plattsburgh, NY 12901",0,N/A
 Butcher Block,"15 Booth Dr, Plattsburgh, NY 12901",4.2,2
 Latitude 44 Bistro,"5131 U.S. Ave, Plattsburgh, NY 12901",4.5,2
 The Mariner Bar & Grill,"4016 US-9, Plattsburgh, NY 12901",4.3,N/A
@@ -2590,6 +2594,7 @@ Mickey's Restaurant & Lounge,"26 Riley Ave, Plattsburgh, NY 12901",4.5,2
 Meron's Restaurant,"110 Bailey Ave, Plattsburgh, NY 12901",4.5,N/A
 Aleka's,"103 Margaret St, Plattsburgh, NY 12901",4.5,2
 The Pepper,"13 City Hall Pl, Plattsburgh, NY 12901",4.2,2
+Restaurant,"313 Cornelia St, Plattsburgh, NY 12901",0,N/A
 Twisted Carrot,"82 Margaret St, Plattsburgh, NY 12901",4.8,N/A
 Lomeli's,"24 Oak St, Plattsburgh, NY 12901",4.4,1
 Olive Ridley's Restaurant,"37 Court St, Plattsburgh, NY 12901",4.3,2
@@ -2597,13 +2602,14 @@ Sandi's Kountry Kitchen,"2539 US-11, Mooers, NY 12958",4.5,1
 The 19th Hole Restaurant,"2927 Rand Hill Rd, Altona, NY 12910",3,N/A
 Apple Lodge Eatery,"9483 US-9, Chazy, NY 12921",4.7,N/A
 Cafe Himalaya,"8173 US-9, West Chazy, NY 12992",0,N/A
-Cattle Barn Pub & Grill,"9658 US-9, Chazy, NY 12921",4.3,N/A
 Ganienkeh Pizza and Subs,"102 Devils Den Rd, Altona, NY 12910",0,N/A
+Cattle Barn Pub & Grill,"9658 US-9, Chazy, NY 12921",4.3,N/A
 Pizza Plus,"880 US-11, Champlain, NY 12919",4.2,2
 North Bowl Restaurant,"28 N Bowl Ln, Plattsburgh, NY 12901",4.5,N/A
 Empire Buffet,"876 US-11, Champlain, NY 12919",3.1,1
 Nathan's,"1038 US-11, Champlain, NY 12919",3.6,1
 Gus' Red Hots,"5 Commodore Thomas MacDonough Hwy, Plattsburgh, NY 12901",4.3,1
+Sandi's Kountry kitchen,"Co Rd 11, Ellenburg Depot, NY 12935",3,N/A
 Pleasant Corner Restaurant,"262 State Hwy 9N, Keeseville, NY 12944",4.3,1
 GiGi's on the river,"1878 US-9, Keeseville, NY 12944",4.2,N/A
 Gigi's Restaurant,"1878 Front St, Keeseville, NY 12944",0,N/A
@@ -2615,10 +2621,11 @@ Hometown Nutrition,"686 Bear Swamp Rd, Peru, NY 12972",5,N/A
 Livingood's Restaurant & Brewery,"697 Bear Swamp Rd, Peru, NY 12972",4.5,2
 The Little Pizza Shop,"618 Lapham Mills Rd, Peru, NY 12972",4.3,1
 Subway,"654 Bear Swamp Rd, Peru, NY 12972",3.8,1
+McDonald's,"741 Bear Swamp Rd, Peru, NY 12972",3.8,1
+Pasquales Pizzeria Take out & Delivery,"2937 Main St, Peru, NY 12972",3.8,1
 Bistro de Margot,"126 College St, Burlington, VT 05401",4.7,N/A
 Restaurant Poco,"55 Main St, Burlington, VT 05401",4.7,N/A
 Tailwind,"42 Airport Ln, Plattsburgh, NY 12903",0,N/A
-Victoria's Cafe,"308 U.S. Rte 2, South Hero, VT 05486",4.6,N/A
 Subway,"NY-374, Dannemora, NY 12929",4,1
 Fiddlehead Bistro,"33 Broadway, Saranac Lake, NY 12983",4.7,N/A
 The Belvedere Restaurant,"102 Bloomingdale Ave, Saranac Lake, NY 12983",4.5,2
@@ -2631,8 +2638,8 @@ China Jade,"65 Main St, Saranac Lake, NY 12983",3.9,1
 Nonna Fina's Pizzeria,"151 River St, Saranac Lake, NY 12983",4.7,N/A
 Moose Lodge,"30 Marina Way, Lake Placid, NY 12946",4.3,1
 Barley Sandwich,"19 Broadway, Saranac Lake, NY 12983",4.8,N/A
-Artisans at the Lake Placid Lodge,"144 Lodge Way, Lake Placid, NY 12946",4.3,N/A
 Number One,"7 Bloomingdale Ave, Saranac Lake, NY 12983",3.8,2
+Artisans at the Lake Placid Lodge,"144 Lodge Way, Lake Placid, NY 12946",4.3,N/A
 Blue Line Brewery Pizza & Pub,"555 Lake Flower Ave, Saranac Lake, NY 12983",4.3,1
 Owl's Nest Pizza Parlor,"51 Main St, Saranac Lake, NY 12983",4.4,1
 Nannette's Rise N Shine Cafe,"Dickinson Center, NY 12930",4.5,1
@@ -2642,25 +2649,23 @@ Hearth of Malone,"403 E Main St, Malone, NY 12953",4.2,N/A
 Riverside Steak & Seafood,"389 W Main St, Malone, NY 12953",4.8,2
 Donovan's Steak & Ale,"3853 US-11, Malone, NY 12953",4.7,2
 As We Like it Cafe / JC Soups,"4077 US-11, Malone, NY 12953",4.7,N/A
-Scotty's Diner,"1049 US-11, Moira, NY 12957",4.4,1
 The Pines Tap and Table,"135 Bare Hill Rd, Malone, NY 12953",4.6,2
+Scotty's Diner,"1049 US-11, Moira, NY 12957",4.4,1
 Bokie's Drive In,"3960 US-11, Malone, NY 12953",4.6,1
 Pit Stop Diner,"1982 NY-11C, North Lawrence, NY 12967",4.6,N/A
 Something Different Pizza & Deli,"590 E Main St, Malone, NY 12953",4.4,1
 Malone ny,"Malone, NY 12953",0,N/A
-True Soul Food,"458 Co Rte 8, Brushton, NY 12916",0,N/A
-Mad Joes,"714 US-11, Moira, NY 12957",3.7,N/A
 Bears Den Restaurant,"425 NY-37, Akwesasne, NY 13655",4.1,N/A
-Firehouse Pizzeria,"1192 Washington St, Brushton, NY 12916",4.5,N/A
+True Soul Food,"458 Co Rte 8, Brushton, NY 12916",0,N/A
 Bubba's Bocadillos,"458 Co Rte 8, Brushton, NY 12916",1,N/A
+Mad Joes,"714 US-11, Moira, NY 12957",3.7,N/A
+Firehouse Pizzeria,"1192 Washington St, Brushton, NY 12916",4.5,N/A
 Cedar Lodge,"2145 White Hill Rd, Parishville, NY 13672",4.8,N/A
 Jessie's Supper Club,"2 Wolf Pond Rd, Owls Head, NY 12969",4,N/A
 ADK CAVU Cafe,"96 Airport Rd, Saranac Lake, NY 12983",4.8,N/A
 The 1892 Bar & Grille,"6386 NY-30, Lake Clear, NY 12945",4.6,N/A
 Adirondack Alps Restaurant at the Lake Clear Lodge,"6319 NY-30, Lake Clear, NY 12945",4.8,N/A
 Just Dogs,"NY-30, Paul Smiths, NY 12970",5,N/A
-Main Street Restaurant,"79 Main St, Tupper Lake, NY 12986",4.3,2
-Pine Grove Restaurant,"166 Main St, Tupper Lake, NY 12986",4.5,2
 Casey's Cafe and Bakery,"2306 11, Bangor, NY 12966",3,N/A
 Pipe Dream Pizza,"801 US-11, Moira, NY 12957",0,N/A
 Maple Steak & Ale,"873 NY-37, Akwesasne, NY 13655",4.3,N/A
@@ -2690,8 +2695,8 @@ Miss Huntingdon Restaurant,"116 Rue Châteauguay, Huntingdon, QC J0S 1H0, Canada
 Restaurant Napoli Trattoria,"3624E Québec 201 Saint-Timothée Saint-Antoine-Abbé Franklin, QC J0S 1N0, Canada",2.7,N/A
 Hollywood Inn,"3027, 4939 NY-374, Merrill, NY 12955",4.3,N/A
 Leblanc Patates,"56 Rue Châteauguay, Huntingdon, QC J0S 1H0, Canada",4.6,1
-Leonidas Deli,"49 Rue Châteauguay, Huntingdon, QC J0S 1H0, Canada",4,2
 Ellenburg Inn,"5010 US-11, Ellenburg Depot, NY 12935",4.3,N/A
+Leonidas Deli,"49 Rue Châteauguay, Huntingdon, QC J0S 1H0, Canada",4,2
 Casa Capitano,"216 Lake St, Rouses Point, NY 12979",4.2,N/A
 Ruthcliffe Lodge,"1002 Quarry Rd, Isle La Motte, VT 05463",4.8,N/A
 Angelo's Pizza & Grill,"44 Champlain St, Rouses Point, NY 12979",4.3,2
@@ -2708,20 +2713,20 @@ CHINA WOK,"99 Park St Suite 1, Tupper Lake, NY 12986",3.8,1
 Guido's Pizzeria,"116 Park St, Tupper Lake, NY 12986",3.6,N/A
 Woodsmens Tavern & Grill / Grand Union Hotel,"36 Depot St, Tupper Lake, NY 12986",4.5,N/A
 1844 House,"6885 US-11, Potsdam, NY 13676",4.7,3
+P-2's Irish Pub,"31 Main St, Tupper Lake, NY 12986",4.6,1
 Bakers Sizzling Grill,"18 Mckabe Rd, Colton, NY 13625",4.8,1
 RMR Bar & Grill,"3927 NY-56, South Colton, NY 13687",4.5,2
-Casablanca,"413 E Main St, Gouverneur, NY 13642",4.4,2
+JRECK Subs,"16 Demars Blvd Suite 3, Tupper Lake, NY 12986",4.2,1
 The Red Pine Cone,"3906 NY-56, South Colton, NY 13687",4.6,N/A
 Plum Brook Cafe,"756 Co Rd 17, Russell, NY 13684",4.9,N/A
-P-2's Irish Pub,"31 Main St, Tupper Lake, NY 12986",4.6,1
 Jenn's Smokin' Hot & Frosty Lounge,"5621 US-11, Ellenburg Center, NY 12934",4.6,1
-Sandi's Kountry kitchen,"Co Rd 11, Ellenburg Depot, NY 12935",3,N/A
 The Owlyout,"4492 NY-374, Merrill, NY 12955",5,N/A
 Bourdeau Jacques,"2400 Chem. de Covey Hill, Hinchinbrooke, QC J0S 1E0, Canada",5,N/A
 Bravo Restaurant,"Saint-Chrysostome, QC J0S 1R0, Canada",0,N/A
 Dunkin',"5556 State Route 11, Ellenburg Center, NY 12934",4.2,1
 Restaurant Gary's,"1172 Mnt des Irlandais, Howick, QC J0S 1G0, Canada",4.4,1
 Jreck Subs,"4173 3, Fine, NY 13690",4.8,N/A
+Casablanca,"413 E Main St, Gouverneur, NY 13642",4.4,2
 Jocko's Bar and Grill,"2058 Co Rd 27, Russell, NY 13684",4.7,1
 Twin Lakes Hotel (The Hotel Without Rooms),"4155 State Rte 3, Star Lake, NY 13690",4.5,1
 Stillwater Restaurant,"2591 Stillwater Rd, Lowville, NY 13367",4.6,N/A
@@ -2736,18 +2741,17 @@ Backyard Bistro at Charlotte Crossings,"3488 Ethan Allen Hwy, Charlotte, VT 0544
 Turtle Island Cafe,"3790 Main St, Willsboro, NY 12996",4.6,N/A
 Black Sheep Bistro,"253 Main St, Vergennes, VT 05491",4.7,3
 Rustic Roots,"195 Falls Rd, Shelburne, VT 05482",4.8,2
-Stone's Throw Charlotte,"86 Ferry Rd, Charlotte, VT 05445",4.8,N/A
 Peg & Ter's Bar and Kitchen,"5573 Shelburne Rd, Shelburne, VT 05482",4.8,2
-Shuen Lee,"10 Main St, Vergennes, VT 05491",4.2,1
+Stone's Throw Charlotte,"86 Ferry Rd, Charlotte, VT 05445",4.8,N/A
 Cucina Antica,"Shelburne Shopping Park, Shelburne, VT 05482",4.6,2
+Shuen Lee,"10 Main St, Vergennes, VT 05491",4.2,1
 Barkeaters,"97 Falls Rd, Shelburne, VT 05482",4.4,2
-The Red Onion Cafe,"3488 Ethan Allen Hwy, Charlotte, VT 05445",4.1,N/A
 Village Cafe & Tavern,"6640 US-7, North Ferrisburgh, VT 05473",4.2,2
 Archie's Grill,"4066 Shelburne Rd, Shelburne, VT 05482",4.4,2
+The Red Onion Cafe,"3488 Ethan Allen Hwy, Charlotte, VT 05445",4.1,N/A
 3 Squares Cafe,"141 Main St, Vergennes, VT 05491",4.6,2
 Rockers Pizzeria,"191 Main St, Vergennes, VT 05491",4.4,N/A
 Folino's Wood Fired Pizza Shelburne,"6305 Shelburne Rd, Shelburne, VT 05482",4.6,2
-The Gables Inn Mountain Dog Restaurant & Pub,"6455 Main St, Westport, NY 12993",5,N/A
 Park Squeeze,"161 Main St, Vergennes, VT 05491",4.5,2
 Blue Anchor,"18396 Stormont, Dundas and Glengarry County Road 2, Cornwall, ON K6H 5R5, Canada",4.4,2
 Ava's Pizzeria,"2501 Chateaugay St, Fort Covington, NY 12937",4.4,N/A
@@ -2759,12 +2763,12 @@ Zorba's,"2851 Marleau Av, Cornwall, ON K6H 7B6, Canada",4.4,N/A
 Riverside Restaurant,"837 Montreal Rd, Cornwall, ON K6H 1C7, Canada",4.2,1
 Old Orchard Place,"3936 NY-22, Willsboro, NY 12996",4.8,N/A
 Wooden Nickel,"8201 US-9, Lewis, NY 12950",4.6,N/A
-"DAK Bar - Whole Food Energy Bars, handcrafted in the Adirondacks!","545 Middle Rd, Essex, NY 12936",5,N/A
 Namaste Kitchen,"3182 Shelburne Rd, Shelburne, VT 05482",4.9,N/A
-Bleu Northeast Kitchen,"25 Cherry St, Burlington, VT 05401",4.2,N/A
 Rotisserie Restaurant,"1355 Williston Rd, South Burlington, VT 05403",3.9,2
+Bleu Northeast Kitchen,"25 Cherry St, Burlington, VT 05401",4.2,N/A
 Deep City Restaurant + Bar,"112 Lake St, Burlington, VT 05401",4.7,N/A
 The Gryphon,"131 Main St, Burlington, VT 05401",4.4,2
+Pascolo Ristorante,"120 Church St, Burlington, VT 05401",4.4,3
 Halfway House Motel and Restaurant,"7158 US-9, Elizabethtown, NY 12932",4.2,N/A
 The Arsenal,"7581 Court St, Elizabethtown, NY 12932",4.2,N/A
 The Deer's Head Inn,"7552 Court St, Elizabethtown, NY 12932",4.4,N/A
@@ -2776,9 +2780,11 @@ Highland Restaurant,"22 Highland Rd, Massena, NY 13662",4,N/A
 The Station,"9355 NY-56, Massena, NY 13662",4.2,N/A
 The Spicy Pearl,"105 Pitt St, Cornwall, ON K6J 3P5, Canada",4.9,N/A
 KFC,"3414 State Route 11, Malone, NY 12953",3.7,1
+The Gables Inn Mountain Dog Restaurant & Pub,"6455 Main St, Westport, NY 12993",5,N/A
 Safe Haven Nutrition,"4316 Main St, Port Henry, NY 12974",4.7,N/A
 Twinleaf Akwesasne,"18 NY-37, Akwesasne, NY 13655",4.5,1
 Tacos & Tortas,"46 Herne Rd, Akwesasne, NY 13655",4,N/A
+Birchwood Restaurant & Bar,"119 Sydney St, Cornwall, ON K6J 3H1, Canada",4.8,N/A
 Five Guys,"418 State Rte 3, Plattsburgh, NY 12901",4.5,2
 China Cafe,"60 Smithfield Blvd, Plattsburgh, NY 12901",4.4,N/A
 Perkins Restaurant & Bakery,"411 State Rte 3, Plattsburgh, NY 12901",4.2,2
@@ -2790,7 +2796,6 @@ Cactus Grill & Cantina,"11 Raymond St, Potsdam, NY 13676",4.1,2
 Sabad's,"81 W Main St, Norfolk, NY 13667",4.5,2
 Morley's American Grill,"240 E Orvis St, Massena, NY 13662",4.3,2
 Coach's Corner,"191 Park Ave, Massena, NY 13662",4.2,2
-JRECK Subs,"16 Demars Blvd Suite 3, Tupper Lake, NY 12986",4.2,1
 McDonald's,"26 Demars Blvd, Tupper Lake, NY 12986",3.7,1
 ADK Food Hub - Real Food Market And Eatery,"320 Park St, Tupper Lake, NY 12986",4.7,1
 Bar Antidote,"35 Green St, Vergennes, VT 05491",4.6,2
@@ -2845,21 +2850,21 @@ Corrado's Restaurant,"9439 Riverforest Rd, Weedsport, NY 13166",4.4,1
 Flojo's Bar,"9022 Plainville Rd, Baldwinsville, NY 13027",4.4,N/A
 Trappers,"1140 Morgan Rd, Memphis, NY 13112",4.1,1
 New York Pizzeria,"11376 Main St, Cato, NY 13033",4.8,1
-Tassone's Wine Garden,"8113 Dexter Pkwy, Baldwinsville, NY 13027",4.4,2
 Daphine's Diner,"15085 NY-104, Martville, NY 13111",4.7,1
+Tassone's Wine Garden,"8113 Dexter Pkwy, Baldwinsville, NY 13027",4.4,2
 Olives Eatery and Two Twisted Sisters,"25 Syracuse St, Baldwinsville, NY 13027",4.7,2
 Cottage Restaurant,"21 Oswego St, Baldwinsville, NY 13027",4.5,1
 Towpath Pizza,"2 S Main St, Jordan, NY 13080",4.5,N/A
-Arnold's Family Restaurant,"2667 Erie Dr, Weedsport, NY 13166",4.6,1
 The Seneca Riverside Inc,"9345 Stickle Rd, Weedsport, NY 13166",4,N/A
+Arnold's Family Restaurant,"2667 Erie Dr, Weedsport, NY 13166",4.6,1
 Mi Ranchito,"24 E Genesee St, Baldwinsville, NY 13027",4.6,2
 Angry Garlic,"29 Oswego St, Baldwinsville, NY 13027",4.7,2
 Empire Eatery,"9036 N Seneca St, Weedsport, NY 13166",4,N/A
 Foxfire Restaurant,"1 Village Blvd N, Baldwinsville, NY 13027",4.3,N/A
 R F H's Hide-A-Way,"1058 County Rte 57, Phoenix, NY 13135",4.5,2
 CJ'S Pub & Restaurant,"8902 S Seneca St, Weedsport, NY 13166",4.5,1
+Cook's Village Diner,"8991 N Seneca St, Weedsport, NY 13166",4.6,1
 Inn Between,"2290 W Genesee Turnpike, Camillus, NY 13031",4.6,3
-The Suds Factory River Grill,"3 Syracuse St, Baldwinsville, NY 13027",3.7,2
 salt of the earth,"147 Cayuga St, Union Springs, NY 13160",4.9,2
 1833 Kitchen & Bar,"391 Main St, Aurora, NY 13026",4.6,N/A
 Blue Moose Grille,"177 Cayuga St, Union Springs, NY 13148",3.9,N/A
@@ -2880,6 +2885,7 @@ El Bajio Mexican Restaurant,"74 Fall St, Seneca Falls, NY 13148",4.5,2
 "Happy Landing Sammich Shop, LLC","7568 NY-96, Interlaken, NY 14847",0,N/A
 Basil Thai Cuisine,"219 County Rte 57, Phoenix, NY 13135",4.4,1
 Pasta's on the Green,"1 Village Blvd N, Baldwinsville, NY 13027",4.3,2
+The Suds Factory River Grill,"3 Syracuse St, Baldwinsville, NY 13027",3.7,2
 Angry Smokehouse,"33 Water St, Baldwinsville, NY 13027",4.5,N/A
 San Miguel Mexican Bar & Grill,"2 Oswego St, Baldwinsville, NY 13027",4.2,2
 Docks Grill At Pirates Cove Marina,"9170 Horseshoe Island Rd #9607, Clay, NY 13041",4.4,N/A
@@ -2921,7 +2927,6 @@ Vietnamese Noodle House,"709 N Main St, North Syracuse, NY 13212",4.7,1
 Sapori By Antonio Restaurant & Pizzeria,"5962 NY-31 Unit 12, Cicero, NY 13039",4.6,2
 Avicolli's Italian Restaurant And Pizzeria,"7839 Oswego Rd, Liverpool, NY 13090",4.4,2
 Modern Malt,"7785 Frontage Rd Unit C, Cicero, NY 13039",3.9,N/A
-The Brick House Cafe,"5885 Cir Dr E, Cicero, NY 13039",4.6,N/A
 Joey's Italian Restaurant,"6594 Thompson Rd, Syracuse, NY 13206",4.6,2
 Seasons Tavern,"6301 NY-298, East Syracuse, NY 13057",4.1,N/A
 LODED,"6393 Thompson Rd, Syracuse, NY 13206",4.4,N/A
@@ -2929,6 +2934,7 @@ Lala Lu,"6430 Yorktown Cir, East Syracuse, NY 13057",4.3,N/A
 The Spinning Wheel Restaurant,"7384 Thompson Rd, North Syracuse, NY 13212",4.3,2
 Bull and Bear Roadhouse,"6402 Collamer Rd, East Syracuse, NY 13057",4.3,2
 Paula's at WaNoa,"6920 Minoa Bridgeport Rd, East Syracuse, NY 13057",4.9,N/A
+The Brick House Cafe,"5885 Cir Dr E, Cicero, NY 13039",4.6,N/A
 Lakeport Inn,"1859 NY-31, Chittenango, NY 13037",4.5,1
 TJ's,"32 NY-49, Cleveland, NY 13042",4.5,2
 The Cleveland House,"118 NY-49, Cleveland, NY 13042",4.7,N/A
@@ -2976,7 +2982,6 @@ Cottage Inn Restaurant,"13662 NY-370, Red Creek, NY 13143",4.5,1
 Blue Moon Grill,"122 Cayuga St, Fulton, NY 13069",4.6,2
 Tavern On the Lock,"24 S 1st St, Fulton, NY 13069",4.3,2
 The Village Grill of Fair Haven,"809 NY-104A, Sterling, NY 13156",4.6,1
-Cook's Village Diner,"8991 N Seneca St, Weedsport, NY 13166",4.6,1
 84 Fall,"84 Fall St, Seneca Falls, NY 13148",4.6,N/A
 Red Brick Pub Kitchen & Cocktails,"57 Fall St, Seneca Falls, NY 13148",4.7,N/A
 "Lavish Lounge, Bar and Restaurant","288 Genesee St, Auburn, NY 13021",4.6,N/A
@@ -2986,13 +2991,13 @@ Copper Turret,"15 W Main St, Morrisville, NY 13408",4.4,2
 Dave's Diner,"35 Albany St, Cazenovia, NY 13035",4.4,2
 New Great Wall,"130 Albany St, Cazenovia, NY 13035",3.7,1
 The Brae Loch Inn,"5 Albany St, Cazenovia, NY 13035",4.5,N/A
-Due Passi Pizzeria,"79 Albany St, Cazenovia, NY 13035",4.3,N/A
 Susie's Cafe LLC,"37 W Main St, Morrisville, NY 13408",4.6,1
+Due Passi Pizzeria,"79 Albany St, Cazenovia, NY 13035",4.3,N/A
+Xing Xing Kitchen,"25 Main St, Morrisville, NY 13408",4.3,N/A
 Caz Pizza,"62 Albany St, Cazenovia, NY 13035",4.3,2
 Owahgena Pizzeria,"118 Albany St, Cazenovia, NY 13035",4.3,1
-Xing Xing Kitchen,"25 Main St, Morrisville, NY 13408",4.3,N/A
-Cazenovia Bagel Co.,"79 Nelson St, Cazenovia, NY 13035",4.6,1
-The Pewter Spoon Cafe,"87 Albany St, Cazenovia, NY 13035",4.6,2
+New York Pizzeria,"28 Main St, Morrisville, NY 13408",3.9,2
+The Fort,"97 Main St, Morrisville, NY 13408",4.2,1
 Passarella,"2972 E Main St, Parish, NY 13131",4.6,2
 Grist Mill,"3039 County Rte 26, Parish, NY 13131",4.2,1
 Driveway Inn,"4169 State Rte 3, Fulton, NY 13069",4.6,1
@@ -3061,6 +3066,8 @@ Burger Den,"1 River St, Cortland, NY 13045",0,N/A
 Hyde's Diner,"157 Homer Ave, Cortland, NY 13045",4.7,1
 Asian Delicious,"1 Main St, Cortland, NY 13045",3.9,2
 Gorgers,"101 Main St, Cortland, NY 13045",4.6,N/A
+Cazenovia Bagel Co.,"79 Nelson St, Cazenovia, NY 13035",4.6,1
+The Pewter Spoon Cafe,"87 Albany St, Cazenovia, NY 13035",4.6,2
 The Toast,"2390 US-20, Cazenovia, NY 13035",4.6,2
 The Brewster Inn,"6 Ledyard Ave, Cazenovia, NY 13035",4.7,N/A
 McDonald's,"Town & Country Plaza, 2300, Cazenovia, NY 13035",3.4,1
@@ -3069,7 +3076,6 @@ Sal's Pizzeria,"1599 Cortland St, Deruyter, NY 13052",4.7,2
 The Georgetown Inn,"970 State Rte 26, Georgetown, NY 13072",4.5,N/A
 Sugar Shack Cafe and Bakery,"691 Wood Rd, Deruyter, NY 13052",4.9,N/A
 New Woodstock Market,"2092 Main St, New Woodstock, NY 13122",4.7,N/A
-New York Pizzeria,"28 Main St, Morrisville, NY 13408",3.9,2
 Village Taqueria and Grill,"2 E Main St, Dryden, NY 13053",4.8,2
 Elm Tree Inn,"2 McLean Rd, McLean, NY 13102",4.4,N/A
 Bravo,"17 Railroad St, Freeville, NY 13068",4.2,2
@@ -3111,8 +3117,6 @@ Rosalie's Cucina,"841 W Genesee Street Rd, Skaneateles, NY 13152",4.6,3
 GOOD eats & sips,"18 W Genesee St, Skaneateles, NY 13152",4.8,N/A
 Alvord House Restaurant,"5 E Main St, Marcellus, NY 13108",4.3,1
 Daniel's Grill,"69 North St, Marcellus, NY 13108",4.6,2
-Elephant and The Dove,"9 E Genesee St, Skaneateles, NY 13152",4.3,N/A
-The Fort,"97 Main St, Morrisville, NY 13408",4.2,1
 Stix,"80 Eaton St, Morrisville, NY 13408",0,N/A
 Mustang Alley,"80 Eaton St, Morrisville, NY 13408",3.8,1
 Seneca Dining Hall,"Chenango St, Morrisville, NY 13408",3.8,1
@@ -3122,9 +3126,9 @@ HaKaCha Restaurant,"311 3rd St, Ithaca, NY 14850",4.7,N/A
 Sunset Grill,"823 Danby Rd, Ithaca, NY 14850",4.2,1
 The Heights,"903 Hanshaw Rd, Ithaca, NY 14850",4.5,2
 Taverna Banfi,"130 Statler Dr, Ithaca, NY 14853",4.4,3
-Loumies,"114 Dryden Rd, Ithaca, NY 14850",4.7,1
 The Rook,"404 W State St, Ithaca, NY 14850",4.5,2
 Allechant,"903 Hanshaw Rd # 13, Ithaca, NY 14850",4.6,N/A
+Loumies,"114 Dryden Rd, Ithaca, NY 14850",4.7,1
 The Terrace Restaurant,"130 Statler Dr, Ithaca, NY 14853",4.5,1
 The Bistro at La Tourelle,"1152 Danby Rd, Ithaca, NY 14850",4.3,N/A
 Lev Kitchen,"222 E State St, Ithaca, NY 14850",4.5,N/A
@@ -3142,10 +3146,10 @@ Schneider's Lil Salmon Inn,"239 NY-104B, Mexico, NY 13114",4.6,1
 Paulanjo's Pizza,"3255 Main St, Mexico, NY 13114",3.8,1
 Stefano's Mexico,"3273 Main St, Mexico, NY 13114",4,2
 Subway,"2877 E Main St, Parish, NY 13131",3.5,1
-Green Side Restaurant,"6919 State Rte 3, Pulaski, NY 13142",3.5,N/A
 The Eis House,"144 Academy St, Mexico, NY 13114",4.5,N/A
-The Lakeside Restaurant,"7116 State Rte 3, Pulaski, NY 13142",4.6,1
 Subway,"5775 State Rte 3, Mexico, NY 13114",4.1,1
+McDonald's,"3362 Main St, Mexico, NY 13114",3.4,1
+Green Side Restaurant,"6919 State Rte 3, Pulaski, NY 13142",3.5,N/A
 Woody's Bar and Grille,"2468 NY-414, Waterloo, NY 13165",4.4,N/A
 Mac's Drive-In,"1166 Waterloo Geneva Rd, Waterloo, NY 13165",4.6,1
 La Fiesta Brava,"9 E Main St, Waterloo, NY 13165",4.5,1
@@ -3185,6 +3189,7 @@ Dos Amigos,"403 College Ave, Ithaca, NY 14850",4.2,N/A
 Gola Osteria Restaurant & Catering,"115 S Quarry St, Ithaca, NY 14850",4.2,N/A
 Old Mexico Express,"111 Dryden Rd, Ithaca, NY 14850",4.2,N/A
 Sangam Indian Cuisine,"424 Eddy St, Ithaca, NY 14850",4.1,2
+Pho Time Vietnamese Cuisine,"208b Dryden Rd, Ithaca, NY 14850",4.1,1
 Taco Bell,"3016 East Ave, Central Square, NY 13036",4.1,1
 Maryann's Country Time Cafe,"23 County Rte 6, Phoenix, NY 13135",4.8,1
 Burger King,"3002 East Ave, Central Square, NY 13036",3.9,1
@@ -3194,11 +3199,11 @@ Barb's Diner,"891 Main St, Locke, NY 13092",4.6,1
 Great Garden Chinese Restaurant,"118 Main St, Moravia, NY 13118",4,N/A
 New York Pizzeria,"119 Main St, Moravia, NY 13118",4.5,2
 Giuseppe's Pizzeria,"161 Main St, Moravia, NY 13118",4.1,1
+Subway,"1695 NY-38, Moravia, NY 13118",3.6,1
 Hazelnut Kitchen,"53 E Main St, Trumansburg, NY 14886",4.6,2
 Main Street Pizzeria,"120 Main St, Groton, NY 13073",4.4,2
 Casper's,"118 Main St #1132, Groton, NY 13073",4.7,1
 New York Garden Chinese Restaurant,"144 Main St, Groton, NY 13073",4.1,1
-Subway,"1695 NY-38, Moravia, NY 13118",3.6,1
 Falls Restaurant & Catering,"214 E Main St, Trumansburg, NY 14886",4.4,1
 Ron Don's Village Pub,"1 Old Main St, Trumansburg, NY 14886",4.6,1
 East Shore Roadhouse,"1928 E Shore Dr, Lansing, NY 14882",4.9,N/A
@@ -3221,6 +3226,7 @@ Otro Cinco,"206 S Warren St, Syracuse, NY 13202",4.5,2
 Apizza Regionale,"260 Genesee St, Syracuse, NY 13202",4.7,2
 Munjed's Middle Eastern Cafe,"505 Westcott St, Syracuse, NY 13210",4.4,2
 Tanya's Spanish Restaurant,"686 South Ave, Syracuse, NY 13207",4.7,N/A
+Redfield's Restaurant,"701 E Genesee St suite a, Syracuse, NY 13210",3.6,N/A
 Sammy Malone's,"2 Oswego St, Baldwinsville, NY 13027",4.2,N/A
 Happy Garden,"2265 Downer St # 7, Baldwinsville, NY 13027",3.7,1
 Sandy & Sons,"201 E Manlius St, East Syracuse, NY 13057",4.7,1
@@ -3256,13 +3262,14 @@ Little Italy Pizzeria,"125 S Main St, Homer, NY 13077",4.5,1
 Nicky C's Hometown Pizzeria and Meatball Shop,"12 S West St, Homer, NY 13077",4.2,N/A
 Perkins Restaurant & Bakery,"2 Locust Ave, Cortland, NY 13045",4.2,2
 Riley's,"312 Park St, Syracuse, NY 13203",4.6,2
+Il Limone Restaurant Pizzeria,"7421 Oswego Rd, Liverpool, NY 13090",4.3,N/A
 110 Grill,"9090 Destiny USA Dr, Syracuse, NY 13204",3.9,2
 The Colonial Lodge Restaurant,"2630 NY-41A, Moravia, NY 13118",4.1,N/A
 Goody's Lake Como Inn,"1307 E Lake Rd, Cortland, NY 13045",4.5,1
 AJ's Family Diner,"202 Port Watson St, Cortland, NY 13045",4.5,1
 Gator's Tavern,"83 Owego St, Cortland, NY 13045",4.6,1
+The Lakeside Restaurant,"7116 State Rte 3, Pulaski, NY 13142",4.6,1
 Fairway's and Dream's,"6927 State Rte 3, Richland, NY 13142",4.6,N/A
-McDonald's,"3362 Main St, Mexico, NY 13114",3.4,1
 Tailwater Restaurant & Bar,"52 Pulaski St, Altmar, NY 13302",4.6,N/A
 Amber Inn Tavern,"2424 Otisco Valley Rd, Marietta, NY 13110",4.4,N/A
 Mandana Inn,"1937 W Lake Rd, Skaneateles, NY 13152",4.3,2
@@ -3271,6 +3278,7 @@ The Cider Mill,"4221 Fay Rd, Syracuse, NY 13219",4.7,N/A
 Marietta House,"2819 NY-174, Marietta, NY 13110",4.5,2
 Mike's Pizzeria,"1388 E Genesee St, Skaneateles, NY 13152",4.3,1
 Marcellus Pizza,"3800 Lee-Mulroy Rd, Marcellus, NY 13108",4.5,1
+Elephant and The Dove,"9 E Genesee St, Skaneateles, NY 13152",4.3,N/A
 The Village Tavern Hannibal,"174 Oswego St, Hannibal, NY 13074",4.2,N/A
 Brandon's Pub + Grille,"559 Main St, Fair Haven, NY 13064",4.4,2
 Coffee Bean Bistro,"934 Co Rte 7, Hannibal, NY 13074",4.5,N/A
@@ -3279,11 +3287,11 @@ Turtle Cove Resort & Marina,"356 King Rd, Sterling, NY 13156",4.3,1
 The Lounge at Colloca Estate Winery,"14632 Ingersoll Rd, Fair Haven, NY 13156",5,N/A
 The Village Slice,"177 Oswego St, Hannibal, NY 13074",3.9,1
 104 Store,"13824 NY-370, Red Creek, NY 13143",4.3,1
-Village Restaurant,"6014 New Hartford St, Wolcott, NY 14590",4.3,1
 Fullers,"6958 Main St, Red Creek, NY 13143",4.8,N/A
+Hardware Cafe & General Store,"566 Main St, Fair Haven, NY 13064",4.5,1
+Village Restaurant,"6014 New Hartford St, Wolcott, NY 14590",4.3,1
 Battle Island Restaurant,"2150 NY-48, Fulton, NY 13069",4.5,2
 La Parrilla On The Water,"24 E 1st St, Oswego, NY 13126",4.4,2
-Bistro 197,"197 W 1st St, Oswego, NY 13126",4.4,N/A
 Pizza Man,"50 Oswego St, Baldwinsville, NY 13027",4.6,1
 Port Byron Diner,"97 Rochester St, Port Byron, NY 13140",4.5,1
 Potters Farm to Fork,"1951 NY-31, Port Byron, NY 13140",4.4,1
@@ -3293,7 +3301,7 @@ Nino's Pizzeria,"115 Main St, Port Byron, NY 13140",4.3,2
 Arby's,"2767 NY-31, Weedsport, NY 13166",4,1
 Nino's NY Pizzeria,"8889 S Seneca St, Weedsport, NY 13166",4.1,1
 JRECK Subs,"2700 E Brutus St, Weedsport, NY 13166",4.2,1
-Blended Nutrition,"3265 Main St, Mexico, NY 13114",3.6,N/A
+Bistro 197,"197 W 1st St, Oswego, NY 13126",4.4,N/A
 Maria's Family Restaurant,"111 W 2nd St, Oswego, NY 13126",4.4,1
 Southern Fare,"189 W 1st St Suite 1, Oswego, NY 13126",4.4,2
 Rudy's Lakeside Drive-In,"78 Co Rte 89, Oswego, NY 13126",4.5,2
@@ -3324,10 +3332,9 @@ Denny's,"5315 W Genesee St, Camillus, NY 13031",3.8,1
 Swallow's,"1914 South Ave, Syracuse, NY 13207",4.6,1
 Shanghai Garden Chinese Restaurant,"112 Kasson Rd, Camillus, NY 13031",4.6,1
 Chav's Soul Food Kitchen,"2419 S Salina St, Syracuse, NY 13205",3.5,1
+Annie's Diner,"7409 State Rte 3, Pulaski, NY 13142",4.7,N/A
 Cathy's Wings & Pizza,"5339 NY-104, Oswego, NY 13126",3.8,1
 GlimmerGlass Bistro,"All Seasons Inn, 5422 NY-104, Oswego, NY 13126",0,N/A
-Annie's Diner,"7409 State Rte 3, Pulaski, NY 13142",4.7,N/A
-Dominick's Sports Tavern,"390 County Rte 51A, Oswego, NY 13126",4.4,N/A
 Gary's Restaurant,"6367 Lakeshore Rd S, Canastota, NY 13032",4.3,N/A
 Harpoon Eddie's,"611 Park Ave, Sylvan Beach, NY 13157",4.2,2
 Flo's Diner,"3223 NY-31, Canastota, NY 13032",4.6,1
@@ -3365,6 +3372,7 @@ China House,"5640 NY-12, Norwich, NY 13815",3.9,1
 Taco Bell,"5412 NY-12, Norwich, NY 13815",3.3,1
 Dusty s Dairy Bar & Grill,"6072 NY-12, Norwich, NY 13815",4.7,1
 The Pricker Bush,"3642 County Rte 57, Oswego, NY 13126",4.3,N/A
+Dominick's Sports Tavern,"390 County Rte 51A, Oswego, NY 13126",4.4,N/A
 Murray's Pizza,"1576 State Rte 26, South Otselic, NY 13155",3.5,N/A
 Rusch's Bar & Grill open for in dining or take out,"22 Lebanon St, Hamilton, NY 13346",4.4,2
 Seven Oaks Restaurant,"73 Payne St, Hamilton, NY 13346",4.6,2
@@ -3391,10 +3399,10 @@ Papa's Total Take Out,"12004 E Main St, Wolcott, NY 14590",4.6,N/A
 The Dugout,"11818 Orchard St, Wolcott, NY 14590",4.7,N/A
 Foster's,"12029 E Main St, Wolcott, NY 14590",4.6,N/A
 Peter's New York Pizzeria,"12013 E Main St, Wolcott, NY 14590",4.6,N/A
-China King Chinese Restaurant,"6011 New Hartford St #2, Wolcott, NY 14590",3.7,1
 Hometown Eatery,"10366 Railroad Ave, North Rose, NY 14516",4.9,N/A
-Hardware Cafe & General Store,"566 Main St, Fair Haven, NY 13064",4.5,1
+China King Chinese Restaurant,"6011 New Hartford St #2, Wolcott, NY 14590",3.7,1
 Dockers Seafood and Grille,"6483 Catchpole Shore Rd, North Rose, NY 14516",3.9,N/A
+Riley's Bar & Grill,"9660 Ridge Rd, North Rose, NY 14516",4.7,N/A
 The Gathering Place,"6800 County Rte 17, Redfield, NY 13437",4.8,1
 Kasoag Lake Tavern And Grill,"603 County Rte 30, Williamstown, NY 13493",4.5,N/A
 Elms Restaurant,"21 Country Club Ln, Sandy Creek, NY 13145",4,N/A
@@ -3408,13 +3416,13 @@ beiteng foodking Chinese restaurant,"60 Glasgow St, Clyde, NY 14433",4.6,1
 Undercroft Board Game Cafe,"25 Columbia St, Clyde, NY 14433",5,N/A
 Westside Fuel,"10329 NY-31, Clyde, NY 14433",4.8,N/A
 Iron Skillet,"1255 NY-414, Waterloo, NY 13165",3.9,3
-McDonald's,"1073 NY-31, Port Byron, NY 13140",3.3,1
 Pete's Treats,"295 Cayuga St, Union Springs, NY 13160",4.4,1
-Magee Country Diner,"1303 NY-414, Waterloo, NY 13165",4.3,1
 Big Greek Grill,"655 NY-318 Suite #36, Waterloo, NY 13165",4.5,N/A
+Magee Country Diner,"1303 NY-414, Waterloo, NY 13165",4.3,1
 Malone's Irish Hideaway,"271 Barker Rd, Oswego, NY 13126",4.4,1
 Mass Pizza,"Taberg Rd, Annsville, NY 13471",5,N/A
 On The Rocks Bar and Grill (The Rocks),"7142 Julie Street, Taberg, NY 13471",4.6,1
+Gli Amanti Pizzeria,"4177 NY-69, Taberg, NY 13471",4.2,N/A
 Hiawatha Inn,"3744 NY-13, Truxton, NY 13158",4.7,N/A
 New China Royal Restaurant,"103 Genesee St, Auburn, NY 13021",4.1,1
 Angelos Pizza,"25 E Genesee St, Auburn, NY 13021",4.3,1
@@ -3459,13 +3467,13 @@ Boonville Hotel Inc,"103 Water St, Boonville, NY 13309",4.5,N/A
 The Junction At Alder Creek,"11573 NY-12, Boonville, NY 13309",4.6,N/A
 Capri Pizzeria,"111 Main St, Boonville, NY 13309",4.5,2
 Luigi's Pizzeria,"104 Water St, Boonville, NY 13309",4.1,1
+Burger King,"261 Utica Rd, Boonville, NY 13309",3.8,1
 Hiffa's,"9560 NY-12, Remsen, NY 13438",4.7,1
 Rookie's Tavern,"3446 Moose River Rd, Boonville, NY 13309",4.5,1
-Burger King,"261 Utica Rd, Boonville, NY 13309",3.8,1
 Rocky's on The Lake,"438 Mac Arthur Rd, Cold Brook, NY 13324",4.6,N/A
+Subway,"13240 NY-12, Boonville, NY 13309",4,1
 Cindys Diner,"9336 NY-12, Remsen, NY 13438",4.3,1
 Tavern,"114 State St, Prospect, NY 13435",4.5,1
-Subway,"13240 NY-12, Boonville, NY 13309",4,1
 Ohio Tavern & Restaurant,"2755 NY-8, Cold Brook, NY 13324",4.7,2
 "Buck's Family Restaurant, Inc.","469 NY-13, Williamstown, NY 13493",4.6,1
 Rusty Roof,"441 NY-13, Williamstown, NY 13493",4.5,1
@@ -3475,12 +3483,12 @@ Delta Lake Inn,"8524 Fish Hatchery Rd, Rome, NY 13440",4.5,2
 Gone Coastal,"5345 Lee Center Taberg Rd, Lee Center, NY 13363",4.4,2
 Bella Pizza,"9261 Point Rock Rd, Taberg, NY 13471",4.3,2
 Milk Plant Tavern,"1006 State Rte 26, West Leyden, NY 13489",4.6,1
-Joey's Pizzeria,"8963 Turin Rd, Rome, NY 13440",4.1,N/A
 Snubbing Post,"8221 Rome-Westernville Rd, Rome, NY 13440",4.3,1
+Joey's Pizzeria,"8963 Turin Rd, Rome, NY 13440",4.1,N/A
 Vine & Fig,"8171 Turin Rd, Rome, NY 13440",4.8,N/A
 Jonny B's Tavern,"8345 New Floyd Rd, Rome, NY 13440",4.6,2
-El Jarocho Mexican Restaurant and Bar,"1305 Floyd Ave, Rome, NY 13440",4.5,1
 Frontier Restaurant,"7949 New Floyd Rd, Rome, NY 13440",4.5,N/A
+El Jarocho Mexican Restaurant and Bar,"1305 Floyd Ave, Rome, NY 13440",4.5,1
 Crust Kitchen & Bar,"86 Hangar Road West, Suite 101, Rome, NY 13440",4.5,N/A
 Priscilla's Place,"8583 NY-365, Stittville, NY 13469",4.5,1
 Sweet Basil,"124 Mappa Ave, Barneveld, NY 13304",4.6,1
@@ -3509,18 +3517,19 @@ New York Pizzeria,"7580 S State St, Lowville, NY 13367",4,2
 Arby's,"7416 S State St, Lowville, NY 13367",4.1,1
 Vinny's Pizzeria,"9786 NY-812, Croghan, NY 13327",4.7,N/A
 Mr Sub,"7506 S State St, Lowville, NY 13367",4,N/A
-Pioneer Cafe,"NY-12, Glenfield, NY 13343",4.8,N/A
-Superior Grill,"274 State St, Carthage, NY 13619",4.5,N/A
-Town Talk Restaurant,"9855 NY-12, Copenhagen, NY 13626",4.8,1
 Pond Effects Bar & Grill LLC,"7575 Snell Rd, Lowville, NY 13367",4.3,N/A
-River Valley Inn,"6670 Burdicks Crossing Rd, Lyons Falls, NY 13368",4.7,N/A
 Crave Diner and Vanilla Bean Bake Shop,"5424 Shady Ave, Lowville, NY 13367",4.5,N/A
 JRECK Subs,"7596 E State St, Lowville, NY 13367",4.1,1
+Pioneer Cafe,"NY-12, Glenfield, NY 13343",4.8,N/A
+Subway,"7389 Utica Blvd, Lowville, NY 13367",4.2,1
+McDonald's,"7398 S South St, Lowville, NY 13367",3.5,1
+Superior Grill,"274 State St, Carthage, NY 13619",4.5,N/A
 Ted's Cafe,"325 Brooks Rd, Rome, NY 13441",5,N/A
 Rosie's Oriskany Diner,"8404 NY-69, Oriskany, NY 13424",4.6,1
 Capri Pizzeria,"803 Utica St, Oriskany, NY 13424",4.7,1
 Stockdale's Bar and Grill,"103 River St, Oriskany, NY 13424",4.6,2
 Bowl Boss Rome,"86 Hangar Rd Suite 107, Rome, NY 13441",4.8,N/A
+69 Steakhouse,"409 Oriskany Blvd, Whitesboro, NY 13492",4.3,2
 Quack's Village Inn,"7239 US-20, Madison, NY 13402",4.2,1
 Hotel Solsville,"7243 Valley Rd, Madison, NY 13402",4.5,N/A
 Hamilton Inn,"4480 E Lake Rd, Hamilton, NY 13346",4.7,N/A
@@ -3547,18 +3556,19 @@ Georgio's Village Cafe,"62 Genesee St, New Hartford, NY 13413",4.7,2
 Saalty Dawg Saloon,"1527 Cedarville Rd, Frankfort, NY 13340",4.6,N/A
 Central Dining Inn,"1899 Central Plaza E, Edmeston, NY 13335",0,N/A
 Sister Sammy's Country Deli,"2353 NY-80, West Burlington, NY 13482",5,N/A
-Tally-Ho Restaurant,"156 E Main St, Richfield Springs, NY 13439",4.4,1
 Spikes Pizza & Grocery LLC,"5 East St, Edmeston, NY 13335",4.1,1
+Tally-Ho Restaurant,"156 E Main St, Richfield Springs, NY 13439",4.4,1
 Lake House Restaurant,"2521 Co Hwy 22, Richfield Springs, NY 13439",3.6,N/A
 Round Top Bar and Grill,"43 Lake St, Richfield Springs, NY 13439",4.5,N/A
 Genesee Restaurant and Tap Room,"38 Lake St, Richfield Springs, NY 13439",4.4,N/A
 China Wok,"7 Commons Dr, Cooperstown, NY 13326",4.1,1
 J & D's Wagon Wheel,"4918 NY-28, Cooperstown, NY 13326",4.4,1
 Foo Chow Restaurant,"137 W Main St, Richfield Springs, NY 13439",4,N/A
+Brickhouse Pizzeria,"1 W Main St, Richfield Springs, NY 13439",4.8,1
 Avicolli's Pizza,"78 Main St, Camden, NY 13316",4.6,2
 China Moon,"48 Main St, Camden, NY 13316",4.3,N/A
-Gli Amanti Pizzeria,"4177 NY-69, Taberg, NY 13471",4.2,N/A
 Pizza Plus,"5 Main St, Camden, NY 13316",3.9,2
+204 Main Bar & Bistro,"204 Main St, Sharon Springs, NY 13459",4.8,N/A
 5 S Diner,"12 Hancock St, Fort Plain, NY 13339",4.5,1
 Erie restaurant,"Fort Plain, NY 13339",0,N/A
 Red Lantern House,"25 Main St, Fort Plain, NY 13339",3.7,1
@@ -3591,6 +3601,7 @@ Ocean Blue Restaurant & Oyster Bar,"Landmark Building, 118 Columbia St, Utica, N
 Tryon Inn and Backdoor Bar,"124 Main St, Cherry Valley, NY 13320",4.5,N/A
 The Permaculture Inn,"871 Engleville Rd, Sharon Springs, NY 13459",4.2,N/A
 K C's Corner Motel,"5705 US-20, East Springfield, NY 13333",4.4,N/A
+Red Shed Brewery - Red Shed Ale House,"10 Main St, Cherry Valley, NY 13320",4.8,N/A
 Lafa Mediterranean by Zeina's,"4666 Commercial Dr, New Hartford, NY 13413",4.8,N/A
 The Grapevine,"120 Genesee St, New Hartford, NY 13413",4.6,2
 Symeon's Greek Restaurant,"4941 Commercial Dr, Yorkville, NY 13495",4.7,2
@@ -3613,8 +3624,6 @@ Piggy Pats Smoke & Ale House,"3956 Edgebrook Pl, New Hartford, NY 13413",4.3,2
 Debbie's Cafe,"3963 Oneida St, New Hartford, NY 13413",4.7,N/A
 Matteson Hotel,"1001 NY-51, Ilion, NY 13357",4.8,N/A
 Bento Sushi,"50 Kellogg Rd, New Hartford, NY 13413",3.7,N/A
-The Red Samurai Steak House,"8562 Seneca Turnpike, New Hartford, NY 13413",4.5,2
-Mitsuba,"17 Ellinwood Dr, New Hartford, NY 13413",4.4,2
 New York Pizzeria,"7439 Main St, Newport, NY 13416",4.6,2
 Main Street Ristorante and Primitive Gift Shop,"7431 Main St, Newport, NY 13416",4.8,2
 BELLA REGINA,"15 Auert Ave, Utica, NY 13502",4.2,2
@@ -3627,6 +3636,7 @@ Whiskey Jack's,"5454 Plumber Rd, Constableville, NY 13325",4.5,1
 Marinos,"3950 NY-12, Lyons Falls, NY 13368",4.6,N/A
 Steak 'n Brew,"4497 State Rte 26, Turin, NY 13473",4.7,2
 Central Hotel,"7666 E Main St, Port Leyden, NY 13433",3.5,N/A
+River Valley Inn,"6670 Burdicks Crossing Rd, Lyons Falls, NY 13368",4.7,N/A
 Rusty P's,"7619 Number Four Rd, Lowville, NY 13367",4.8,N/A
 Sahara Restaurant,"39936 State Rte 3, Carthage, NY 13619",4.6,2
 The Buckhorn Bar & Grill,"11420 Yousey Ln, Croghan, NY 13327",4.8,N/A
@@ -3639,6 +3649,7 @@ Clinton Ale House,"43 Meadow St, Clinton, NY 13323",4.6,N/A
 The Howard Diner,"199 College Hill Rd, Clinton, NY 13323",4.9,1
 Miracle Mile,"Vernon, NY 13476",3.6,N/A
 New China Sea,"16 W Park Row #1, Clinton, NY 13323",3.8,1
+Dutch's Daughter,"3405 Martin Rd, Clinton, NY 13323",0,N/A
 Miners Table,"4579 NY-28, Herkimer, NY 13350",4.4,2
 Dibbles Inn,"25 Bridge St, Middleville, NY 13406",4.8,N/A
 Arthur's,"19 S Main St, Dolgeville, NY 13329",4.6,N/A
@@ -3692,9 +3703,9 @@ Ancora!,"261 Genesee St, Utica, NY 13501",4.6,2
 VIVID CAFE,"1155 Mohawk St, Utica, NY 13501",4.8,1
 The Grill at Kitlas Restaurant,"2242 Broad St, Frankfort, NY 13340",4.5,N/A
 Chesterfield's Tavolo,"131 N Genesee St, Utica, NY 13502",4.4,2
-Chowder House,"57 Burrstone Rd, New York Mills, NY 13417",4.5,2
+The Red Samurai Steak House,"8562 Seneca Turnpike, New Hartford, NY 13413",4.5,2
+Mitsuba,"17 Ellinwood Dr, New Hartford, NY 13413",4.4,2
 STAR MIX GRILL restaurant,"381 Chestnut St, Oneonta, NY 13820",4.8,1
-McDonald's,"60 Commons Dr, Cooperstown, NY 13326",3.1,1
 Waterfront Grille,"800 Mohawk St, Herkimer, NY 13350",4.2,2
 China Gourmet,"59 Central Ave # 2, Ilion, NY 13357",4.5,1
 Applebee's Grill + Bar,"630 W State St, Herkimer, NY 13350",4.1,2
@@ -3721,20 +3732,16 @@ Crazy Otto's Empire Diner,"100 W Albany St, Herkimer, NY 13350",4.6,1
 Taste of China Sherrill Inc,"618 Sherrill Rd, Sherrill, NY 13461",4.7,1
 Ebeneezer's Cafe & Creamery,"624 Sherrill Rd, Sherrill, NY 13461",4.7,1
 Palisades Hotel,"1921 N James St, Rome, NY 13440",4.5,1
+Sam'z Eats & Sweets,"8200 Turin Rd, Rome, NY 13440",4.5,N/A
 Bento Sushi,"801 Cypress St, Rome, NY 13440",4.4,N/A
 Moe's Southwest Grill,"1877 Black River Blvd, Rome, NY 13440",4.1,1
-Sam'z Eats & Sweets,"8200 Turin Rd, Rome, NY 13440",4.5,N/A
-Mitsuba,"1720 Black River Blvd, Rome, NY 13440",4.4,2
 P K's Pub,"221 King St, Herkimer, NY 13350",4.7,2
 Bella Pizza,"122 N Main St, Herkimer, NY 13350",4.8,N/A
 Pine Tree Inn,"7796 Brantingham Rd, Brantingham, NY 13312",4.6,2
-Subway,"7389 Utica Blvd, Lowville, NY 13367",4.2,1
-McDonald's,"7398 S South St, Lowville, NY 13367",3.5,1
-J&B Sandwiches,"7506 S State St, Lowville, NY 13367",4.4,N/A
 Coach Light Inn,"5555 Partridgeville Rd, Brantingham, NY 13312",4.7,N/A
 The Station,"44 Oswego St, Camden, NY 13316",4.4,N/A
-Skobby's Pizza Place,"612 E Main St, Little Falls, NY 13365",3.8,1
 Bonita's Sandwich Chef,"22 N Ann St, Little Falls, NY 13365",4.6,N/A
+Skobby's Pizza Place,"612 E Main St, Little Falls, NY 13365",3.8,1
 Ed's Pizza Place,"532 E Main St, Little Falls, NY 13365",4.5,1
 Great Wall,"627 E Main St, Little Falls, NY 13365",3.4,1
 Paesano's Pizzeria,"8 W Main St, Mohawk, NY 13407",4.4,1
@@ -3748,24 +3755,20 @@ Slickers Adirondack Tavern,"3132 NY-28, Old Forge, NY 13420",4.4,2
 Walt's Diner,"3047 NY-28, Old Forge, NY 13420",4.6,1
 Tony Harper's Pizza & Clam Shack,"3062 NY-28, Old Forge, NY 13420",4.1,2
 The Tow Bar Inn,"3065 NY-28, Old Forge, NY 13420",5,N/A
-Dutch's Daughter,"3405 Martin Rd, Clinton, NY 13323",0,N/A
 Deansboro Superette,"2740 NY-12B, Deansboro, NY 13328",4.9,1
-McDonald's,"3789 NY-13, Pulaski, NY 13142",3.6,1
 Cedar Pine Restaurant,"1132 Comins Rd, Redfield, NY 13437",4.5,N/A
 Osceola Outpost,"2107 N Osceola Rd, Camden, NY 13316",4.7,N/A
 The Hayloft of Tug Hill,"406 County Rte 39, Williamstown, NY 13493",4.6,N/A
 Cheese Factory Bar n Grill,"369 County Rte 39, Williamstown, NY 13493",4.4,N/A
-Worlds famous Osceola hotel,"1316 Mary St, Osceola, NY 13316",4.6,1
 Keitha's Kafe,"28734 Lorraine Ave, Lorraine, NY 13659",4.9,N/A
+Worlds famous Osceola hotel,"1316 Mary St, Osceola, NY 13316",4.6,1
 The Allen's Florence Hotel,"11940 Osceola Rd, Camden, NY 13316",4.6,N/A
 K-Dogs BBQ,"147 Main St, Jordanville, NY 13361",5,N/A
-Brickhouse Pizzeria,"1 W Main St, Richfield Springs, NY 13439",4.8,1
 Cassidy's Diner,"35 W Main St, Richfield Springs, NY 13439",4.7,1
 Mr Shake,"663 NY-28, Richfield Springs, NY 13439",4.7,1
 New York Pizzeria,"126 W Main St, Richfield Springs, NY 13439",4.3,2
 The Porch at Otsego Golf Club,"144 Pro Shop Drive, Springfield Center, NY 13468",4.4,N/A
 McDonald's,"3155 US-20, Richfield Springs, NY 13439",3.2,1
-69 Steakhouse,"409 Oriskany Blvd, Whitesboro, NY 13492",4.3,2
 Boulevard Diner,"24 Roosevelt Dr, Whitesboro, NY 13492",4.6,1
 Station 233 The Simple Bar,"4836 NY-233, Westmoreland, NY 13490",4.5,2
 Beardslee Castle,"123 Old State Rd, Little Falls, NY 13365",4.6,2
@@ -3775,7 +3778,6 @@ Apsa,"103 New Hartford Shopping Center, New Hartford, NY 13413",4.7,N/A
 Honondasus,"8639 Seneca Turnpike, New Hartford, NY 13413",0,N/A
 Pizzeria Italia,"2644 Genesee St, Utica, NY 13502",4.8,1
 The Upstate Tavern,"5218 Patrick Rd, Verona, NY 13478",4.4,2
-Red Shed Brewery - Red Shed Ale House,"10 Main St, Cherry Valley, NY 13320",4.8,N/A
 The Franklin,"9485 River Rd, Marcy, NY 13403",3.8,N/A
 Five Guys,"756 Horatio St, Utica, NY 13502",4.5,2
 Voss's,"9411 Maynard Dr, Marcy, NY 13403",4.6,N/A
@@ -3790,6 +3792,7 @@ Arizona Tacos,"515 W Dominick St, Rome, NY 13440",4.3,1
 Nicky Doodles,"1159 Erie Blvd W, Rome, NY 13440",4.5,1
 Eddie's Paramount Diner,"414 W Dominick St, Rome, NY 13440",4.6,1
 Verona Hotel,"5693 E Main St, Verona, NY 13478",4.4,1
+Town Talk Restaurant,"9855 NY-12, Copenhagen, NY 13626",4.8,1
 Shorty's Deli,"38 Main St, Camden, NY 13316",5,N/A
 MooCluckOink Enterprise LLC,"2434 Waldron Rd, Camden, NY 13316",0,N/A
 Subway,"13 Main St, Camden, NY 13316",4.2,1
@@ -3809,8 +3812,8 @@ Fairground Inn,"852 Coffeen St, Watertown, NY 13601",4.5,2
 Wise Guys Ristorante,"12208 NY-12E, Chaumont, NY 13622",4.7,2
 The Lunch Box,"22415 US-11, Watertown, NY 13601",4.5,N/A
 Celest Jamaican Cuisine,"23746 NY-342, Watertown, NY 13601",4.8,1
-Maggie's on the River,"500 Newell St, Watertown, NY 13601",4.1,2
 Tico's Mex Mex,"12113 NY-12E, Chaumont, NY 13622",4.6,N/A
+Maggie's on the River,"500 Newell St, Watertown, NY 13601",4.1,2
 The Wright Diner,"32523 NY-12, Depauville, NY 13632",4.7,1
 Flavors of The Philippines,"568 Bradley St, Watertown, NY 13601",4.7,2
 Shorty's Place,"1280 Coffeen St, Watertown, NY 13601",4.4,1
@@ -3858,10 +3861,9 @@ China Wok,"5 Liberty St, Adams, NY 13605",4.5,1
 Carson's Pizzeria & Bar,"11613 US-11, Adams Center, NY 13606",4.5,2
 Spook Hill Bar And Grill,"12139 US-11, Adams Center, NY 13606",4.5,2
 Ramsey's Pizzeria,"13722 US-11, Adams Center, NY 13606",4.5,2
-Papa Tino's Pizzeria II,"12699 State Rte 3, Sackets Harbor, NY 13685",4.2,N/A
 Nu Pier Restaurant,"13212 State Rte 3, Sackets Harbor, NY 13685",4.6,1
+Papa Tino's Pizzeria II,"12699 State Rte 3, Sackets Harbor, NY 13685",4.2,N/A
 JRECK Subs,"32 E Church St, Adams, NY 13605",4.5,1
-McDonald's,"58 W Church St, Adams, NY 13605",3.5,1
 The Flying Spatula,"24479 NY-411, La Fargeville, NY 13656",4.5,1
 Happy Daze Hideaway,"134 Commercial St, Theresa, NY 13691",4.4,N/A
 Miss Laura's Diner,"38218 NY-37, Theresa, NY 13691",4.6,1
@@ -3878,12 +3880,15 @@ Shady Pines Bar & Grill,"7641 State Rte 3, Henderson, NY 13650",4.6,N/A
 GillHouse Restaurant & Inn,"13565 County Rte 123, Henderson Harbor, NY 13651",5,N/A
 Black Catte Cafe,"Association Island, Henderson, NY 13650",0,N/A
 The Westview Lodge & Marina,"13499 County Rte 123, Henderson Harbor, NY 13651",4.3,N/A
+McDonald's,"58 W Church St, Adams, NY 13605",3.5,1
 Taco Bell,"26462 Herrick Dr, Evans Mills, NY 13637",4.1,1
+Stefano's Pizzeria- (Fort Drum/Airfield Location),"32620 State Rte 26, Carthage, NY 13619",4,N/A
 Cafe 56,"61 S Main St, Norfolk, NY 13667",4.5,1
 Hometown Cafe,"3 N Main St, Norwood, NY 13668",4.6,1
 The Lobster House,"95 S Main St, Norwood, NY 13668",4.2,2
 Firehouse Pizzeria,"26 N Main St, Norwood, NY 13668",4.3,1
 Al Smith's Pizzeria,"4 S Main St, Norfolk, NY 13667",4.4,1
+Tim Hortons,"9005 NY-56, Raymondville, NY 13678",4.1,1
 1/2 Ton's Bar & Grill,"141 1/2 Market St, Potsdam, NY 13676",4.3,2
 Royal India Grill,"38 Market St, Potsdam, NY 13676",4.9,2
 Thai Cuisine,"29 Maple St, Potsdam, NY 13676",4.3,2
@@ -3924,7 +3929,6 @@ Neapolitan,"8 Clarkson Ave, Potsdam, NY 13676",0,N/A
 Morgan's BBQ Pit Stop,"13 Hodskin St, Canton, NY 13617",0,N/A
 A-1 Oriental Kitchen CANTON,"43 Main St, Canton, NY 13617",4,1
 JRECK Subs,"109 Main St, Canton, NY 13617",4.3,1
-Burger King,"18 NY-310, Canton, NY 13617",3.7,1
 Telly's Inn 427 S Market St Cape Vincent NY 13618,"Telly's Inn, 427 S Market St, Cape Vincent, NY 13618",4.4,N/A
 The Coal Docks Restaurant & Bar,"592 Broadway St, Cape Vincent, NY 13618",4.6,2
 Snug Harbor Bar Restaurant Pizzeria,"28709 County Rd 6, Cape Vincent, NY 13618",4.6,1
@@ -3949,7 +3953,6 @@ Pig and Moo BBQ,"14169 37, Louisville, NY 13662",4,N/A
 The Blue House,"3736 County Rd 14, Madrid, NY 13660",4.8,N/A
 Hometown Cafe,"1897 NY-345, Madrid, NY 13660",4.3,1
 Pizza Castle,"55 Main St, Morrisburg, ON K0C 1X0, Canada",4.5,1
-Tim Hortons,"9005 NY-56, Raymondville, NY 13678",4.1,1
 Eyland's,"10 W Orvis St, Massena, NY 13662",4.4,N/A
 Spanky's,"3 N Main St, Massena, NY 13662",4.2,1
 Ole Smokehouse in Madrid,"3512 County Rd 14, Madrid, NY 13660",4.4,2
@@ -3957,24 +3960,25 @@ BeaverTails,"13740 Stormont, Dundas and Glengarry County Road 2, Morrisburg, ON 
 Twin Willows,"15294 County Rd 11, La Fargeville, NY 13656",0,N/A
 All Out Pizza And More,"19009 NY-12E, Dexter, NY 13634",4.3,1
 Nonna Dina Pizzeria,"114 E Main St, Brownville, NY 13615",4.6,2
+Diane's Coffee Shop,"305 Canal St, Dexter, NY 13634",4.8,1
 Natali's/C-Way Restaurant & Bar,"37067 NY-12, Clayton, NY 13624",4.4,N/A
 LA Lunchbox,"36347 NY-180, Orleans, NY 13656",4.8,N/A
 ELM STREET TACOS LLC,"36090 NY-180, La Fargeville, NY 13656",4,N/A
-Diane's Coffee Shop,"305 Canal St, Dexter, NY 13634",4.8,1
+Subway,"12345 E Main St, Chaumont, NY 13622",4.1,1
 Foster's Harbor Inn,"71 Schermerhorn Landing Rd #B, Hammond, NY 13646",3.9,N/A
 New York Fries ONroute Mallorytown,"678 ON-401 Eastbound, Mallorytown, ON K0E 1R0, Canada",3.1,N/A
+ONT Express,"678 ON-401, Mallorytown, ON K0E 1R0, Canada",4.1,N/A
+Subway,"Travel Plaza 678 Hwy 401 Westbound, Mallorytown, ON K0E 1R0, Canada",1.5,1
 Windows on the Bay,"17 Holland St, Alexandria Bay, NY 13607",4.2,2
 Old Homestead Restaurant,"28 James St, Alexandria Bay, NY 13607",3.7,N/A
-ONT Express,"678 ON-401, Mallorytown, ON K0E 1R0, Canada",4.1,N/A
 The North Star Family Restaurant,"114 Church St, Alexandria Bay, NY 13607",4,2
-The Spot Bistro & Patio,"35-79 James St, Alexandria Bay, NY 13607",4,N/A
-Korner Pizzeria & Family Restaurant,"10 James St, Alexandria Bay, NY 13607",4,1
 Riverwatch dining,"17 Holland St, Alexandria Bay, NY 13607",4,N/A
+Korner Pizzeria & Family Restaurant,"10 James St, Alexandria Bay, NY 13607",4,1
 River House,"9 Market St, Alexandria Bay, NY 13607",4,N/A
-Subway,"Travel Plaza 678 Hwy 401 Westbound, Mallorytown, ON K0E 1R0, Canada",1.5,1
 Captain Visger House,"2 Church St, Alexandria Bay, NY 13607",4.8,N/A
+Tim Hortons,"680 Hwy 401 Eastbound, Mallorytown, ON K0E 1R0, Canada",2.3,1
+Tim Hortons,"678 Hwy 401 Westbound, Mallorytown, ON K0E 1R0, Canada",3.2,1
 1864,"20 James St, Alexandria Bay, NY 13607",3,N/A
-Cavallario's Bayside,"01 James St, Alexandria Bay, NY 13607",3.8,N/A
 New Lucky Kitchen,"950 James St, Clayton, NY 13624",4.2,1
 Tonys Food Shack,"17371 County Rd 3, Clayton, NY 13624",5,N/A
 Seaway Grille,"200 Riverside Dr, Clayton, NY 13624",3.3,N/A
@@ -3995,12 +3999,13 @@ Liola's Pizzeria,"Carthage, NY 13619",3.9,1
 Subway,"60 Franklin St Suite 2, West Carthage, NY 13619",4,1
 JRECK Subs,"210 State St, Carthage, NY 13619",4.4,1
 McDonald's,"98 Bridge St, Carthage, NY 13619",3.6,1
+Pizza Hut,"60 Franklin St Suite 1, Carthage, NY 13619",4,1
 Barage,"1120 Washington St, Watertown, NY 13601",4.8,N/A
 Holy Smokes Bourbon and BBQ,"32 Public Square, Watertown, NY 13601",4.5,N/A
 Savory Downtown,"300 Washington St, Watertown, NY 13601",4,2
 Vito's Gourmet,"3 Public Square, Watertown, NY 13601",4.7,1
-Riccardo's Market,"710 Holcomb St, Watertown, NY 13601",4.8,N/A
 Mo's Place,"345 Factory St, Watertown, NY 13601",4.4,1
+Riccardo's Market,"710 Holcomb St, Watertown, NY 13601",4.8,N/A
 Jumbo's Diner,"1 E Main St, Gouverneur, NY 13642",4.3,1
 New York Pizzeria,"83 E Main St, Gouverneur, NY 13642",4.3,2
 Trout Lake Maple,"Balmat, NY 13642",0,N/A
@@ -4023,6 +4028,7 @@ Good Fellos,"202 W Main St, Sackets Harbor, NY 13685",4.5,2
 The Battlefield Eatery,"213 W Main St Left side of the building, Sackets Harbor, NY 13685",4.8,N/A
 Sam's Club Cafe,"21341 Sams Dr, Watertown, NY 13601",5,N/A
 Red Lobster,"20831 State Rte 3, Watertown, NY 13601",4.1,2
+Burger King,"18 NY-310, Canton, NY 13617",3.7,1
 Dairy Queen Grill & Chill,"51 Gouverneur St, Canton, NY 13617",4,1
 Tim Hortons,"5994 US-11, Canton, NY 13617",4.4,1
 McDonald's,"105 E Main St, Canton, NY 13617",3.1,1
@@ -4032,8 +4038,9 @@ KFC,"103 E Main St, Canton, NY 13617",3.1,1
 Village Inn of Harrisville,"8208 Main St, Harrisville, NY 13648",4.4,1
 Tricia's,"40685 NY-12, Clayton, NY 13624",4.6,1
 The Ivy Restaurant,"61 Shipmans Ln, Lansdowne, ON K0E 1L0, Canada",4,N/A
-Rapid Valley,"898 2, Lansdowne, ON K0E 1L0, Canada",4.4,1
 P J's River Rat Cafe,"41867 NY-180, Clayton, NY 13624",4.5,N/A
+Rapid Valley,"898 2, Lansdowne, ON K0E 1L0, Canada",4.4,1
+The Spot Bistro & Patio,"35-79 James St, Alexandria Bay, NY 13607",4,N/A
 The Guzzle,"42205 Rainbow St E, Thousand Island Park, NY 13692",4.2,N/A
 "APPS, SOUPS, SALADS & BOWLS","40685 NY-12, Clayton, NY 13624",0,N/A
 Whiskey Wagon Saloon,"43523 NY-37, Redwood, NY 13679",5,N/A
@@ -4048,15 +4055,13 @@ Five Guys,"79 Market St, Potsdam, NY 13676",4.5,2
 Potsdam Little Italy,"30 Market St, Potsdam, NY 13676",3.9,1
 Lee's Hawaiian Grill,"3 Market St, Potsdam, NY 13676",4.5,1
 Cornwall BBQ Fine Dining,"436 Second St W, Cornwall, ON K6J 1H1, Canada",4.2,2
-Birchwood Restaurant & Bar,"119 Sydney St, Cornwall, ON K6J 3H1, Canada",4.8,N/A
 Entrepernerds Chip Stand,"1049 Island Rd, Stormont, Dundas and Glengarry United Counties, ON K6H 5R7, Canada",5,N/A
 37 West Lounge,"516 NY-37, Hogansburg, NY 13655",4,2
 Captain George's Fish & Chips Cornwall,"1195 Second St W, Cornwall, ON K6J 1J2, Canada",4.4,2
 Cedars,"1 Water St E, Cornwall, ON K6H 6M2, Canada",4.7,N/A
+JRECK Subs,"22 NY-37, Akwesasne, NY 13655",4.1,1
 Manny's restaurant,"718 Montreal Rd, Cornwall, ON K6H 1C7, Canada",4.5,N/A
 Mexi's Cornwall,"58 Pitt St, Cornwall, ON K6J 3P2, Canada",4.5,2
-The Shack,"627 Montreal Rd, Cornwall, ON K6H 1C3, Canada",4.3,N/A
-JRECK Subs,"22 NY-37, Akwesasne, NY 13655",4.1,1
 The Sandwich Bar,"113 W Main St, Sackets Harbor, NY 13685",4.7,N/A
 Lakeside Pizza & Wings,"104 Bartlett Rd, Sackets Harbor, NY 13685",4.7,N/A
 Subway,"13821 Rt 3, Sackets Harbor, NY 13685",4.1,1
@@ -4065,6 +4070,7 @@ Family Corner Restaurant,"900 Pitt St #4, Cornwall, ON K6J 3S5, Canada",4.2,1
 Tiny Table,"11 Fourth St W, Cornwall, ON K6J 3P9, Canada",4.5,1
 All New,"17305 Cornwall Centre Rd, Cornwall, ON K6K 1K5, Canada",4.3,2
 Thum's Kitchen,"1615 Pitt St, Cornwall, ON K6H 3G3, Canada",4.7,2
+The Shack,"627 Montreal Rd, Cornwall, ON K6H 1C3, Canada",4.3,N/A
 New Roma's Restaurant,"200 McConnell Ave, Cornwall, ON K6H 4L3, Canada",4.4,N/A
 Napoleon Delicatessen,"1 Montreal Rd, Cornwall, ON K6H 1A9, Canada",3.9,1
 East Side Mario's,"1106 Brookdale Ave, Cornwall, ON K6J 4P4, Canada",4.1,2
@@ -4076,7 +4082,6 @@ Asian Buffet & Mongolian Grill,"175 Market St, Potsdam, NY 13676",4.1,2
 Madrid Hotel,"1897 NY-345, Madrid, NY 13660",4.2,N/A
 Arby's,"172 Market St, Potsdam, NY 13676",4,1
 Burger King,"176 Market St, Potsdam, NY 13676",3.4,1
-Pizza Hut,"60 Franklin St Suite 1, Carthage, NY 13619",4,1
 Trombino's Restaurant,"181 Center St, Massena, NY 13662",4.2,1
 An Italian Affair,"339 E Orvis St, Massena, NY 13662",4.4,2
 CT'S Chicken & Fish,"278 E Orvis St, Massena, NY 13662",4.4,N/A
@@ -4087,12 +4092,11 @@ Dairy Queen Grill & Chill,"85 Parker Ave, Massena, NY 13662",4.3,1
 Pizza Hut,"303 Main St, Massena, NY 13662",2.7,1
 Burger King,"Harte Haven Shopping Center, Massena, NY 13662",3.5,1
 Rosario's Deli,"42 Main St, Massena, NY 13662",4.4,1
-U-B's Mercantile LLC,"3386 State Rte 3, Oswegatchie, NY 13670",4.2,N/A
 Felder's Convenience Deli Pizza,"NY-37, Redwood, NY 13679",4.7,N/A
-Stefano's Pizzeria- (Fort Drum/Airfield Location),"32620 State Rte 26, Carthage, NY 13619",4,N/A
 L&L Hawaiian Barbecue,"26390 US-11, Evans Mills, NY 13637",3.8,1
 Charleys Cheesesteaks,"10730 Enduring Freedom Dr Bldg P, Fort Drum, NY 13603",3.4,1
 Dairy Queen Grill & Chill,"26475 Johnson Rd, Evans Mills, NY 13637",3.9,1
+Cavallario's Bayside,"01 James St, Alexandria Bay, NY 13607",3.8,N/A
 JK's Roadhouse,"24818 State Rte 26, Redwood, NY 13679",4.5,N/A
 Coleman's Dock Of The Bay,"2 James St, Alexandria Bay, NY 13607",4,2
 Riverboat Bar,"15 Church St, Alexandria Bay, NY 13607",4.3,N/A
@@ -4103,8 +4107,9 @@ JRECK Subs,"148 E Main St, Gouverneur, NY 13642",4.3,1
 A 1 Buffet,"9 Factory St, Gouverneur, NY 13642",3.6,1
 Subway,"238 W Main St, Gouverneur, NY 13642",4,1
 McDonald's,"118 E Main St, Gouverneur, NY 13642",3.6,1
+Steiner's General Store & Diner,"25511 NY-12, Watertown, NY 13601",4.4,1
+U-B's Mercantile LLC,"3386 State Rte 3, Oswegatchie, NY 13670",4.2,N/A
 Wheel and Anchor Restaurant,"650 King St E, Gananoque, ON K7G 1H3, Canada",3.8,N/A
-Subway,"12345 E Main St, Chaumont, NY 13622",4.1,1
 Tim Hortons,"154 Elm St, Potsdam, NY 13676",4.2,1
 Pantheon,"3599 NY-79, Harpursville, NY 13787",4.1,1
 Hornets Nest LLC,"3027 NY-7, Nineveh, NY 13813",4.4,N/A
@@ -4157,12 +4162,12 @@ Punks Place,"21 Mill St, Candor, NY 13743",4.5,1
 Railhouse,"366 Broad St, Waverly, NY 14892",4.4,2
 Harris Diner,"79 North Ave, Owego, NY 13827",4.6,1
 Mario's Pizza,"51 Fox St, Owego, NY 13827",4.7,1
-Yanuzzi's,"235 Desmond St, Sayre, PA 18840",4.4,2
-Owego Original Italian,"23 Lake St, Owego, NY 13827",4.5,1
 Fin & Pho,"2384 W River Rd #1406, Nichols, NY 13812",4.2,N/A
+Owego Original Italian,"23 Lake St, Owego, NY 13827",4.5,1
+Yanuzzi's,"235 Desmond St, Sayre, PA 18840",4.4,2
+Shoe Inn,"10 Town Line Rd, Van Etten, NY 14889",4.3,1
 The Grille at the Train Station,"718 N Lehigh Ave, Sayre, PA 18840",4.5,2
-The Blackburn 1897,"130 W Lockhart St, Sayre, PA 18840",4.6,N/A
-Lisa's Place,"367 Broad St, Waverly, NY 14892",4.6,1
+Barstow House,"35 River St, Nichols, NY 13812",4.6,N/A
 Creekside Diner,"8088 NY-38, Newark Valley, NY 13811",4.7,N/A
 The Red Rooster,"1502, 13334 NY-38, Richford, NY 13835",4.8,N/A
 Fortunato's,"28 N Main St, Newark Valley, NY 13811",4.4,2
@@ -4191,8 +4196,8 @@ Grandma's Mexican Restaurant,"11 Washington Ave, Endicott, NY 13760",4.6,N/A
 Sliderz Bar & Grill,"3201 Vestal Pkwy E, Vestal, NY 13850",4.4,1
 The Ponds Restaurant,"304 B Sutherland Rd, East Meredith, NY 13757",4.6,N/A
 TG GURU Nepl,"Kathmann Rd, Meredith, NY 13753",0,N/A
-The Diner,"11308 NY-23, Davenport Center, NY 13751",4.6,1
 Meredith Inn,"4206 Turnpike Rd, Delhi, NY 13753",4.4,N/A
+The Diner,"11308 NY-23, Davenport Center, NY 13751",4.6,1
 Rainbow Trail,"132 North Ave, Owego, NY 13827",4.4,1
 Panda Wok,"713 NY-17C, Owego, NY 13827",4.6,1
 A Tavolo Italian Restaurant,"42 Chenango Bridge Rd, Binghamton, NY 13901",4.4,2
@@ -4261,6 +4266,7 @@ Farm by Beer Tree Brew,"197 NY-369, Port Crane, NY 13833",4.6,2
 Christy's Diner,"522 Court St, Binghamton, NY 13904",4.3,N/A
 Country Pride,"753 Upper Court Street, Binghamton, NY 13904",4,2
 Rockin Robin Diner,"1080 Chenango St, Binghamton, NY 13901",4.6,N/A
+Dan Dee Grill,"215 Robinson St, Binghamton, NY 13904",4.4,1
 Five Guys,"5006 NY-23, Oneonta, NY 13820",4.4,2
 Moxie Wood Fire Grill,"998 Conklin Rd, Conklin, NY 13748",4.5,2
 The Windsor Diner,"20 Main St, Windsor, NY 13865",4.7,N/A
@@ -4272,10 +4278,10 @@ Lunchmobile,"303 Ostrum Rd, Kirkwood, NY 13795",5,N/A
 Hong Kong,"869 US-11, Kirkwood, NY 13795",3.8,1
 Dragon Kim,"1113 Conklin Rd, Conklin, NY 13748",4.4,N/A
 Woody's Tavern,"14 Grosset Dr, Kirkwood, NY 13795",4.5,N/A
-Beer Thirty,"721 Court St, Binghamton, NY 13904",4.5,2
-Wendy's,"2 Industrial Drive, Binghamton, NY 13904",3.9,1
 Speedie Pizza,"14 Main St, Windsor, NY 13865",4,N/A
 Big Dipper BBQ 2,"1167 Conklin Rd, Conklin, NY 13748",4.5,1
+Wendy's,"2 Industrial Drive, Binghamton, NY 13904",3.9,1
+Beer Thirty,"721 Court St, Binghamton, NY 13904",4.5,2
 The Rainbow Lodge,"440 Rainbow Lodge Rd, Walton, NY 13856",4.6,2
 Unclebrother,"250 E Front St, Hancock, NY 13783",4.3,N/A
 Hancock House Bar & Restaurant,"137 E Front St, Hancock, NY 13783",4.8,N/A
@@ -4285,6 +4291,7 @@ The Chestnut,"11 W Main St, Hancock, NY 13783",4.4,N/A
 Grandma Laurie's,"6 Duran Rd, Equinunk, PA 18417",4.7,N/A
 New China,"110 E Front St, Hancock, NY 13783",4.2,1
 MicBree's Crosstown Tavern,"6031 Hancock Hwy, Starlight, PA 18461",4.4,N/A
+The Beaver-Del,"8560 County Rd 17, East Branch, NY 13756",4.8,N/A
 The Tulip and the Rose Cafe,"435 Main St, Franklin, NY 13775",4.8,2
 Rubera's Restaurant,"360 Main St, Otego, NY 13825",4.4,N/A
 Marshall's Pizza,"226 Main St, Franklin, NY 13775",3.6,N/A
@@ -4310,13 +4317,11 @@ Three Bear Inn,"3 Broome St, Marathon, NY 13803",4.2,N/A
 Riverview Diner,"3126 US-11, Lisle, NY 13797",4.7,N/A
 Arby's,"2946 US-11, Whitney Point, NY 13862",4.1,1
 McDonald's,"2972 US-11, Whitney Point, NY 13862",3.5,1
-Dan Dee Grill,"215 Robinson St, Binghamton, NY 13904",4.4,1
 Park Diner,"119 Conklin Ave, Binghamton, NY 13903",4.4,1
 House of Reardon,"25 Grant St, Binghamton, NY 13904",4.6,1
 The Relief Pitcher,"197 Conklin Ave, Binghamton, NY 13903",4.2,2
 Soda Jerks,"458 Chestnut St, Oneonta, NY 13820",4.4,1
 The Autumn Cafe,"244 Main St, Oneonta, NY 13820",4.5,2
-Kelli's Deli,"2601 State Rte 26, Maine, NY 13802",3.9,2
 Burger King,"3742 US-11, McGraw, NY 13101",4,1
 Fred's Inn,"5149 NY-12, Norwich, NY 13815",4.2,2
 Joe & Vinny's - Sidney,"59 Main St, Sidney, NY 13838",4.1,1
@@ -4324,9 +4329,9 @@ River Rock Diner,"904 NY-17C, Owego, NY 13827",4.6,1
 Barleycorn Pizza,"216 Front St #1630, Owego, NY 13827",4.8,N/A
 Kam Fung,"42 W Main St Unit #2, Owego, NY 13827",3.9,1
 Divots Bar & Grill,"151 Roki Blvd, Nichols, NY 13812",5,N/A
-Barstow House,"35 River St, Nichols, NY 13812",4.6,N/A
-Mangialardo's,"115 S Thomas Ave, Sayre, PA 18840",4.1,2
 Barstow House,"418 W River Rd, Nichols, NY 13812",0,N/A
+Mangialardo's,"115 S Thomas Ave, Sayre, PA 18840",4.1,2
+The Blackburn 1897,"130 W Lockhart St, Sayre, PA 18840",4.6,N/A
 Cozy Brook Cafe,"56 NY-41, Windsor, NY 13865",4.5,N/A
 Pheasant Tail Tavern,"132 Front St, Deposit, NY 13754",4.1,N/A
 Little Italy,"100 Front St, Deposit, NY 13754",4.5,2
@@ -4365,12 +4370,12 @@ The John Barleycorn Tavern,"216 Front St #1630, Owego, NY 13827",4.6,1
 Dobb's Country Kitchen,"25065 US-11, Hallstead, PA 18822",4.3,1
 Lexi Lu's Grill,"15 Church St, Great Bend, PA 18821",5,N/A
 Main Street Cafe,"1328 E Main St, Susquehanna, PA 18847",4.4,1
-Orient Star,"235 Erie Ave, Susquehanna, PA 18847",4.5,N/A
+Red Rock BBQ and Ice Cream,"33288 PA-171, Susquehanna, PA 18847",4.7,N/A
 Tedeschi's,"25066 US-11, Hallstead, PA 18822",4.5,2
+Orient Star,"235 Erie Ave, Susquehanna, PA 18847",4.5,N/A
 Jerry's Riverhouse,"191 Lr 57151, Susquehanna, PA 18847",0,N/A
 Sunrise Cafe,"713 Main St, Hallstead, PA 18822",4.6,1
 Maloney's,"417 Main St, Hallstead, PA 18822",4.3,2
-Red Rock BBQ and Ice Cream,"33288 PA-171, Susquehanna, PA 18847",4.7,N/A
 Blue Stone Pizzeria,"25059 US-11, Hallstead, PA 18822",4.4,1
 Happy Pappi Arepas Bar,"252 Chenango St, Binghamton, NY 13901",4.9,N/A
 Fat Patties Burger Bar,"1123 Upper, Front St, Binghamton, NY 13905",4.4,N/A
@@ -4474,8 +4479,8 @@ Gordie Harper Bazaar,"3333 Lockport Olcott Rd, Newfane, NY 14108",4.4,N/A
 Wilson's Pizza Shop,"2730 Main St, Newfane, NY 14108",4.5,1
 Calhoon's Pub,"2598 Main St, Newfane, NY 14108",4.6,1
 The Garage Cafe,"8516 Lake Rd, Barker, NY 14012",0,N/A
-Pizza Wings & Things,"1693 Quaker Rd, Barker, NY 14012",4.5,1
-Tim Hortons,"2897 Lockport Olcott Rd, Newfane, NY 14108",4,1
+Shamus Restaurant,"98 West Ave, Lockport, NY 14094",4.6,2
+Sunrise Cafe,"8503 Rochester Rd, Gasport, NY 14067",4.7,1
 Main Street Grille,"246 E Main St, Arcade, NY 14009",4.6,2
 Theo's Family Restaurant,"563 W Main St, Arcade, NY 14009",4.3,1
 Smokey's Bar & Grill,"9629 1447, NY-78, Java Center, NY 14082",4.4,2
@@ -4514,20 +4519,19 @@ Don Juan Mexican Restaurant West Seneca,"484 Harlem Rd, West Seneca, NY 14224",4
 The Trailside Grill,"2887 Royce Rd, Varysburg, NY 14167",4.3,N/A
 Varysburg Bar & Grill / Sweet Things Bakery AKA Varysburg Hotel,"2486 US-20A, Varysburg, NY 14167",5,N/A
 BYRNCLIFF RESORT,"2357 Humphrey Rd, Varysburg, NY 14167",0,N/A
-Varysburg Hotel,"2486 US-20A, Varysburg, NY 14167",4.3,N/A
 Grateful Grill,"4260 NY-19, Silver Springs, NY 14550",4.4,2
-Creekside Convenience,"4200 NY-78, Bliss, NY 14024",4.2,1
 Laurie's Restaurant,"46 N Main St, Warsaw, NY 14569",4.6,1
+Varysburg Hotel,"2486 US-20A, Varysburg, NY 14167",4.3,N/A
 Silverlake Family Restaurant,"105 W Buffalo St, Warsaw, NY 14569",4.2,1
+Creekside Convenience,"4200 NY-78, Bliss, NY 14024",4.2,1
 Abbott & Crew Inc,"3803 Main St, Strykersville, NY 14145",5,N/A
-Double Happiness,"63 N Main St #1343, Warsaw, NY 14569",4.4,N/A
-Shenanigans Fine Dining and Gaslight Pizzeria,"425 N Main St, Warsaw, NY 14569",3.8,N/A
+Lower Fall Restaurant and Gifts,"Hunt, NY 14846",4.6,N/A
+Pizza Wings & Things,"1693 Quaker Rd, Barker, NY 14012",4.5,1
 Zambistro Restaurant,"408 Main St, Medina, NY 14103",4.6,2
 New England Seafood,"8401 Ridge Rd, Gasport, NY 14067",4.4,N/A
 Harvest Restaurant,"444 Main St, Medina, NY 14103",4.9,N/A
 GENNARO'S PASTARIA,"701 S Main St, Medina, NY 14103",4.8,N/A
 Darrell's Place,"90 Telegraph Rd, Middleport, NY 14105",4.7,2
-Shamus Restaurant,"98 West Ave, Lockport, NY 14094",4.6,2
 Rudy's Soda Bar & Cafe,"118 W Center St, Medina, NY 14103",4.6,1
 Country Club Family Restaurant,"535 Main St, Medina, NY 14103",4.3,1
 La Port's Pine Restaurant,"48 Pine St, Lockport, NY 14094",4.4,1
@@ -4540,9 +4544,9 @@ Linda's Family Diner,"8783 Alleghany Rd, Corfu, NY 14036",4.6,1
 Pizzabella & Pasta,"66 Main St, Akron, NY 14001",3.9,2
 Kaboodles Kafe',"13677 Main St, Akron, NY 14001",4.5,1
 Straight out the Boot,"7062 Lewiston Rd, Oakfield, NY 14125",4.6,N/A
+Jim's Saloon,"2677 Main St, East Pembroke, NY 14056",4.5,1
 McDonald's,"I-90, Batavia, NY 14020",1,N/A
 Wolcottsville Inn LLC,"6327 Wolcottsville Rd, Akron, NY 14001",4.6,N/A
-Jim's Saloon,"2677 Main St, East Pembroke, NY 14056",4.5,1
 Candy Apple Cafe,"81 Buell St, Akron, NY 14001",4.6,1
 Indian Falls Log Cabin,"1227 Gilmore Rd, Corfu, NY 14036",4.3,2
 Bo's Bar and Grill,"3212 Lockport Rd, Oakfield, NY 14125",0,N/A
@@ -4550,15 +4554,14 @@ Bo's Bar and Grill,"3212 Lockport Rd, Oakfield, NY 14125",0,N/A
 Shannon's Riverside Restaurant,"10596 NY-19, Fillmore, NY 14735",4.3,1
 Silver Springs Pizza Depot,"130 N Main St, Silver Springs, NY 14550",4.5,2
 Sahr's Restaurant,"9955 NY-16, Machias, NY 14101",4.8,1
-Lower Fall Restaurant and Gifts,"Hunt, NY 14846",4.6,N/A
 Roadside Bar & Grill,"10924 NY-16, Delevan, NY 14042",4.6,1
 Gainesville Store,"15 N Main St, Gainesville, NY 14066",4.7,1
 The Colden Mill Restaurant,"8348 Boston Colden Rd, Colden, NY 14033",4.4,2
 Boston Hotel,"9373 Boston State Rd, Boston, NY 14025",4.5,2
 The Grange Community Kitchen,"22 Main St, Hamburg, NY 14075",4.6,2
 Colden Country Inn,"8815 State Rd, Colden, NY 14033",4.6,2
-Coyote Cafe,"36 Main St, Hamburg, NY 14075",4.2,2
 Mammoser's,"16 S Buffalo St, Hamburg, NY 14075",4.3,1
+Coyote Cafe,"36 Main St, Hamburg, NY 14075",4.2,2
 Bella Pizza Boston,"5699 Herman Hill Rd, Hamburg, NY 14075",4.5,1
 The Dog Bar,"1913 Davis Rd, West Falls, NY 14170",4.4,2
 Three Girls Cafe,"8373 Boston State Rd, Boston, NY 14025",4.6,1
@@ -4567,7 +4570,7 @@ Last Run Tavern & Grill,"9574 State Rd, Glenwood, NY 14069",4.6,1
 Brunner's Eatery,"7171 Boston State Rd, Hamburg, NY 14075",4.2,1
 Juicy Burger Bar,"1 Buffalo St, Hamburg, NY 14075",4.4,2
 Schunk's West Hill Grill,"4274 Keller Rd, Eden, NY 14057",4.5,1
-174 Buffalo,"174 Buffalo St, Hamburg, NY 14075",4.3,2
+Pizza Glen,"9764 State Rd, Glenwood, NY 14069",4.4,1
 Lebro's Restaurant,"330 Campbell Blvd, Getzville, NY 14068",4.4,2
 Eagle House Restaurant,"5578 Main St, Williamsville, NY 14221",4.4,2
 Zasada's Restaurant,"4 Laverack Ave, Depew, NY 14043",4.5,1
@@ -4608,6 +4611,7 @@ Shawna's Kitchen,"8196 Erie Rd, Angola, NY 14006",5,N/A
 Tallchief Diner,"11359 Southwestern Blvd, Irving, NY 14081",3.8,N/A
 Vern's Pub & Grill,"291 Young St, Wilson, NY 14172",4.9,N/A
 Matty's Pizzeria,"288 Young St, Wilson, NY 14172",4.3,2
+Tim Hortons,"2897 Lockport Olcott Rd, Newfane, NY 14108",4,1
 Woodcock Brothers Brewery,"638 Lake St #2, Wilson, NY 14172",4.5,N/A
 The Shepherd's Place,"9887 Wesley Rd, Houghton, NY 14744",4.9,N/A
 China Star,"9727 NY-19, Houghton, NY 14744",4.2,1
@@ -4626,21 +4630,23 @@ Neat,"5175 Transit Rd, Buffalo, NY 14221",4.7,2
 This Little Pig,"4401 Transit Rd, Williamsville, NY 14221",4.3,2
 Bar-Bill North,"8326 Main St, Clarence, NY 14221",4.4,2
 Pita Gourmet,"6031 Transit Rd #103, East Amherst, NY 14051",4.5,N/A
-Sto Lat Bar,"4475 Transit Rd Suite 108, Buffalo, NY 14221",4.4,N/A
 Pita Gourmet,"6733 Transit Rd, Buffalo, NY 14221",4.5,1
 Campfire Grill,"3003 Walden Ave, Depew, NY 14043",4.6,1
 La Costa Verde,"5790 Transit Rd, Depew, NY 14043",4.4,1
 Helen's Kitchen,"4187 Transit Rd, Williamsville, NY 14221",4.5,N/A
 Maizal Mexican Kitchen and Mezcaleria,"4840 N French Rd, East Amherst, NY 14051",4.4,2
+Kabab & Curry,"8445 Main Rd, Williamsville, NY 14221",4.3,2
+Linguine's,"5354 Genesee St, Bowmansville, NY 14026",4.1,2
+Sto Lat Bar,"4475 Transit Rd Suite 108, Buffalo, NY 14221",4.4,N/A
 Giuseppe's Restaurant,"7067 Olean Rd, South Wales, NY 14139",4.5,1
 Kipp's Restaurant,"6411 Olean Rd, South Wales, NY 14139",4.6,1
 Old Orchard Inn,"2095 Blakeley Corners Rd, East Aurora, NY 14052",4.5,2
 The Iron Kettle Landmark Restaurant,"1009 Olean Rd, East Aurora, NY 14052",4.5,1
 Genesse,"7025 Ellicott Rd, Orchard Park, NY 14127",3.7,N/A
-Pizza Glen,"9764 State Rd, Glenwood, NY 14069",4.4,1
 George's Hot Dogs,"5808 Herman Hill Rd, Hamburg, NY 14075",4.5,2
 Anjon's Pizzeria,"5427 S Abbott Rd, Orchard Park, NY 14127",4.4,1
 Tim Hortons,"7286 Olean Rd, South Wales, NY 14139",3.7,1
+174 Buffalo,"174 Buffalo St, Hamburg, NY 14075",4.3,2
 Pegasus restaurant,"5748 South Park Ave, Hamburg, NY 14075",4.3,1
 Raphael's,"4572 Clark St, Hamburg, NY 14075",4.3,2
 The Public House on the Lake,"4914 Lake Shore Rd, Hamburg, NY 14075",4.1,2
@@ -4656,15 +4662,15 @@ Zoar Valley Tavern and Restaurant,"10711 Hammond Hill Rd, East Otto, NY 14729",4
 GoWanda Brewing at The Wicked Glen,"29 S Water St, Gowanda, NY 14070",4.3,2
 LoMade Meals,"14152 NY-438, Gowanda, NY 14070",5,N/A
 Capozzi's Pizzeria,"21 Jamestown St, Gowanda, NY 14070",4.3,1
-La Via Pizzeria,"39 Jamestown St, Gowanda, NY 14070",4.5,1
-Tim Hortons,"65 Buffalo St, Gowanda, NY 14070",3.7,1
 Perrysburg Diner,"11846 Main St, Perrysburg, NY 14129",4.8,N/A
-Subway,"24 E Main St First Floor, Gowanda, NY 14070",4.1,1
-McDonald's,"325 Buffalo St, Gowanda, NY 14070",3.4,1
+La Via Pizzeria,"39 Jamestown St, Gowanda, NY 14070",4.5,1
 Fiesta Bamba,"60 S Cascade Dr, Springville, NY 14141",4.5,2
+Tim Hortons,"65 Buffalo St, Gowanda, NY 14070",3.7,1
 TACOCAT,"72 S Cascade Dr, Springville, NY 14141",4.7,N/A
 Apple Dumplin,"521 S Cascade Dr, Springville, NY 14141",4.5,1
+Subway,"24 E Main St First Floor, Gowanda, NY 14070",4.1,1
 Piz-A-Italia,"10518 Gowanda State Rd, North Collins, NY 14111",4.1,1
+McDonald's,"325 Buffalo St, Gowanda, NY 14070",3.4,1
 Homeslice 33 Pizzeria,"12 E Main St, Corfu, NY 14036",4.3,N/A
 Burnin'Barrel BBQ,"10 E Main St, Corfu, NY 14036",5,N/A
 Dadio's Central LLC,"7 E Main St, Corfu, NY 14036",4.4,1
@@ -4679,6 +4685,7 @@ Twilight Meadows,"11071 Alexander Rd, Attica, NY 14011",4.6,1
 Food King Restaurant,"137 Market St, Attica, NY 14011",4.3,N/A
 J Dub's Pizzas and Subs,"10594 Alexander Rd, Alexander, NY 14005",4.7,N/A
 John & Marys,"151 Prospect St, Attica, NY 14011",3.5,N/A
+Shenanigans Fine Dining and Gaslight Pizzeria,"425 N Main St, Warsaw, NY 14569",3.8,N/A
 Burger King,"130 Prospect St, Attica, NY 14011",3.6,1
 Wyoming Gaslight Market,"8 S Academy St, Wyoming, NY 14591",4.5,N/A
 Nino's Pizzeria,"26 Market St, Attica, NY 14011",4.3,1
@@ -4695,7 +4702,6 @@ Jenny Lee Country Store,"19 N Main St, Cattaraugus, NY 14719",4.4,1
 The Trillium Lodge,"6830 Main St, Cherry Creek, NY 14723",4.4,2
 The New Waverly of Otto,"9125 Otto-E Otto Rd, Cattaraugus, NY 14719",4.5,N/A
 Vfw,"7165 N, Cherry Creek-Leon Rd, Cherry Creek, NY 14723",4.4,1
-Flying Penguin Pizzeria,"7078 US-62, Conewango Valley, NY 14726",4.9,N/A
 Lake House Bar and Grill,"3198 Elton Rd, Delevan, NY 14042",4.3,N/A
 Lime Lake Snack Bar,"3197 Elton Rd, Delevan, NY 14042",4.6,N/A
 Granny's Family Restaurant,"2865 Sheridan Dr, Tonawanda, NY 14150",4.4,N/A
@@ -4722,8 +4728,8 @@ El Azteca Restaurant,"3953 Vineyard Dr, Dunkirk, NY 14048",4.3,1
 Jenna's 4th St Cafe,"112 E 4th St, Dunkirk, NY 14048",4.7,1
 Rustico,"296 Lake Shore Dr W, Dunkirk, NY 14048",0,N/A
 Domus Fare,"41 W Main St, Fredonia, NY 14063",4.6,1
-Fred's,"22 Water St, Fredonia, NY 14063",4.6,2
 Applebee's Grill + Bar,"3908 Vineyard Dr, Dunkirk, NY 14048",4.1,2
+Fred's,"22 Water St, Fredonia, NY 14063",4.6,2
 The Point,"296 Lake Shore Dr W, Dunkirk, NY 14048",4.1,N/A
 64 On The Rocks,"64 W Main St, Fredonia, NY 14063",4.4,N/A
 Olympia Grill,"55 Crosspoint Pkwy #122, Getzville, NY 14068",4.6,2
@@ -4780,6 +4786,7 @@ Angola's Taste of The Midway,"97 N Main St, Angola, NY 14006",4,1
 Tavern On the Mall,"14 Main St, Forestville, NY 14062",4.4,1
 Sullivan's Charbroil,"3590 E Main St, Fredonia, NY 14063",4.4,1
 The Burger Den,"10390 Bennett Rd, Fredonia, NY 14063",0,N/A
+Denny's,"10390 Bennett Rd, Fredonia, NY 14063",4,1
 Al's Sub & Pizza Shop,"104 N Main St, Castile, NY 14427",4.3,N/A
 Country Kitchen Restaurant,"34 S Main St, Perry, NY 14530",4.3,1
 John & Sarah's,"127 N Center St, Perry, NY 14530",4.5,1
@@ -4789,13 +4796,12 @@ Village Eatery,"429 Davison Rd, Lockport, NY 14094",4.5,2
 Cammarata's Restaurant,"6336 Robinson Rd, Lockport, NY 14094",4.5,2
 The Kitchen,"207 Washburn St, Lockport, NY 14094",4.7,N/A
 Jackies Family Restaurant,"7545 Chestnut Ridge Rd # 1, Lockport, NY 14094",3.3,N/A
-Sunrise Cafe,"8503 Rochester Rd, Gasport, NY 14067",4.7,1
 Sub Delicious,"15 Locust St, Lockport, NY 14094",4.1,1
 Lock 34 Bar & Grill,"80 Main St, Lockport, NY 14094",4.5,2
 Village Pizzeria,"4 State St, Middleport, NY 14105",4.4,1
-Big Will's Kitchen,"39 Locust St, Lockport, NY 14094",5,1
 Canalside Inn,"4431 Main St, Gasport, NY 14067",4.6,1
 Scripts Cafe,"2 East Ave, Lockport, NY 14094",4.7,1
+Big Will's Kitchen,"39 Locust St, Lockport, NY 14094",5,1
 Roman Cafe,"797 Payne Ave, North Tonawanda, NY 14120",4.3,2
 Aung Family Restaurant,"2768-B, Elmwood Ave, Kenmore, NY 14217",4.8,2
 Hideaway Grille,"399 Division St, North Tonawanda, NY 14120",4.5,2
@@ -4826,6 +4832,7 @@ Village Inn,"187 Central Ave, Silver Creek, NY 14136",4.2,1
 Stroh's Tavern,"9566 Lake Shore Rd, Angola, NY 14006",4.5,1
 Lake Shore Cafe,"3255 Lake Shore Rd, Blasdell, NY 14219",4.7,N/A
 Woodlawn Diner,"3200 Lake Shore Rd, Blasdell, NY 14219",4.6,1
+Olive Garden Italian Restaurant,"3701 McKinley Pkwy, Blasdell, NY 14219",4.3,2
 Maria's Pizza,"9120 Erie Rd, Angola, NY 14006",4.1,1
 Simply Soul,"829 Main St, Niagara Falls, NY 14301",4.7,N/A
 Carpaccio Restaurant & Wine Bar,"6840 Lundy's Ln, Niagara Falls, ON L2G 1V6, Canada",4.4,2
@@ -4865,9 +4872,9 @@ Mariachi De Oro,"11417 Maple Ridge Rd, Medina, NY 14103",4.6,1
 El Gran Burrito,"127 W Center St, Medina, NY 14103",4.8,N/A
 Fitzgibbons Public House,"429 Main St, Medina, NY 14103",4.5,2
 Romyn's Smoked BBQ,"26 E Bank St, Albion, NY 14411",4.6,N/A
-Captain Kidz,"143 E Center St, Medina, NY 14103",4.3,1
 Gilligan's Galley,"926 Point Breeze Rd, Kent, NY 14477",4.7,N/A
 Chia Sen Restaurant,"170 S Main St, Albion, NY 14411",3.4,N/A
+Captain Kidz,"143 E Center St, Medina, NY 14103",4.3,1
 Great Wall 2 Chinese Restaurant,"6 Elm St A, Franklinville, NY 14737",4.6,N/A
 Bear Creek Lodge,"3510 Bear Creek Rd, Franklinville, NY 14737",3,N/A
 Rizzo's Pizzeria,"49 N Main St, Franklinville, NY 14737",4.6,N/A
@@ -4888,10 +4895,10 @@ Kalamatas,"Transit Rd, Lockport, NY 14094",0,N/A
 Rayzor's Dawg House,"8178 N Main St, Eden, NY 14057",4.5,2
 Oriental King,"8566 N Main St, Eden, NY 14057",4.4,1
 Chick's Restaurant and Lanes,"8196 Erie Rd, Angola, NY 14006",4.1,N/A
-Tim Hortons,"8259 N Main St, Eden, NY 14057",4,1
 Salisa's,"2214 Niagara Falls Blvd, Niagara Falls, NY 14304",4.7,1
 Sunny's Family Drive-In Restaurant,"5780 S Transit Rd, Lockport, NY 14094",4.2,1
 Orange Tree Inn,"2230 Cayuga Drive Extension, Niagara Falls, NY 14304",4.7,2
+Tom's Diner,"11 Main St, Lockport, NY 14094",4.5,1
 Northern Pier Bar & Grill,"5764 W Lake Rd, Olcott, NY 14126",0,N/A
 Crave King Mediterranean Food,"2693 South Park Ave, Buffalo, NY 14218",4.5,1
 O'Daniels GinMill & Grill,"1305 Abbott Rd, Buffalo, NY 14218",4.5,2
@@ -4900,7 +4907,6 @@ Danny's South,"4300 Abbott Rd, Orchard Park, NY 14127",4.2,2
 Burger King,"639 NY-5 & 20, Irving, NY 14081",3.8,1
 Tim Hortons,"675 Main Rd, Irving, NY 14081",4.1,1
 Glen Iris Inn,"7 Letchworth State Park, Castile, NY 14427",4.4,N/A
-Mel's,"19 N State St, Nunda, NY 14517",4.8,N/A
 Somewhere,"681 Blairville Rd, Youngstown, NY 14174",4.7,1
 BBQ By Mike,"2273 Saunders Settlement Rd, Sanborn, NY 14132",5,N/A
 Bandana's Bar & Grill,"930 Lake Rd, Youngstown, NY 14174",4.6,1
@@ -4929,6 +4935,7 @@ Old Greenwalls Restaurant,"9105 Cayuga Dr, Niagara Falls, NY 14304",4.3,1
 Hoover's Restaurant,"6035 Ward Rd, Sanborn, NY 14132",4.5,1
 Cuevas Pub & Grill,"182 E 2nd St, Dunkirk, NY 14048",5,N/A
 The Pig-Out Place,"10058 Leon Rd, Cattaraugus, NY 14719",0,N/A
+Flying Penguin Pizzeria,"7078 US-62, Conewango Valley, NY 14726",4.9,N/A
 Bobby J's Italian American Grille,"204 Como Park Blvd, Buffalo, NY 14227",4.6,2
 Taco Bell,"297 S Cascade Dr, Springville, NY 14141",3.6,1
 Star Garden Buffet,"298 S Cascade Dr, Springville, NY 14141",3.8,N/A
@@ -4978,10 +4985,9 @@ Lovebirds Restaurant,"LoveBirds Restaurant, 151 Grider St, Buffalo, NY 14215",4.
 Savor,"28 Old Falls St, Niagara Falls, NY 14303",4.4,2
 Falls Manor Restaurant,"7104 Lundy's Ln, Niagara Falls, ON L2G 1W2, Canada",4.5,N/A
 Betty's Restaurant,"8921 Sodom Rd, Niagara Falls, ON L2G 0T4, Canada",4.4,2
-Basell's Restaurant & Tavern,"4880 Victoria Ave, Niagara Falls, ON L2E 4C5, Canada",3.9,1
 Foodie Palace,"8674 Lundy's Ln, Niagara Falls, ON L2H 1H4, Canada",4.7,N/A
-Pita Palace,"360 Rainbow Blvd, Niagara Falls, NY 14303",4.2,N/A
 Pane's Restaurant,"984 Payne Ave, North Tonawanda, NY 14120",3.8,2
+Basell's Restaurant & Tavern,"4880 Victoria Ave, Niagara Falls, ON L2E 4C5, Canada",3.9,1
 Curry House @ Mama Rose,"744 E Market St, Niagara Falls, NY 14301",3.7,N/A
 Bad Apples Bistro,"42 Nichols St #4, Spencerport, NY 14559",4.7,2
 North Chili Family Restaurant,"4405 Buffalo Rd, North Chili, NY 14514",4.4,1
@@ -5022,7 +5028,6 @@ Nick's,"7934 Ridge Rd, Sodus, NY 14551",4.5,1
 Franklin House Tavern,"8184 Sentell St, Sodus Point, NY 14555",4.7,2
 Six50 on the Bay,"8489 Greig St, Sodus Point, NY 14555",4.1,2
 Royalty Food for Soul,"16 E Main St, Sodus, NY 14551",4.9,1
-Riley's Bar & Grill,"9660 Ridge Rd, North Rose, NY 14516",4.7,N/A
 Made In Mexico,"6564 NY-88, Sodus, NY 14551",4.7,N/A
 The Saltbox Smokehouse,"6152 Barclay Rd, Sodus, NY 14551",4.8,2
 Mi Hacienda Jalisciense Mexican Restaurant,"8430 Ridge Rd, Sodus, NY 14551",4.7,N/A
@@ -5058,16 +5063,15 @@ Old Mill House Restaurant,"2626 Main St, Stanley, NY 14561",4.8,N/A
 Trails End,"93 Main St, Dresden, NY 14441",4.4,1
 The Liberty Restaurant,"221 E Elm St, Penn Yan, NY 14527",4.5,1
 New Hall Diner,"4856 Main Street, Hall, NY 14463",4.7,N/A
-Sans Dumplings,"1030 Larzelere Rd, Penn Yan, NY 14527",5,N/A
-Vonnies Boathouse,"4446 W Lake Rd, Geneva, NY 14456",4.5,1
 Penn Yan Diner,"131 E Elm St, Penn Yan, NY 14527",4.6,1
+Sans Dumplings,"1030 Larzelere Rd, Penn Yan, NY 14527",5,N/A
 Angel's Family Restaurant,"5 Main St, Penn Yan, NY 14527",4.6,N/A
+Vonnies Boathouse,"4446 W Lake Rd, Geneva, NY 14456",4.5,1
 Burnt Rose Wine Bar & Restaurant,"13 Main St, Penn Yan, NY 14527",4.6,N/A
 The Wagner Restaurant,"124 E Elm St, Penn Yan, NY 14527",4.5,1
 Parker's Grille - Penn Yan,"11 Main St, Penn Yan, NY 14527",4.3,N/A
-Cork & Fork Pub at the Dresden Hotel,"76 Main St, Dresden, NY 14441",3.7,N/A
-18th Amendment,"7 Main St, Penn Yan, NY 14527",4.7,N/A
 Casa Mezcal reserva,"104 Liberty St, Penn Yan, NY 14527",4.8,N/A
+18th Amendment,"7 Main St, Penn Yan, NY 14527",4.7,N/A
 Bk8d & Loaded,"1 Basin St, Penn Yan, NY 14527",4.9,N/A
 Bergen Farm Market Family Restaurant,"8097 Clinton Street Rd, Bergen, NY 14416",4.5,1
 My Kinda Place,"7100 W Buffalo Rd, Churchville, NY 14428",4.3,1
@@ -5100,6 +5104,7 @@ Cast Iron Grille,"655 Gallup Rd, Spencerport, NY 14559",5,N/A
 Brockway Dining Hall,"350 New Campus Dr, Brockport, NY 14420",3.9,1
 Kitchen Express,"74 Main St, Brockport, NY 14420",3.9,1
 Tully's Good Times Batavia,"522 E Main St, Batavia, NY 14020",4.4,2
+Cinquino's Pizza,"314 Ellicott St, Batavia, NY 14020",4.6,N/A
 Scottsville Diner,"46 Main St, Scottsville, NY 14546",4.6,1
 Reminisce Soda Fountain,"3013 Main St, Caledonia, NY 14423",4.5,1
 DIRTY DAVES,"28 Caledonia Ave, Scottsville, NY 14546",4.5,1
@@ -5107,6 +5112,8 @@ Duffy's Tavern,"100 W Main St, Avon, NY 14414",4.5,1
 Hunts Pub,"1027 Main St, Mumford, NY 14511",4.5,1
 China Garden,"275 E Main St, Avon, NY 14414",4.2,N/A
 Daffies Pizza,"26 North St, Caledonia, NY 14423",4.1,1
+Puppy's Bar & Grill,"58 W Main St, Avon, NY 14414",4.6,N/A
+Tom Wahl's Avon,"283 E Main St, Avon, NY 14414",4.6,2
 Bon Ami French Bistro,"215 S Main St, Canandaigua, NY 14424",4.7,N/A
 Hilltop restaurant,"4025 NY-5 &, US-20, Canandaigua, NY 14424",4.5,2
 Akropolis Family Restaurant,"4025 NY-5 & US-20, Canandaigua, NY 14424",3.8,1
@@ -5138,14 +5145,15 @@ Roy's,"4123 NY-96, Manchester, NY 14504",4.4,2
 Route 96 BBQ,"6385 NY-96, Victor, NY 14564",4.5,N/A
 Diablo Loco Mexican Restaurant,"1470 NY-332, Farmington, NY 14425",4.5,1
 Cheap Charlie's Restaurant,"8 Elm St, Bloomfield, NY 14469",4.3,2
+Mel's,"19 N State St, Nunda, NY 14517",4.8,N/A
 Ciraulos Deli & Grill,"9924 NY-408, Dalton, NY 14836",4.3,N/A
 Daryl's Pizzeria,"163 S Main St, Perry, NY 14530",4.5,2
 4S Theatre & Restaurant Inc,"7037 Chapman Ave, Perry, NY 14530",5,N/A
 Lightyear's Bar & Grill,"21 N State St, Nunda, NY 14517",4.3,N/A
 Doughboys Pizzeria,"28 N State St, Nunda, NY 14517",4.2,N/A
 Hong Kong Restaurant,"10 N Main St, Perry, NY 14530",4.4,1
-Charcoal Corral,"7037 Chapman Ave, Perry, NY 14530",4.6,2
 A Slice of Brooklyn Pizzeria,"13 N Main St, Perry, NY 14530",4.4,N/A
+Charcoal Corral,"7037 Chapman Ave, Perry, NY 14530",4.6,2
 Ration Wine Bar,"9 N Main St, Perry, NY 14530",4.8,N/A
 Mesquite Grill,"910 Elmgrove Rd, Rochester, NY 14624",4.4,2
 Waffles R Wild Bar & Grill,"3872 Lyell Rd, Rochester, NY 14606",4.4,N/A
@@ -5154,7 +5162,6 @@ Greenway Grille and Bar,"2771 Scottsville Rd, Scottsville, NY 14546",4.3,2
 Jake's,"1025, 4390 Buffalo Rd #6, North Chili, NY 14514",4.4,2
 Chili Hots,"3774 Chili Ave, Rochester, NY 14624",4.2,1
 Knuckles Knockout,"25 Old Scottsville Chili Rd, Rochester, NY 14624",4,2
-Orchard Yacht Club,"1103 Archbald Rd, Waterport, NY 14571",0,N/A
 The Grove 1848,"1848 Kendall Rd, Kendall, NY 14476",4.6,N/A
 Forest Hill Restaurant,"41 E Manitou Rd, Rochester, NY 14612",4.7,2
 The Original Charbroil House Restaurant,"1395 Island Cottage Rd, Rochester, NY 14612",4.5,2
@@ -5269,6 +5276,7 @@ Copper Ale House,"4095 Ridge Rd, Williamson, NY 14589",4.7,2
 The Pizza Stop Pub and Bistro,"4135 Lake Rd, Williamson, NY 14589",4.7,N/A
 Casa Mexicana Bar & Grill,"3829 N Main St, Marion, NY 14505",4.7,N/A
 Original Candy Kitchen,"4069 Main St, Williamson, NY 14589",4.7,1
+The Landing at Pultneyville,"4135 Mill St, Williamson, NY 14589",4.6,N/A
 Konstantinou's Restaurant,"2030 NY-104, Ontario, NY 14519",4.2,2
 Winfield Grill,"647 Winton Rd N, Rochester, NY 14609",4.4,2
 Family Restaurant,"Macedon, NY 14502",4.6,N/A
@@ -5301,19 +5309,18 @@ High Banks Tavern,"36 Main St, Mt Morris, NY 14510",4.4,2
 Leaning Tower,"25 Main St, Mt Morris, NY 14510",4,1
 Stars and Stripes Cafe,"9 State St, Mt Morris, NY 14510",0,N/A
 Brian's USA Diner,"5524 Mt Morris Rd, Mt Morris, NY 14510",4.6,1
-National Hotel,"2927 Cuylerville Rd, Leicester, NY 14481",4.7,N/A
 Lighter Side Eatery,"114 Main St, Geneseo, NY 14454",4.5,N/A
-University Hots,"114 Main St, Geneseo, NY 14454",3.8,1
 Destination Bar & Grill,"3739 County Line Rd, Brockport, NY 14420",4.7,N/A
 North of the Border Bar & Grill,"416 Clarkson Hamlin Town Line Rd, Hamlin, NY 14464",4.4,1
 Hamlin Pizza Shack,"1721 Lake Rd N, Hamlin, NY 14464",4.2,2
 Cusimanos Pizzeria,"3670 Lake Rd N, Brockport, NY 14420",4.9,N/A
 The Dakota,"913 Roosevelt Hwy, Hilton, NY 14468",4.3,2
 China Moon,"1800 Lake Rd N, Hamlin, NY 14464",4.1,1
-Hilton Family Restaurant,"54 Hovey St, Hilton, NY 14468",4.5,1
 Krony's Pizza Etc,"500 Hamlin Clarkson Town Line Rd, Hamlin, NY 14464",4.6,2
-Foster's Restaurant,"50 Canning St, Hilton, NY 14468",4.5,2
 "Pettinari's Deli, Pizza & Meats","918 Roosevelt Hwy, Hilton, NY 14468",4.8,1
+Hilton Family Restaurant,"54 Hovey St, Hilton, NY 14468",4.5,1
+Foster's Restaurant,"50 Canning St, Hilton, NY 14468",4.5,2
+Mark's Pizzeria,"430 Clarkson Hamlin Town Line Rd, Hamlin, NY 14464",4,N/A
 Pizza Paul's,"5808 Big Tree Rd, Lakeville, NY 14480",3.8,1
 Rising Sun II Chinese Kitchen,"8742 Main St, Honeoye, NY 14471",4.4,N/A
 Top Shelf Pizza,"4905 E Lake Rd, Honeoye, NY 14471",4.4,1
@@ -5358,13 +5365,14 @@ Five Guys,"405 Commerce Dr, Victor, NY 14564",4.5,2
 Risen Cafe,"469 E State St, Albion, NY 14411",5,N/A
 Valhalla Cafe and Catering service LLC,"3900 NY-14A, Penn Yan, NY 14527",4.6,N/A
 The Grateful Plateful,"3900 NY-14A, Penn Yan, NY 14527",4,N/A
+J&T's Pizza Corner,"2727 Genesee St, Piffard, NY 14533",4.7,N/A
+University Hots,"114 Main St, Geneseo, NY 14454",3.8,1
 PapaRoni's,"11090 Lake St, Pavilion, NY 14525",3.8,2
 Smokin' Eagle BBQ & Brew,"9 Main St, Le Roy, NY 14482",4.4,2
 Pastore's Pizza,"110 W Main St, Le Roy, NY 14482",4.3,N/A
 Burger King,"134 W Main St, Le Roy, NY 14482",3.4,1
 Shell's Post,"6173 Main St, Stafford, NY 14143",4.6,1
 Ruck's Pizza Kitchen,"166 W Main St, Honeoye Falls, NY 14472",4.4,1
-J&T's Pizza Corner,"2727 Genesee St, Piffard, NY 14533",4.7,N/A
 Savor'Es Mexico,"3016 NY-88, Newark, NY 14513",3.9,N/A
 Craft 120,"120 E Union St, Newark, NY 14513",4.5,2
 Akropolis Restaurant,"513 Canal St, Palmyra, NY 14522",4.3,1
@@ -5399,10 +5407,9 @@ Redwood Restaurant,"6 Cohocton St #9534, Naples, NY 14512",4.3,2
 The Social Restaurant and Taproom at the Naples Hotel,"111 S Main St, Naples, NY 14512",4.3,2
 Neapolitan Pizzeria,"120 N Main St, Naples, NY 14512",4.6,2
 Luigi's,"101 N Main St, Naples, NY 14512",4.4,1
-China City,"126 S Main St, Naples, NY 14512",4.4,N/A
-Pine Hill Provisions,"8629 State Rte 21, Naples, NY 14512",5,N/A
 Dam Overlook Gifts and Grill,"Mt Morris, NY 14510",3.9,N/A
-Harry's Expressway,"6 Mt Morris Rd, Leicester, NY 14481",5,N/A
+Pine Hill Provisions,"8629 State Rte 21, Naples, NY 14512",5,N/A
+China City,"126 S Main St, Naples, NY 14512",4.4,N/A
 The Social Restaurant & Taproom,"111 S Main St, Naples, NY 14512",5,N/A
 Subway,"145 N Main St, Naples, NY 14512",4,1
 Mountain View Inn,"34 E Main St, Atlanta, NY 14808",4.7,N/A
@@ -5412,16 +5419,15 @@ Ling Ling Chinese Restaurant,"210 S Main St, Newark, NY 14513",3.8,1
 Veneto's Wood Fired Pizza & Pasta Westside,"1308 Buffalo Rd, Rochester, NY 14624",4.6,N/A
 Papa Joe's Italian Eatery,"485 Spencerport Rd, Rochester, NY 14606",4.5,2
 Pura Vida Ville,"2115 Buffalo RD Westmar plaza , Next UPS Store, Rochester, NY 14624",4.6,1
-Cucina 120,"120 Pixley Rd, Rochester, NY 14624",4.5,N/A
 The Tap it Bar and Grill,"1761 Scottsville Rd, Rochester, NY 14623",4.7,N/A
 Jim's Ground,"1205 Spencerport Rd, Rochester, NY 14606",4.6,1
 Applebee's Grill + Bar,"2120 Chili Ave, Rochester, NY 14624",3.9,2
+Giuseppe's,"50 Spencerport Rd, Rochester, NY 14606",4.5,2
 Kandis's,"701 Lake Ave, Rochester, NY 14615",4.9,N/A
 Tangie's Kitchen,"165 East Ridge Road, Rochester, NY 14621",4.1,2
 Mr Goody's Restaurant,"1470 N Clinton Ave, Rochester, NY 14621",4.2,1
 Bella Pasta Restaurant and Catering,"2500 Ridgeway Ave, Rochester, NY 14626",4.5,2
 El Pilon Criollo,"973 N Clinton Ave, Rochester, NY 14621",4.5,1
-"""Gleixners Goodies"", Cafe & Gifts","1 N State St, Nunda, NY 14517",4.9,N/A
 The Shawmut Grille,"Grove, NY 14822",2.3,N/A
 Kathys Corner Cafe,"53 Main St, Canaseraga, NY 14822",4.6,N/A
 Beef & Brew,"293 S Main St, Geneva, NY 14456",4.4,2
@@ -5458,6 +5464,7 @@ LAF-A-Lot,"100 Laf a Lot Rd, Wayland, NY 14572",4.5,1
 Dom's Original,"37 N Dansville St, Cohocton, NY 14826",4.9,1
 Hometown Diner & Pizzeria,"22 N Main St, Wayland, NY 14572",3.3,N/A
 Smitty's Pop & Hops,"11506 State Rte 21, Wayland, NY 14572",4.2,1
+Double Happiness,"63 N Main St #1343, Warsaw, NY 14569",4.4,N/A
 Stefano's Pizzeria (New York Style),"12 N Main St, Warsaw, NY 14569",3.8,1
 Uncle Joe's Pizzeria,"99 N Genesee St, Geneva, NY 14456",4.5,1
 Bella's Seneca Lake Steakhouse,"369 Waterloo Geneva Rd, Waterloo, NY 13165",4.1,N/A
@@ -5466,7 +5473,7 @@ Mama Mia's,"87 Main St, Geneseo, NY 14454",4.2,1
 Village Tavern,"137 Center St, Geneseo, NY 14454",4.6,2
 Pizza Paul's,"110 Main St, Geneseo, NY 14454",4.2,2
 Wendy's,"4158 Lakeville Rd, Geneseo, NY 14454",3.7,1
-The Landing at Pultneyville,"4135 Mill St, Williamson, NY 14589",4.6,N/A
+Cork & Fork Pub at the Dresden Hotel,"76 Main St, Dresden, NY 14441",3.7,N/A
 Dresden Hotel,"76 Main St, Dresden, NY 14441",4.3,N/A
 Mamma G's,"2133 E Henrietta Rd, Rochester, NY 14623",4.6,2
 Carrabba's Italian Grill,"3340 W Henrietta Rd, Rochester, NY 14623",4.3,2
@@ -5596,26 +5603,26 @@ Dragon House,"87 N Main St, Wellsville, NY 14895",4.6,1
 Hot diggity dogs,"NY-19, Wellsville, NY 14895",5,N/A
 Napoli Pizza of Wellsville,"253 S Main St, Wellsville, NY 14895",4.4,N/A
 The Bolivar Hotel,"300 N Main St, Bolivar, NY 14715",0,N/A
-Las Brasas Grill Mexican Restaurant,"3202 Andover Rd, Wellsville, NY 14895",4.5,N/A
-Mike's On The Corner,"3947 Main St, Scio, NY 14880",4.6,N/A
 Pizza King,"35 N Main St Suite 1, Wellsville, NY 14895",4.3,1
 Burger King,"4228 Bolivar Rd, Wellsville, NY 14895",4,1
-The Shinglehouse Diner,"107 Academy St, Shinglehouse, PA 16748",4.7,N/A
 New King Wok,"4194 Bolivar Rd, Wellsville, NY 14895",3.6,2
+Mike's On The Corner,"3947 Main St, Scio, NY 14880",4.6,N/A
+Las Brasas Grill Mexican Restaurant,"3202 Andover Rd, Wellsville, NY 14895",4.5,N/A
+The Shinglehouse Diner,"107 Academy St, Shinglehouse, PA 16748",4.7,N/A
 Wellsville General Store and Grill,"3376 Andover Rd, Wellsville, NY 14895",4.7,N/A
 Roadside Inc,"418 Ceres Rd, Shinglehouse, PA 16748",4.4,1
-Mama's Smokin' BBQ,"605 NY-19, Wellsville, NY 14895",4.7,1
+McDonald's,"500 Bolivar Rd, Wellsville, NY 14895",3.3,1
 Fox's Pizza,"126 Academy St, Shinglehouse, PA 16748",3.9,1
 Subway,"109 Oswayo St, Shinglehouse, PA 16748",4.1,1
 Deb's Lil Deli,"2941 NY-305, West Clarksville, NY 14786",4.8,N/A
 Island Style Bar and Grill,"31 Schuyler St, Belmont, NY 14813",5,N/A
 American House & Hotel,"128 W Main St, Angelica, NY 14709",4.5,2
-Dawny Jeans,"5429 NY-19, Belmont, NY 14813",4.7,N/A
 3 Bums Pizza Angelica,"231 W Main St, Angelica, NY 14709",4,1
+Dawny Jeans,"5429 NY-19, Belmont, NY 14813",4.7,N/A
 Miller & Brandes,"4681 Castle Garden Rd, Friendship, NY 14739",4.4,1
 "Off Duty, Inc.","5184 State Rte 244, Belmont, NY 14813",4.5,N/A
-Subway,"2 Pennsylvania Ave, Friendship, NY 14739",3.8,1
 The Kopper Keg,"11 E Main St, Cuba, NY 14727",4.4,1
+Subway,"2 Pennsylvania Ave, Friendship, NY 14739",3.8,1
 Davidson's Family Restaurant,"398 E Fairmount Ave, Lakewood, NY 14750",4.6,1
 La Cocina,"273 E Fairmount Ave, Lakewood, NY 14750",4.3,1
 Dean's Restaurant,"707 Fairmount Ave, Jamestown, NY 14701",4.3,1
@@ -5649,9 +5656,11 @@ Calarco's Restaurant & Lounge,"15 Market St, Westfield, NY 14787",4.4,2
 Backyard Bar & Grill,"4003 Route 380, Gerry, NY 14740",4,1
 Splash,"60 Lakeside Dr, Bemus Point, NY 14712",0,N/A
 Coppola's Pizzaria,"20 Main St, Bemus Point, NY 14712",4.5,2
+The Village Casino,"1 Lakeside Dr, Bemus Point, NY 14712",4.2,2
 Hughes Hotel,"129 Main St, Little Valley, NY 14755",4.6,1
 The Bear Brick,"100 Main St, Little Valley, NY 14755",4.4,1
 Crosby's - Little Valley,"105 Rock City St, Little Valley, NY 14755",4.2,1
+Mitch's General Store,"9005 E Otto Springville Rd, East Otto, NY 14729",4.7,1
 Dina's At Holimont,"6921 NY-242, Ellicottville, NY 14731",3,N/A
 Dinner Bell,"15 Center St, Frewsburg, NY 14738",4.7,1
 Munchies Dining,"23 S Main St, Eldred, PA 16731",4.5,2
@@ -5661,6 +5670,8 @@ Pizzaland,"1018 Olean-Portville Rd, Portville, NY 14770",4.4,N/A
 Myrge Cafe & Coffee House,"65 S Main St, Portville, NY 14770",4.6,2
 Sprague's Maple Farms,"1048 Portville-Obi Rd, Portville, NY 14770",4.8,2
 Dave's Diner,"14754, 9475 Portville-Ceres Rd, Ceres, NY 14721",4.2,1
+Subway,"2 S Main St, Portville, NY 14770",4.3,1
+Fox's Pizza Den,"187 Main St, Eldred, PA 16731",4.3,1
 Pine Junction,"9757 Bailey Hill Rd, Sherman, NY 14781",4.6,2
 Dutch Village Restaurant,"8729 W Main St, Clymer, NY 14724",4.6,1
 Arlene's Dutch Kitchen,"104 E Main St, Sherman, NY 14781",4.5,N/A
@@ -5682,15 +5693,16 @@ Columbus Inn,"11 W Main St, Columbus, PA 16405",4.4,2
 Old Tool Tavern,"114 School St, Randolph, NY 14772",4.6,N/A
 MJ's Tavern,"10933 Mace Rd, Randolph, NY 14772",4.6,2
 R & M Restaurant,"265 Main St, Randolph, NY 14772",4.2,1
-Office Restaurant,"658 NY-394, Kennedy, NY 14747",4.5,1
 Dough boys,"6762 US-62, Conewango Valley, NY 14726",5,N/A
 Stonees,"121 Main St, Randolph, NY 14772",0,N/A
+Office Restaurant,"658 NY-394, Kennedy, NY 14747",4.5,1
 Cherry Creek Sub Shop,"6775 Main St, Cherry Creek, NY 14723",4.7,1
 Big eddies,"6767 Main St, Cherry Creek, NY 14723",4.5,N/A
 Big John's Pizza,"62 Hall St, Randolph, NY 14772",4.1,1
 Dry Brook Restaurant,"1123 NY-394, Falconer, NY 14733",4.5,N/A
-Hide-A-Way Restaurant,"2597 NY-394, Steamburg, NY 14783",4.5,2
 The Vegas,"1064 NY-394, Kennedy, NY 14747",4.5,2
+Hide-A-Way Restaurant,"2597 NY-394, Steamburg, NY 14783",4.5,2
+The Ellington Rod & Gun Club,"1045 Hagerdon Hill Rd, Ellington, NY 14732",4.6,N/A
 Park Restaurant,"Park Rd #1, Salamanca, NY 14779",3,N/A
 Horseshoe Inn,"W Perimeter Rd, Coldspring, NY",4.6,N/A
 Seneca cafe,"777 Seneca Allegany Blvd, Salamanca, NY 14779",2,N/A
@@ -5706,6 +5718,7 @@ Tim Hortons,"6599 US-219, Ellicottville, NY 14731",3.7,1
 Ftr evl,"5 E Washington St, Ellicottville, NY 14731",4.3,2
 Balloons Restaurant & Night Club,"20 Monroe St, Ellicottville, NY 14731",4.1,2
 Subway,"38 Washington St, Ellicottville, NY 14731",4,1
+12 Gates of EVL,"14 Washington St, Ellicottville, NY 14731",4.9,N/A
 Azteca Mexican Diner,"332 W Main St #1618, Falconer, NY 14733",4.5,1
 Tailgaters Barbecue,"3066 N Main Street Ext, Jamestown, NY 14701",5,N/A
 "Cartwright's Maple Tree Inn, LLC","4321 County Rd 15A, Angelica, NY 14709",4.8,1
@@ -5750,12 +5763,13 @@ Murphy's Concessions,"154 Center St, Salamanca, NY 14779",5,N/A
 Subway,"195 Center St, Salamanca, NY 14779",4.1,1
 Group Ther-Happy,"103 Chautauqua Ave, Lakewood, NY 14750",4.4,2
 Pizza Express,"179 W Fairmount Ave, Lakewood, NY 14750",4.1,1
-The Village Casino,"1 Lakeside Dr, Bemus Point, NY 14712",4.2,2
 BJ's,"51 W Main St, Fredonia, NY 14063",4.6,1
 Mary's Deli,"100 W Main St, Fredonia, NY 14063",4,2
 Big Melch's Smokin BBQ,"70 Water St, Fredonia, NY 14063",5,N/A
 "Lena's Pizza, Subs & Wings","18 Canadaway St, Fredonia, NY 14063",4.1,1
 Arctic Bites Fredonia,"44 W Main St, Fredonia, NY 14063",4.5,1
+D.P. Dough Fredonia Ny,"13 E Main St, Fredonia, NY 14063",3.7,1
+Ellicottville Brewing Company Fredonia,"34 W Main St, Fredonia, NY 14063",4.3,3
 Randy's Up The River,"3767 9 Mile Rd, Allegany, NY 14706",4.4,1
 Mangia 2.0,"71 W Main St, Allegany, NY 14706",4.4,1
 The Parkview,"3 E Main St, Westfield, NY 14787",4.8,2
@@ -5765,18 +5779,18 @@ Brazill's on Main,"7 E Main St, Westfield, NY 14787",4.4,N/A
 Lenas-TaQo Westfield,"45 E Main St, Westfield, NY 14787",5,N/A
 Food King Restaurant,"51 E Main St, Westfield, NY 14787",4.5,N/A
 Grace and Abe's,"14 N Portage St, Westfield, NY 14787",4.4,N/A
-Jacks Barcelona Drive In,"8249 1st St, Westfield, NY 14787",4.5,1
 CJ's Pizza & Subs,"77 E Main St #1305, Westfield, NY 14787",4.6,2
+Tap Room & Grill,"43 E Main St #1303, Westfield, NY 14787",4.5,1
+Jacks Barcelona Drive In,"8249 1st St, Westfield, NY 14787",4.5,1
 Tony's Napoli,"671 E State St #2914, Olean, NY 14760",4.3,2
 Tap Room Tito's Lunches,"310 W State St, Olean, NY 14760",4.4,N/A
 Oishi,"2234 W State St, Olean, NY 14760",4.4,2
 Perkins Restaurant & Bakery,"2728 W State St, Olean, NY 14760",4.2,2
 Pit Stop,"1615 W State St, Olean, NY 14760",4.1,1
-Little Caesars Pizza,"840 R C Hoag Dr, Salamanca, NY 14779",4.3,1
 Meeder's,"19 E Main St, Ripley, NY 14775",4.4,1
 Main Street Pizza,"66 W Main St, Ripley, NY 14775",4.7,N/A
 Willows,"2669 W Washington St, Bradford, PA 16701",4.8,N/A
-Subway,"2 S Main St, Portville, NY 14770",4.3,1
+Togi's Family Restaurant,"412 E Main St, Bradford, PA 16701",4.6,2
 Frans Landing,"996 Addison Rd, Painted Post, NY 14870",4.7,1
 Mom's Savona Diner,"82 Main St, Savona, NY 14879",4.4,1
 Champs,"8833 NY-415, Campbell, NY 14821",4.5,1
@@ -5814,13 +5828,12 @@ Collegiate,"31 N Main St, Alfred, NY 14802",4.2,1
 Humming Bird Hill,"6780 Stanz Rd, Almond, NY 14804",4.6,1
 Super Wok,"35 Main St, Hornell, NY 14843",4.1,1
 Paddy's Pub & Grill,"66 Broadway Mall, Hornell, NY 14843",4.5,2
-Burger King,"45 Main St, Hornell, NY 14843",3.9,1
 Sparky's,"80 River St, Hornell, NY 14843",4.5,1
+Italian Villa,"196 Seneca St, Hornell, NY 14843",4.3,2
 Giovanni's,"119 Seneca St, Hornell, NY 14843",4.3,1
 Applebee's Grill + Bar,"1006 NY-36, Hornell, NY 14843",4.1,2
 Subway,"916 State Rte 244, Alfred Station, NY 14803",3.8,1
 Duke's Main Street Pizza,"38 N Main St, Alfred, NY 14802",3.8,N/A
-Italian Villa,"196 Seneca St, Hornell, NY 14843",4.3,2
 Village Cafe,"7937 NY-36, Arkport, NY 14807",4.7,1
 Maddie J's,"7 Main St, Arkport, NY 14807",4.8,N/A
 "Barbara Jean Country, Inc.","108 West Ave, Arkport, NY 14807",4.3,1
@@ -5830,24 +5843,24 @@ Althea's Finger Lakes Tavern,"230 W Main St, Montour Falls, NY 14865",5,N/A
 Bucket Bar & Grill,"100 Church St, Odessa, NY 14869",4.6,1
 Blue Ribbon Diner,"139 N Catherine St, Montour Falls, NY 14865",4.3,1
 Classic Chef's,"380 N Catherine, Montour Falls, NY 14865",4.4,1
-over the moon grilled cheeserie,"5761 Gulf Rd, Alpine, NY 14805",5,N/A
 Blue Pointe Grille,"16 N Franklin St, Watkins Glen, NY 14891",4.3,2
-Subway,"6034 NY-13, Cayuta, NY 14824",4.4,1
-PriseBox BBQ,"2640 St. Rd, 14, Watkins Glen, NY 14891",4.7,N/A
+over the moon grilled cheeserie,"5761 Gulf Rd, Alpine, NY 14805",5,N/A
 Kookalaroc's Bar and Grill,"107 11th St, Watkins Glen, NY 14891",3.9,N/A
+PriseBox BBQ,"2640 St. Rd, 14, Watkins Glen, NY 14891",4.7,N/A
 Thai Elephants,"133 E 4th St, Watkins Glen, NY 14891",4.6,2
 El Rancho Mexican Restaurant,"212 N Franklin St, Watkins Glen, NY 14891",4.2,2
 Jerlando's Ristorante & Pizza Co.,"400 N Franklin St, Watkins Glen, NY 14891",4.5,2
 Curly's Family Restaurant,"2780 NY-14, Watkins Glen, NY 14891",4.5,1
 The Elf In The Oak,"4221 NY-414, Burdett, NY 14818",4.8,2
-STONE BEND FARM,"196 Porter Hill Rd, Newfield, NY 14867",4.7,N/A
 Nickel's Pit BBQ Watkins Glen,"207 N Franklin St, Watkins Glen, NY 14891",4.6,2
+Subway,"6034 NY-13, Cayuta, NY 14824",4.4,1
 Decoy Restaurant,"4576 NY-14, Rock Stream, NY 14878",4.6,2
 Colonial Pizza and Grill,"701 N Franklin St, Watkins Glen, NY 14891",4.6,N/A
+Roosterfish Pub,"223 N Franklin St, Watkins Glen, NY 14891",3.9,2
 The Whitesville House,"481 Main, Whitesville, NY 14897",4.2,N/A
 Little Italy of Hornell,"7498 Seneca Rd N, Hornell, NY 14843",4.3,1
 Brunch & Munch Cafe,"14 N Main St, Avoca, NY 14809",4.4,N/A
-Ling Ling,"348 W Morris St, Bath, NY 14810",3.6,1
+Ling Ling,"348 W Morris St, Bath, NY 14810",3.5,1
 D.J.'s Flamingo,"7435 NY-415, Bath, NY 14810",4.4,1
 Wendy's,"7748 NY-53, Bath, NY 14810",4.1,1
 PJ Fresh Marketplace,"7753 NY-53, Bath, NY 14810",5,N/A
@@ -5864,7 +5877,6 @@ Burgers & Beer of Hammondsport,"41 Shethar St, Hammondsport, NY 14840",4.3,2
 Maybe Baby Burgers,"7530 NY-54, Bath, NY 14810",4.6,2
 Big D & Chef T's,"14 Liberty St, Bath, NY 14810",4.3,N/A
 Park Inn,"37 Shethar St, Hammondsport, NY 14840",4.8,N/A
-Roosterfish Pub,"223 N Franklin St, Watkins Glen, NY 14891",3.9,2
 Matt's Place LLC,"1237 Co Rte 16, Beaver Dams, NY 14812",4.5,1
 House of Hong,"108 N Franklin St, Watkins Glen, NY 14891",3.9,2
 Kozy Korner,"2801 NY-226, Bradford, NY 14815",4.4,1
@@ -5906,14 +5918,13 @@ Fat City,"939 Hulett St, Horseheads, NY 14845",4.9,2
 JBs,"102 W 14th St, Elmira Heights, NY 14903",4.4,N/A
 Ling Ling Garden,"331 Pine Tree Rd, Ithaca, NY 14850",3.9,1
 kingston's Cuisine,"130 Snyder Hill Rd, Ithaca, NY 14850",5,N/A
+West Creek Roadhouse,"9518 W Creek Rd, Berkshire, NY 13736",4.5,N/A
 North Star Dining Room,"186 Cradit Farm Dr, Ithaca, NY 14850",4.4,1
-Pho Time Vietnamese Cuisine,"208b Dryden Rd, Ithaca, NY 14850",4.1,1
 Toni's Diner,"3631 Tichenor Rd, Hector, NY 14841",4.7,1
 Crossing Diner,"5005 NY-14, Dundee, NY 14837",4.6,1
 Babe's Burger,"6085 Beckhorn Rd, Hector, NY 14841",5,N/A
 here.,"5646 NY-414, Hector, NY 14818",0,N/A
 Killbuck Inn,"4900 NY-36, Canisteo, NY 14823",4.8,2
-DJ's Pizzeria - Canisteo,"31 Main St, Canisteo, NY 14823",4.9,N/A
 Fox's Pizza Den,"7782 NY-417, Addison, NY 14801",4.4,1
 Bob Evans,"1 S Buffalo St, Corning, NY 14830",4.1,2
 Sierra Inn,"2232 Co Rd 24, Swain, NY 14884",4.4,2
@@ -5922,6 +5933,7 @@ Sonny's Bar & Grille,"49 Level Acres Dr, Horseheads, NY 14845",4.5,N/A
 Fratello's Pizza Company,"455 Old Ithaca Rd, Horseheads, NY 14845",4.3,2
 Callears Bar-B-Que Restaurant and Catering,"2081 Elmira St, Sayre, PA 18840",4.4,1
 Beeman's,"1356 Elmira St, Sayre, PA 18840",4.3,2
+Lisa's Place,"367 Broad St, Waverly, NY 14892",4.6,1
 Applebee's Grill + Bar,"1860 Elmira St, Sayre, PA 18840",4.2,2
 Town Diner,"601 Cayuta Ave, Waverly, NY 14892",4.4,1
 Original Italian Pizza,"205 S Keystone Ave, Sayre, PA 18840",4.3,1
@@ -5940,31 +5952,30 @@ Gabe's Grille,"Willow Creek, Big Flats, NY 14814",4.5,N/A
 R & M,"101 W Market St, Corning, NY 14830",4.4,1
 Bridges Bar & Grill,"36 Bridge St, Corning, NY 14830",4.4,N/A
 Burgers & Beer of Corning,"58 W Market St, Corning, NY 14830",4.2,N/A
+Jasper Junction Mini Mart,"3857 NY-417, Jasper, NY 14855",4.6,N/A
+Rexville Country Store,"1364 State Rte 248, Rexville, NY 14877",4.8,N/A
 Lee's Country Kitchen,"7736 State Rte 49, Osceola, PA 16942",4.3,1
 P & J's,"114 W Main St, Elkland, PA 16920",4.5,1
-Jasper Junction Mini Mart,"3857 NY-417, Jasper, NY 14855",4.6,N/A
+"""Gleixners Goodies"", Cafe & Gifts","1 N State St, Nunda, NY 14517",4.9,N/A
 The Crossing,"Dundee, NY 14837",5,N/A
 Triple F diner,"20 Main St, Dundee, NY 14837",5,N/A
 Classic Cafe,"1 Main St, Dundee, NY 14837",4.5,1
 VFW post 8649,"125 Seneca St, Dundee, NY 14837",4.4,N/A
 Tabora bakery and deli,"5012 Lakemont-Himrod Rd, Dundee, NY 14837",4.7,N/A
+HB's Weenie Wagon,"1136 Bossard Rd, Dundee, NY 14837",0,N/A
+Veraisons at the Inn at Glenora Wine Cellars,"5435 NY-14, Dundee, NY 14837",3.9,N/A
 Anthony's Restaurant,"760 E Water St, Elmira, NY 14901",4.1,2
-Mc Ann's Restaurant & Liquor,"3 Waverly St, Van Etten, NY 14889",4.7,1
 The Green Derby Cafe,"113 W 2nd St, Elmira, NY 14901",4.5,2
 Los Panchos,"250 W Water St, Elmira, NY 14901",4.3,2
 Siam Elephants Restaurant,"200 W Water St, Elmira, NY 14901",4.8,2
 Manzari's Bar & Grill,"105 E Miller St, Elmira, NY 14904",4.7,1
 Lib's Supper Club,"106 W 5th St, Elmira, NY 14901",4.6,2
+Mc Ann's Restaurant & Liquor,"3 Waverly St, Van Etten, NY 14889",4.7,1
 Beijing Garden,"145 W Gray St, Elmira, NY 14901",4.2,2
 Ill EagleTaphouse,"200 E Church St, Elmira, NY 14901",4.5,N/A
 Barb's Soup's On Cafe,"311 College Ave, Elmira, NY 14901",4.6,N/A
 Starlite Room,"3018 Lake Rd, Elmira, NY 14903",4.6,2
-Rexville Country Store,"1364 State Rte 248, Rexville, NY 14877",4.8,N/A
 Crooked Lake Ice Cream Company,"35 Shethar St, Hammondsport, NY 14840",4.6,N/A
-Aroma Coffee Art Gallery,"60 Shethar St, Hammondsport, NY 14840",3.8,N/A
-Veraisons at the Inn at Glenora Wine Cellars,"5435 NY-14, Dundee, NY 14837",3.9,N/A
-Scale House Brewery,"5930 NY-414, Hector, NY 14841",4.6,2
-Lakeside Resort & 3812 Bistro,"3812 NY-14, Watkins Glen, NY 14891",4.6,N/A
 Ruby Tuesday,"3300 Chambers Rd Ste 5055, Horseheads, NY 14845",4.1,2
 Chili's Grill & Bar,"3347 Chambers Rd South, Horseheads, NY 14845",4,2
 Red Robin Gourmet Burgers and Brews,"1720 County Rd 64, Horseheads, NY 14845",4.3,2
@@ -5974,18 +5985,19 @@ Little Venice Trumansburg,"49 E Main St, Trumansburg, NY 14886",4.4,2
 New York Pizzeria,"2 W Main St, Trumansburg, NY 14886",4.6,2
 Atlas Bowl,"61 W Main St, Trumansburg, NY 14886",4.6,2
 Old Mexico,"357 Elmira Rd, Ithaca, NY 14850",4.4,1
-Mercato Bar & Kitchen,"108 N Aurora St, Ithaca, NY 14850",4.6,N/A
 Milkstand Restaurant,"215 N Meadow St, Ithaca, NY 14850",4.1,2
+Mercato Bar & Kitchen,"108 N Aurora St, Ithaca, NY 14850",4.6,N/A
 Mia,"130 E State St, Ithaca, NY 14850",4.4,N/A
 MIX,"205 Elmira Rd, Ithaca, NY 14850",4.5,2
 Bum Steer,"105 S Buffalo St, Elkland, PA 16920",4.7,1
 Home Comfort Restaurant,"1131 State Rte 49, Westfield, PA 16950",4.4,1
 Ridge Runner Cafe,"114 Parkhurst St, Elkland, PA 16920",4.5,1
-HB's Weenie Wagon,"1136 Bossard Rd, Dundee, NY 14837",0,N/A
+Scale House Brewery,"5930 NY-414, Hector, NY 14841",4.6,2
 Rotsell's,"12 Main St, Lawrenceville, PA 16929",4.5,1
 Amanda Lou's LLC,"3 Cowanesque St, Lawrenceville, PA 16929",4.7,N/A
 Village Pizza & Subs,"2 Wicks Blvd #3400, South Corning, NY 14830",4.4,1
-Shoe Inn,"10 Town Line Rd, Van Etten, NY 14889",4.3,1
+Dunkin' | Tioga Downs Casino Resort,"2384 W River Rd, Nichols, NY 13812",0,N/A
+P.J. Clarke's | Tioga Downs Casino Resort,"2384 W River Rd, Nichols, NY 13812",3.2,N/A
 Bernie Murray's,"500 S Main St, Elmira, NY 14904",4.3,2
 Mandells,"601 Erie St, Elmira, NY 14904",0,N/A
 Hill Top Inn,"171 Jerusalem Hill Rd, Elmira, NY 14901",4.5,2
@@ -5998,7 +6010,6 @@ Family Wok,"1600 Cedar St, Elmira, NY 14904",4.2,N/A
 New Happy Family,"103 S Main St, Elmira, NY 14904",4,1
 Covered Bridge Market,"176 Main St, Newfield, NY 14867",4.5,2
 The Big Mean Bbq,"3150 Agard Rd, Trumansburg, NY 14886",0,N/A
-Subway,"2078 NY-96, Trumansburg, NY 14886",3.9,1
 Picnic Pizza,"2898 Westinghouse Rd Suite 516, Horseheads, NY 14845",4.3,1
 Lighthouse BBQ,"6 Larchmont Ave, Horseheads, NY 14845",0,N/A
 Dragon Wok,"2898 Westinghouse Rd, Horseheads, NY 14845",3.8,2
@@ -6015,8 +6026,9 @@ Independence Country Store,"452 Main, Whitesville, NY 14897",4.5,1
 Chooch's Kozy Kitchen,"120 W Main St, Westfield, PA 16950",4.5,1
 Sandy's Country Cottage,"794 Northern Potter Rd, Ulysses, PA 16948",4.7,2
 The Downey's,"451 Northern Potter Rd, Ulysses, PA 16948",4.8,N/A
+Mama's Smokin' BBQ,"605 NY-19, Wellsville, NY 14895",4.7,1
 The Corner Cafe,"501 N Main St, Ulysses, PA 16948",4.6,N/A
-McDonald's,"500 Bolivar Rd, Wellsville, NY 14895",3.3,1
+Aroma Coffee Art Gallery,"60 Shethar St, Hammondsport, NY 14840",3.8,N/A
 What The Falafel (WTF),"840 Hanshaw Rd #3, Ithaca, NY 14850",4.7,1
 Northeast Pizza and Bones,"23 Cinema Dr, Ithaca, NY 14850",4.4,N/A
 Sumo Japanese Sushi And Hibachi Grill,"2309 N Triphammer Rd #15, Ithaca, NY 14850",4.3,2
@@ -6028,12 +6040,10 @@ The Diner,"1/2, 1121 Owego Rd, Candor, NY 13743",4.4,N/A
 Knoxville Pizza & Deli,"102 W Main St, Knoxville, PA 16928",4.1,N/A
 Colonial Hotel,"122 E Main St, Westfield, PA 16950",4.7,N/A
 "Ohhh, That Place","163 W Main St, Westfield, PA 16950",4.9,N/A
-Pizza-N-Stuff,"130 E Main St, Westfield, PA 16950",4.3,2
 Golden Bayou,"401 Elmira Rd STE 11, Ithaca, NY 14850",4.4,2
 Kelly's Dockside Cafe,"319 Old Taughannock Blvd, Ithaca, NY 14850",3.9,2
-P.J. Clarke's | Tioga Downs Casino Resort,"2384 W River Rd, Nichols, NY 13812",3.2,N/A
+Spicy Asian,"335 Elmira Rd, Ithaca, NY 14850",4.3,2
 Coasters Sports Bar | Tioga Downs Casino Resort,"2384 W River Rd #1406, Nichols, NY 13812",3.3,N/A
-Dunkin' | Tioga Downs Casino Resort,"2384 W River Rd, Nichols, NY 13812",0,N/A
 Charlie's Cafe,"205 Hoffman St, Elmira, NY 14905",4.4,2
 Anderson's Cozy Corner,"416 W Washington Ave, Elmira, NY 14901",4.2,1
 Vincenzo's,"303 N Main St, Elmira, NY 14901",4.4,2

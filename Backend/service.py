@@ -30,7 +30,7 @@ with open("output_lat_lon.txt", "r") as file:
 output_file = 'restaurant_data.csv'
 
 # Define the headers for the CSV file
-headers = ['Name', 'Address', 'Rating [1-5]', 'Price Level [1-4]', 'Opening Hours']
+headers = ['Name', 'Address', 'Rating [1-5]', 'Price Level [1-4]']
 
 # Geolocator
 geolocator = Nominatim(user_agent="myGeocoder")
