@@ -30,7 +30,7 @@ with open("output_lat_lon.txt", "r") as file:
 output_file = 'restaurant_data.csv'
 
 # Define the headers for the CSV file
-headers = ['Name', 'Address']
+headers = ['Name', 'Address', 'Rating [1-5]', 'Price Level [1-4]', 'Opening Hours']
 
 # Geolocator
 geolocator = Nominatim(user_agent="myGeocoder")
@@ -69,14 +69,9 @@ for data in lat_long_list:
     with open(output_file, 'a', newline='') as file:
             writer = csv.writer(file)
             for place in places['results']:
-                if place.get('formatted_address') is None:
-                    if not place['name'] in restaurants_seen and isEnglish(place['name']):
-                        restaurants_seen.append(place['name'])
-                        writer.writerow([place['name'], 'No address available'])
-                else:
-                    if not place['name'] in restaurants_seen and isEnglish(place['name']) and isEnglish(place['formatted_address']):
-                        restaurants_seen.append(place['name'])
-                        writer.writerow([place['name'], place['formatted_address']])                     
+                if not place in restaurants_seen and isEnglish(place['name']):
+                    restaurants_seen.append(place)
+                    writer.writerow([place.get('name', 'N/A'),place.get('formatted_address', 'N/A'), place.get('rating', 'N/A'), place.get('price_level', 'N/A'), place.get('opening_hours', {}).get('weekday_text', 'N/A')])                
     
     # get more results, but the API will only allow for 40 so only do it once
     # page_token = places['next_page_token']
