@@ -36,7 +36,7 @@ headers = ['Name', 'Address', 'Rating [1-5]', 'Price Level [1-4]', 'Opening Hour
 geolocator = Nominatim(user_agent="myGeocoder")
 
 # initialize some stuff
-restaurants_seen = list()
+restaurants_dict = dict()
 
 # Write the headers to the CSV file
 with open(output_file, 'w', newline='') as file:
@@ -69,9 +69,10 @@ for data in lat_long_list:
     with open(output_file, 'a', newline='') as file:
             writer = csv.writer(file)
             for place in places['results']:
-                if not place in restaurants_seen and isEnglish(place['name']):
-                    restaurants_seen.append(place)
-                    writer.writerow([place.get('name', 'N/A'),place.get('formatted_address', 'N/A'), place.get('rating', 'N/A'), place.get('price_level', 'N/A'), place.get('opening_hours', {}).get('weekday_text', 'N/A')])                
+                place_id = place['place_id']
+                if place_id not in restaurants_dict and isEnglish(place['name']):
+                    restaurants_dict[place_id] = place
+                    writer.writerow([place.get('name', 'N/A'), place.get('formatted_address', 'N/A'), place.get('rating', 'N/A'), place.get('price_level', 'N/A')])
     
     # get more results, but the API will only allow for 40 so only do it once
     # page_token = places['next_page_token']
@@ -92,4 +93,4 @@ for data in lat_long_list:
     #                     writer.writerow([place['name'], place['formatted_address']])
 print(restaurants_seen)
 print("Length of list")
-print(len(restaurants_seen))
+print(len(restaurants_dict))
