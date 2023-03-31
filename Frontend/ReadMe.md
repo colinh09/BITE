@@ -12,7 +12,8 @@
 **Commands**
 
 *To push to github run these commands*
-<li>
-    <ul>git add . (this will add all the files you made changes to. If you want to only add specific files do git add filename1 filename2 etc)</ul>
-    <ul>git commit -m "descriptive message about commit"</ul>
-    <ul>git push origin main</ul>
+<ol>
+    <li>git add . (this will add all the files you made changes to. If you want to only add specific files do git add filename1 filename2 etc)</li>
+    <li>git commit -m "descriptive message about commit"</li>
+    <li>git push origin main</li>
+</ol>
