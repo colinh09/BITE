@@ -165,49 +165,55 @@ The `Rating` collection represents the ratings and reviews submitted by users fo
 
 * Route: `/search-restaurants`
 * Method: `GET`
+* Description: Retrieve restaurants based on their star and price ratings.
 * Query Parameters:
-  * `minStar`: Minimum average user rating.
-  * `maxStar`: Maximum average user rating.
-  * `minPrice`: Minimum
-- `maxPrice`: Maximum price rating (float)
+  * `minStar`: Minimum star rating (float)
+  * `maxStar`: Maximum star rating (float)
+  * `minPrice`: Minimum price rating (float)
+  * `maxPrice`: Maximum price rating (float)
 
-### `GET /restaurants`
+#### Get All Restaurants
 
-Get all restaurants.
+* Route: `/restaurants`
+* Method: `GET`
+* Description: Get all restaurants.
 
-### `POST /restaurants`
+#### Add a New Restaurant
 
-Create a new restaurant.
+* Route: `/restaurants`
+* Method: `POST`
+* Description: Create a new restaurant.
+* Request Body:
+  * `name`: Restaurant name (string)
+  * `location`: Restaurant location (string)
+  * `average_user_rating`: Average user rating (float)
+  * `average_price_rating`: Average price rating (float)
 
-**Request Body:**
-- `name`: Restaurant name (string)
-- `location`: Restaurant location (string)
-- `average_user_rating`: Average user rating (float)
-- `average_price_rating`: Average price rating (float)
+#### Get a Specific Restaurant
 
-### `GET /restaurants/:id`
+* Route: `/restaurants/:id`
+* Method: `GET`
+* Description: Get a specific restaurant by ID.
+* URL Parameters:
+  * `id`: Restaurant ID (string)
 
-Get a specific restaurant by ID.
+#### Update a Restaurant
 
-**URL Parameters:**
-- `id`: Restaurant ID (string)
+* Route: `/restaurants/:id`
+* Method: `PATCH`
+* Description: Update a restaurant by ID.
+* URL Parameters:
+  * `id`: Restaurant ID (string)
+* Request Body:
+  * `name` (optional): Restaurant name (string)
+  * `location` (optional): Restaurant location (string)
+  * `average_user_rating` (optional): Average user rating (float)
+  * `average_price_rating` (optional): Average price rating (float)
 
-### `PATCH /restaurants/:id`
+#### Delete a Restaurant
 
-Update a restaurant by ID.
-
-**URL Parameters:**
-- `id`: Restaurant ID (string)
-
-**Request Body:**
-- `name` (optional): Restaurant name (string)
-- `location` (optional): Restaurant location (string)
-- `average_user_rating` (optional): Average user rating (float)
-- `average_price_rating` (optional): Average price rating (float)
-
-### `DELETE /restaurants/:id`
-
-Delete a restaurant by ID.
-
-**URL Parameters:**
-- `id`: Restaurant ID (string)
+* Route: `/restaurants/:id`
+* Method: `DELETE`
+* Description: Delete a restaurant by ID.
+* URL Parameters:
+  * `id`: Restaurant ID (string)
