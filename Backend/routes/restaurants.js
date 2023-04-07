@@ -2,6 +2,24 @@ const express = require('express');
 const router = express.Router();
 const Restaurant = require('../models/Restaurant');
 
+// GET restaurants by star and price ratings
+router.get('/search-restaurants', async (req, res) => {
+  console.log(req.query);
+  const { minStar, maxStar, minPrice, maxPrice } = req.query;
+  console.log(`minStar: ${minStar}, maxStar: ${maxStar}, minPrice: ${minPrice}, maxPrice: ${maxPrice}`);
+  try {
+    const query = {
+      average_user_rating: { $gte: parseFloat(minStar), $lte: parseFloat(maxStar) },
+      average_price_rating: { $gte: parseFloat(minPrice), $lte: parseFloat(maxPrice) },
+    };
+
+    const restaurants = await Restaurant.find(query);
+    res.json(restaurants);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 // GET all restaurants
 router.get('/', async (req, res) => {
   try {
@@ -50,6 +68,10 @@ router.delete('/:id', getRestaurantById, async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+
+
+
+
 
 async function getRestaurantById(req, res, next) {
   let restaurant;

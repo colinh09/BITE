@@ -1,6 +1,50 @@
 const express = require('express');
 const router = express.Router();
 const Rating = require('../models/Rating');
+const User = require('../models/User');
+const mongoose = require('mongoose');
+
+router.get('/search-ratings', async (req, res) => {
+  const { publicOnly, privateOnly, userId } = req.query;
+
+  try {
+    let query = {};
+
+    if (publicOnly === 'true' && privateOnly === 'true') {
+      const user = await User.findById(userId);
+      const friendIds = user.friends.map(friend => new mongoose.Types.ObjectId(friend));
+      query = {
+        $or: [
+          { public_review: true },
+          {
+            $and: [
+              { public_review: false },
+              { user_id: { $in: friendIds } },
+            ],
+          },
+        ],
+      };
+    } else if (publicOnly === 'true') {
+      query.public_review = true;
+    } else if (privateOnly === 'true') {
+      const user = await User.findById(userId);
+      const friendIds = user.friends.map(friend => new mongoose.Types.ObjectId(friend));
+      query = {
+        $and: [
+          { public_review: false },
+          { user_id: { $in: friendIds } },
+        ],
+      };
+    }
+
+    const ratings = await Rating.find(query);
+    res.json(ratings);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+
 
 // GET all ratings
 router.get('/', async (req, res) => {

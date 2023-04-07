@@ -13,6 +13,18 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  friends: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+  }],
+  wantsToTry: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Restaurant',
+  }],
+  haveBeenTo: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Restaurant',
+  }],
 });
 
 const User = mongoose.model('User', UserSchema, 'users');

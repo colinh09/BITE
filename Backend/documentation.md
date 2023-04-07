@@ -34,3 +34,180 @@ The `Rating` collection represents the ratings and reviews submitted by users fo
 - **price_level** (Number, required): The price level rating given by the user.
 - **repeat_visit** (Boolean, required): Whether the user would visit the restaurant
 - **public_review** (Boolean, required): Whether the review is publicly visible or not.
+
+## Routes
+
+### Ratings
+
+#### Search Ratings
+
+* Route: `/search-ratings`
+* Method: `GET`
+* Query Parameters:
+  * `publicOnly`: If 'true', only returns public ratings.
+  * `privateOnly`: If 'true', only returns private ratings.
+  * `userId`: The user ID for the current user.
+* Description: Get a list of ratings based on specified query parameters.
+
+#### Get All Ratings
+
+* Route: `/`
+* Method: `GET`
+* Description: Get a list of all ratings.
+
+#### Add a New Rating
+
+* Route: `/`
+* Method: `POST`
+* Description: Add a new rating.
+
+#### Get a Specific Rating
+
+* Route: `/:id`
+* Method: `GET`
+* Description: Get a specific rating by ID.
+
+#### Update a Rating
+
+* Route: `/:id`
+* Method: `PATCH`
+* Description: Update a specific rating by ID.
+
+#### Delete a Rating
+
+* Route: `/:id`
+* Method: `DELETE`
+* Description: Delete a specific rating by ID.
+
+### Users
+
+#### Get All Users
+
+* Route: `/`
+* Method: `GET`
+* Description: Get a list of all users.
+
+#### Add a New User
+
+* Route: `/`
+* Method: `POST`
+* Description: Add a new user.
+
+#### Get a Specific User
+
+* Route: `/:id`
+* Method: `GET`
+* Description: Get a specific user by ID.
+
+#### Update a User
+
+* Route: `/:id`
+* Method: `PATCH`
+* Description: Update a specific user by ID.
+
+#### Delete a User
+
+* Route: `/:id`
+* Method: `DELETE`
+* Description: Delete a specific user by ID and remove associated data.
+
+#### Get All Ratings by a Specific User
+
+* Route: `/:id/ratings`
+* Method: `GET`
+* Description: Get all ratings by a specific user.
+
+#### Add a Restaurant to WantsToTry
+
+* Route: `/:id/wants-to-try/add`
+* Method: `PUT`
+* Description: Add a restaurant to the wantsToTry list for a specific user.
+
+#### Delete a Restaurant from WantsToTry
+
+* Route: `/:id/wants-to-try/delete`
+* Method: `PUT`
+* Description: Delete a restaurant from the wantsToTry list for a specific user.
+
+#### Add a Restaurant to HaveBeenTo
+
+* Route: `/:id/have-been-to/add`
+* Method: `PUT`
+* Description: Add a restaurant to the haveBeenTo list for a specific user.
+
+#### Delete a Restaurant from HaveBeenTo
+
+* Route: `/:id/have-been-to/delete`
+* Method: `PUT`
+* Description: Delete a restaurant from the haveBeenTo list for a specific user.
+
+#### View a Friend's HaveBeenTo and WantToTry Lists
+
+* Route: `/:id/friends/:friendId/lists`
+* Method: `GET`
+* Description: View a friend's haveBeenTo and wantToTry lists.
+
+#### Add Friend
+
+* Route: `/:id/friends/add`
+* Method: `PUT`
+* Description: Add a friend to a specific user's friend list.
+
+#### Delete Friend
+
+* Route: `/:id/friends/delete`
+* Method: `PUT`
+* Description: Delete a friend from a specific user's friend list.
+
+### Restaurants
+
+#### Search Restaurants
+
+* Route: `/search-restaurants`
+* Method: `GET`
+* Query Parameters:
+  * `minStar`: Minimum average user rating.
+  * `maxStar`: Maximum average user rating.
+  * `minPrice`: Minimum
+- `maxPrice`: Maximum price rating (float)
+
+### `GET /restaurants`
+
+Get all restaurants.
+
+### `POST /restaurants`
+
+Create a new restaurant.
+
+**Request Body:**
+- `name`: Restaurant name (string)
+- `location`: Restaurant location (string)
+- `average_user_rating`: Average user rating (float)
+- `average_price_rating`: Average price rating (float)
+
+### `GET /restaurants/:id`
+
+Get a specific restaurant by ID.
+
+**URL Parameters:**
+- `id`: Restaurant ID (string)
+
+### `PATCH /restaurants/:id`
+
+Update a restaurant by ID.
+
+**URL Parameters:**
+- `id`: Restaurant ID (string)
+
+**Request Body:**
+- `name` (optional): Restaurant name (string)
+- `location` (optional): Restaurant location (string)
+- `average_user_rating` (optional): Average user rating (float)
+- `average_price_rating` (optional): Average price rating (float)
+
+### `DELETE /restaurants/:id`
+
+Delete a restaurant by ID.
+
+**URL Parameters:**
+- `id`: Restaurant ID (string)
