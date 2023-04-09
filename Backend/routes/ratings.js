@@ -3,6 +3,9 @@ const router = express.Router();
 const Rating = require('../models/Rating');
 const User = require('../models/User');
 const mongoose = require('mongoose');
+const authenticate = require('../authMiddleware.js');
+
+router.use(authenticate);
 
 router.get('/search-ratings', async (req, res) => {
   const { publicOnly, privateOnly, userId } = req.query;

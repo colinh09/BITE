@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const Restaurant = require('../models/Restaurant');
+const authenticate = require('../authMiddleware.js'); 
+
+router.use(authenticate);
 
 // GET restaurants by star and price ratings
 router.get('/search-restaurants', async (req, res) => {

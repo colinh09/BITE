@@ -25,6 +25,10 @@ const UserSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Restaurant',
   }],
+  favorites: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Restaurant',
+  }],
 });
 
 const User = mongoose.model('User', UserSchema, 'users');
