@@ -5,6 +5,29 @@ const authenticate = require('../authMiddleware.js');
 
 router.use(authenticate);
 
+router.get('/search', async (req, res) => {
+  const searchTerm = req.query.q || '';
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
+  const regex = new RegExp(searchTerm, 'i');
+
+  try {
+    const filteredRestaurants = await Restaurant.find({ name: regex })
+      .skip((page - 1) * limit)
+      .limit(limit);
+    const totalFilteredRestaurants = await Restaurant.countDocuments({ name: regex });
+    res.json({
+      totalPages: Math.ceil(totalFilteredRestaurants / limit),
+      currentPage: page,
+      limit: limit,
+      data: filteredRestaurants,
+    });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+
 // GET restaurants by star and price ratings
 router.get('/search-restaurants', async (req, res) => {
   console.log(req.query);

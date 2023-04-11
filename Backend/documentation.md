@@ -13,6 +13,9 @@ The `User` collection represents the users of the application. Each user has the
 - **username** (String, required): The username of the user.
 - **email** (String, required): The email address of the user.
 - **password** (String, required): The password of the user (hashed and stored securely).
+- **friends** (List of User Object Ids): List of all the user's friends
+- **wantsToTry** (List of Restaurant Object Ids): List of all the restauarants the user wants to try.
+- **haveBeenTo** (List of Restaurant Object Ids): List of all the restauarants the user has been to.
 
 ### Restaurant
 
@@ -117,6 +120,12 @@ The `Rating` collection represents the ratings and reviews submitted by users fo
 * Method: `GET`
 * Description: Get all ratings by a specific user.
 
+#### Get User's WantsToTry List
+
+* Route: `/:id/wants-to-try`
+* Method: `GET`
+* Description: Get a user's wantsToTry list.
+
 #### Add a Restaurant to WantsToTry
 
 * Route: `/:id/wants-to-try/add`
@@ -128,6 +137,12 @@ The `Rating` collection represents the ratings and reviews submitted by users fo
 * Route: `/:id/wants-to-try/delete`
 * Method: `PUT`
 * Description: Delete a restaurant from the wantsToTry list for a specific user.
+
+#### Get User's HaveBeenTo List
+
+* Route: `/:id/have-been-to`
+* Method: `GET`
+* Description: Get a user's haveBeenTo list.
 
 #### Add a Restaurant to HaveBeenTo
 
@@ -141,11 +156,29 @@ The `Rating` collection represents the ratings and reviews submitted by users fo
 * Method: `PUT`
 * Description: Delete a restaurant from the haveBeenTo list for a specific user.
 
-#### View a Friend's HaveBeenTo and WantToTry Lists
+#### Get User's Favorites List
+
+* Route: `/:id/favorites`
+* Method: `GET`
+* Description: Get a user's favorites list.
+
+#### Add a Restaurant to Favorites
+
+* Route: `/:id/favorites/add`
+* Method: `PUT`
+* Description: Add a restaurant to the favorites list for a specific user.
+
+#### Delete a Restaurant from Favorites
+
+* Route: `/:id/favorites/delete`
+* Method: `PUT`
+* Description: Delete a restaurant from the favorites list for a specific user.
+
+#### View a Friend's HaveBeenTo, WantToTry, and Favorites Lists
 
 * Route: `/:id/friends/:friendId/lists`
 * Method: `GET`
-* Description: View a friend's haveBeenTo and wantToTry lists.
+* Description: View a friend's haveBeenTo, wantToTry, and favorites lists.
 
 #### Add Friend
 
