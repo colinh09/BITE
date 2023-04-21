@@ -183,36 +183,44 @@ const EditableLists = ({ userId, idToken }) => {
           <button onClick={() => handleAddToList(listType)} disabled={!listType || !selectedRestaurant}>
             Add to List
           </button>
-          {[{ title: 'Wants to Try', data: wantsToTry },
-          { title: 'Have Been To', data: haveBeenTo },
-          { title: 'Favorites', data: favorites }].map((list) => (
-            <div key={list.title}>
-              <h1>{list.title}</h1>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Location</th>
-                    <th>Action</th>
+          {[
+        { title: 'Wants to Try', data: wantsToTry },
+        { title: 'Have Been To', data: haveBeenTo },
+        { title: 'Favorites', data: favorites }
+      ].map((list) => (
+        <div key={list.title}>
+          <h1>{list.title}</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Array.isArray(list.data) ? (
+                list.data.map((restaurant) => (
+                  <tr key={restaurant._id}>
+                    <td>{restaurant.name}</td>
+                    <td>{restaurant.location}</td>
+                    <td>
+                      <button onClick={() => deleteFromList(list.title.toLowerCase().replace(/ /g, '-'), restaurant._id)}>
+                        Delete
+                      </button>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {list.data.map((restaurant) => (
-                    <tr key={restaurant._id}>
-                      <td>{restaurant.name}</td>
-                      <td>{restaurant.location}</td>
-                      <td>
-                        <button onClick={() => deleteFromList(list.title.toLowerCase().replace(/ /g, '-'), restaurant._id)}>
-                          Delete
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          ))}
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="3">No data available</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
         </div>
+      ))}
+    </div>
       );
     };
 

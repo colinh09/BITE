@@ -15,6 +15,14 @@ const RestaurantSchema = new mongoose.Schema({
   average_user_rating: {
     type: Number,
   },
+  latitude: {
+    type: Number,
+    required: true,
+  },
+  longitude: {
+    type: Number,
+    required: true,
+  },
 });
 
 const Restaurant = mongoose.model('Restaurant', RestaurantSchema, 'restaurants');

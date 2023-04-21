@@ -27,10 +27,10 @@ with open("output_lat_lon.txt", "r") as file:
         lat_long_list.append([float(latitude), float(longitude)])
 
 # Define the output file name
-output_file = 'restaurant_data.csv'
+output_file = 'restaurant_data2.csv'
 
 # Define the headers for the CSV file
-headers = ['Name', 'Address', 'Rating [1-5]', 'Price Level [1-4]']
+headers = ['Name', 'Address', 'Rating [1-5]', 'Price Level [1-4]', 'Latitude', 'Longitude']
 
 # Geolocator
 geolocator = Nominatim(user_agent="myGeocoder")
@@ -71,8 +71,10 @@ for data in lat_long_list:
             for place in places['results']:
                 place_id = place['place_id']
                 if place_id not in restaurants_dict and isEnglish(place['name']):
+                    latitude = place['geometry']['location']['lat']
+                    longitude = place['geometry']['location']['lng']
                     restaurants_dict[place_id] = place
-                    writer.writerow([place.get('name', 'N/A'), place.get('formatted_address', 'N/A'), place.get('rating', 'N/A'), place.get('price_level', 'N/A')])
+                    writer.writerow([place.get('name', 'N/A'), place.get('formatted_address', 'N/A'), place.get('rating', 'N/A'), place.get('price_level', 'N/A'), latitude, longitude])
     
     # get more results, but the API will only allow for 40 so only do it once
     # page_token = places['next_page_token']
@@ -91,6 +93,5 @@ for data in lat_long_list:
     #                 if not place['name'] in restaurants_seen and isEnglish(place['name']) and isEnglish(place['formatted_address']):
     #                     restaurants_seen.append(place['name'])
     #                     writer.writerow([place['name'], place['formatted_address']])
-print(restaurants_seen)
 print("Length of list")
 print(len(restaurants_dict))

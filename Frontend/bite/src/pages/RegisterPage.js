@@ -12,10 +12,10 @@ const RegisterPage = () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       console.log('User registered with Firebase:', userCredential);
-      return true;
+      return userCredential;
     } catch (error) {
       console.error('Error registering user with Firebase:', error);
-      return false;
+      return null;
     }
   };
 
