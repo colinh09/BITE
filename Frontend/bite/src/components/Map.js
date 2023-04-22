@@ -1,51 +1,59 @@
-import React, { useState, useEffect } from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import React, { useState } from "react";
+import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "400px"
+  height: "400px",
 };
 
 const defaultCenter = {
-  lat: 40.730610,
-  lng: -73.935242
+  lat: 40.73061,
+  lng: -73.935242,
 };
 
 function Map({ restaurants }) {
   const [map, setMap] = useState(null);
-
-  useEffect(() => {
-    // Fetch the restaurants data from your MongoDB collection here
-  }, []);
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: "AIzaSyCpNT8X2EQ48kkPJEvAuLCWBYqPkyApfC0",
+    libraries: ["places"],
+  });
 
   const onLoad = (mapInstance) => {
     setMap(mapInstance);
   };
 
-  const renderMarkers = () => {
+  const renderMarkers = (mapInstance) => {
+    console.log(restaurants);
     return restaurants.map((restaurant) => (
       <Marker
         key={restaurant._id}
         position={{
-          lat: restaurant.geometry.location.lat,
-          lng: restaurant.geometry.location.lng
+          lat: restaurant.latitude,
+          lng: restaurant.longitude,
         }}
         label={restaurant.name}
+        map={mapInstance}
       />
     ));
   };
 
+  if (loadError) {
+    return <div>Error loading map</div>;
+  }
+
+  if (!isLoaded) {
+    return <div>Loading map...</div>;
+  }
+
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCpNT8X2EQ48kkPJEvAuLCWBYqPkyApfC0">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={defaultCenter}
-        zoom={10}
-        onLoad={onLoad}
-      >
-        {map && renderMarkers()}
-      </GoogleMap>
-    </LoadScript>
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={defaultCenter}
+      zoom={10}
+      onLoad={onLoad}
+    >
+      {map && renderMarkers(map)}
+    </GoogleMap>
   );
 }
 

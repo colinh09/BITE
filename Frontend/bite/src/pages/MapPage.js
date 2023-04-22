@@ -30,9 +30,7 @@ function MapPage() {
 
         const response = await fetch("/api/restaurants", requestOptions);
         const data = await response.json();
-        setRestaurantData(data.slice(0, 2));
-
-        setRestaurantData(data);
+        setRestaurantData(data.slice(0, 10));
       } catch (error) {
         console.error("Error fetching restaurant data:", error);
       }
@@ -42,6 +40,10 @@ function MapPage() {
       unsubscribe();
     };
   }, []);
+
+  // useEffect(() => {
+  //   console.log(restaurantData);
+  // }, [restaurantData]);
 
   return (
     <div className="Map Page">
