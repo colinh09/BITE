@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Map from "../components/Map";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import styles from "./MapPage.css";
 
 function MapPage() {
-  const [restaurantData, setRestaurantData] = useState([]);
+  const [wantsToTry, setWantsToTry] = useState([]);
+  const [haveBeenTo, setHaveBeenTo] = useState([]);
+  const [favorites, setFavorites] = useState([]);
+  const userId = localStorage.getItem("userId");
+  const idToken = localStorage.getItem("idToken");
 
   useEffect(() => {
-    const auth = getAuth();
+    if (userId) {
+      fetchLists(userId, idToken);
+    } else {
+      console.log("User is not logged in");
+    }
 
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        await fetchRestaurants(user);
-      } else {
-        console.log("User is not logged in");
-      }
-    });
-
-    async function fetchRestaurants(user) {
+    async function fetchLists(userId, idToken) {
       try {
-        const idToken = await user.getIdToken(true);
-
         const requestOptions = {
           method: "GET",
           headers: {
@@ -28,26 +26,26 @@ function MapPage() {
           },
         };
 
-        const response = await fetch("/api/restaurants", requestOptions);
-        const data = await response.json();
-        setRestaurantData(data.slice(0, 10));
+        const wantsToTryRes = await fetch(`/api/users/${userId}/wants-to-try`, requestOptions);
+        const wantsToTryData = await wantsToTryRes.json();
+        if (wantsToTryData) setWantsToTry(wantsToTryData);
+
+        const haveBeenToRes = await fetch(`/api/users/${userId}/have-been-to`, requestOptions);
+        const haveBeenToData = await haveBeenToRes.json();
+        if (haveBeenToData) setHaveBeenTo(haveBeenToData);
+
+        const favoritesRes = await fetch(`/api/users/${userId}/favorites`, requestOptions);
+        const favoritesData = await favoritesRes.json();
+        if (favoritesData) setFavorites(favoritesData);
       } catch (error) {
-        console.error("Error fetching restaurant data:", error);
+        console.error("Error fetching list data:", error);
       }
     }
-
-    return () => {
-      unsubscribe();
-    };
-  }, []);
-
-  // useEffect(() => {
-  //   console.log(restaurantData);
-  // }, [restaurantData]);
+  }, [userId, idToken]);
 
   return (
-    <div className="Map Page">
-      <Map restaurants={restaurantData} />
+    <div className={styles.MapPage}>
+      <Map wantsToTry={wantsToTry} haveBeenTo={haveBeenTo} favorites={favorites} />
     </div>
   );
 }

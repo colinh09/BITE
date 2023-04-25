@@ -53,16 +53,16 @@ const EditableLists = ({ userId, idToken }) => {
             });
             const haveBeenToData = await haveBeenToRes.json();
             setHaveBeenTo(haveBeenToData);
-        } catch (error) {
-            console.error("Error fetching lists:", error);
-        }
-        const favoritesRes = await fetch(`api/users/${userId}/favorites`, {
-            headers: {
-            Authorization: `Bearer ${idToken}`,
-            },
-        });
-        const favoritesData = await favoritesRes.json();
-        setFavorites(favoritesData);
+          } catch (error) {
+              console.error("Error fetching lists:", error);
+          }
+          const favoritesRes = await fetch(`api/users/${userId}/favorites`, {
+              headers: {
+              Authorization: `Bearer ${idToken}`,
+              },
+          });
+          const favoritesData = await favoritesRes.json();
+          setFavorites(favoritesData);
     };
 
     const fetchFilteredRestaurants = useCallback(async (inputValue) => {
