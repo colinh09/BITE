@@ -98,9 +98,19 @@ router.delete('/:id', getRatingById, async (req, res) => {
   }
 });
 
+router.get('/restaurant/:id/reviews', async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const reviews = await Rating.find({ restaurant_id: id });
+    res.json(reviews);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 async function getRatingById(req, res, next) {
   let rating;
-
   try {
     rating = await Rating.findById(req.params.id);
     if (!rating) {

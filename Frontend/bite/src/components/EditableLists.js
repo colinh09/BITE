@@ -16,26 +16,6 @@ const EditableLists = ({ userId, idToken }) => {
         { value: 'favorites', label: 'Favorites' },
     ];
 
-    // const fetchRestaurants = async () => {
-    //     try {
-    //         const res = await fetch('api/restaurants', {
-    //             headers: {
-    //             Authorization: `Bearer ${idToken}`,
-    //             },
-    //         });
-    //         const data = await res.json();
-    //         console.log(data);
-    //         setRestaurants(
-    //             data.map((restaurant) => ({
-    //             value: restaurant._id,
-    //             label: restaurant.name,
-    //             })),
-    //         );
-    //     } catch (error) {
-    //       console.error('Error fetching restaurants:', error);
-    //     }
-    // };
-
     const fetchLists = async () => {
         try {
             const wantsToTryRes = await fetch(`api/users/${userId}/wants-to-try`, {
