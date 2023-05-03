@@ -305,6 +305,21 @@ router.get('/:id/friend-count', getUserById, (req, res) => {
   });
 });
 
+// validate password
+router.post('/:id/validate-password', getUserById, async (req, res) => {
+  const { password } = req.body;
+  try {
+    if (res.user.password === password) {
+      res.json({ isValid: true });
+    } else {
+      res.json({ isValid: false });
+    }
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+
 
 // Middleware for commonly used queries
 async function getUserById(req, res, next) {

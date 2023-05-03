@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { AiOutlineSetting } from 'react-icons/ai'; // Make sure to install react-icons
 import './TasteProfile.css';
+import ProfileSettings from '../components/ProfileSettings';
 
 function TasteProfile() {
   const [user, setUser] = useState(null);
+  const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,17 +22,26 @@ function TasteProfile() {
     fetchData();
   }, []);
 
-  if (!user) return <div>User not found...</div>;
+  if (!user) return <div>Loading Page...</div>;
 
   return (
     <div className="taste-profile">
-      <h1>{user.username}</h1>
-      <p>Dietary Restrictions: {user.dietaryRestrictions.join(', ') || 'None'}</p>
-      <p>City: {user.city}</p>
-      <p>State: {user.state}</p>
-      <p>Number of Friends: {user.friends.length}</p>
-      <p>Number of Restaurants Visited: {user.haveBeenTo.length}</p>
-      {/* Add the settings popup component here */}
+      <div className="profile-container">
+        <div className="profile-info">
+            <h1 className="welcome-message">Hello {user.username}.</h1>
+            <p className="welcome-subtitle">Below are your taste profile and stats!</p>
+            <p><span className="key">Dietary Restrictions:</span> {user.dietaryRestrictions.join(', ') || 'None'}</p>
+            <p><span className="key">City:</span> {user.city}</p>
+            <p><span className="key">State:</span> {user.state}</p>
+            <p><span className="key">Number of Friends:</span> {user.friends.length}</p>
+            <p><span className="key">Number of Restaurants Visited:</span> {user.haveBeenTo.length}</p>
+        </div>
+        <div className="profile-settings">
+            <h1 className="welcome-message">Changed your mind about something?</h1>
+            <p className="welcome-subtitle">Edit it here:</p>
+            <ProfileSettings userId={user._id} idToken={localStorage.getItem('idToken')} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,50 @@
 .taste-profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.taste-profile h1 {
+  color: #F3684A;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.taste-profile p {
+  font-size: 24px;
+  margin-bottom: 3rem;
+}
+
+.taste-profile .key {
+  color: #F3684A;
+}
+
+
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-subtitle {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.profile-info {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.profile-settings {
+  flex: 1;
+  margin-left: 2rem;
+}

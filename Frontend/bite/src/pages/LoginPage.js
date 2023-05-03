@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { Link } from 'react-router-dom';
+import './LoginPage.css';
+import logo from '../assets/munchr.png';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -28,9 +30,8 @@ const LoginPage = () => {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const idToken = await userCredential.user.getIdToken();
       localStorage.setItem('idToken', idToken);
-      const user = await getUserByEmail(email, idToken); // Pass idToken here
+      const user = await getUserByEmail(email, idToken);
       localStorage.setItem('userId', user._id);
-      // Redirect to the Lists page
       window.location.href = '/lists';
     } catch (error) {
       alert('Invalid email or password');
@@ -39,25 +40,27 @@ const LoginPage = () => {
 
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={loginUser}>
+    <div className="login-container">
+      <div className="logo" style={{ backgroundImage: `url(${logo})` }}></div>
+      <form onSubmit={loginUser} className="login-form">
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="username-field"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="password-field"
         />
-        <button type="submit">Login</button>
+        <button type="submit" className="login-button">Login</button>
       </form>
-      <p>
-        Don't have an account? <Link to="/register">Register</Link>
+      <p className="register-link">
+        Don't have an account? <Link to="/register" className="register-link-text">Register</Link>
       </p>
     </div>
   );

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import Select from 'react-select';
+import './RegisterPage.css';
+import logo from '../assets/munchr.png';
 
 const RegisterPage = () => {
   const [username, setUsername] = useState('');
@@ -64,54 +66,60 @@ const RegisterPage = () => {
     'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose'
   ];
   return (
-    <div>
-      <h2>Register</h2>
-      <form onSubmit={createUser}>
+    <div className="register-container">
+      <div className="logo" style={{ backgroundImage: `url(${logo})` }}></div>
+      <form onSubmit={createUser} className="register-form">
+        <div className="section-title">General Info</div>
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          className="input-field"
         />
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="input-field"
         />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Select
-          isMulti
-          options={dietaryOptions}
-          value={dietaryRestrictions.map((restriction) => ({
-            value: restriction,
-            label: restriction.charAt(0).toUpperCase() + restriction.slice(1),
-          }))}
-          onChange={handleDietaryRestrictionsChange}
-        />
-        <select value={city} onChange={(e) => setCity(e.target.value)}>
-          <option value="">Select City</option>
-          {cities.map((city) => (
-            <option key={city} value={city.toLowerCase()}>{city}</option>
-          ))}
-        </select>
-        <select value={state} onChange={(e) => setState(e.target.value)}>
-          <option value="">Select State</option>
-          {usStates.map((state) => (
-            <option key={state} value={state}>{state}</option>
-          ))}
-        </select>
-        <button type="submit">Register</button>
-      </form>
-      <p>
-        Already have an account? <Link to="/">Login</Link>
-      </p>
-    </div>
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="input-field"
+      />
+      <div className="section-title">Flavor Profile</div>
+      <Select
+        isMulti
+        options={dietaryOptions}
+        value={dietaryRestrictions.map((restriction) => ({
+          value: restriction,
+          label: restriction.charAt(0).toUpperCase() + restriction.slice(1),
+        }))}
+        onChange={handleDietaryRestrictionsChange}
+        className="select-field"
+      />
+      <select value={city} onChange={(e) => setCity(e.target.value)} className="input-field">
+        <option value="">Select City</option>
+        {cities.map((city) => (
+          <option key={city} value={city.toLowerCase()}>{city}</option>
+        ))}
+      </select>
+      <select value={state} onChange={(e) => setState(e.target.value)} className="input-field">
+        <option value="">Select State</option>
+        {usStates.map((state) => (
+          <option key={state} value={state}>{state}</option>
+        ))}
+      </select>
+      <button type="submit" className="register-button">Register</button>
+    </form>
+    <p className="login-link">
+      Already have an account? <Link to="/" className="login-link-text">Login</Link>
+    </p>
+  </div>
   );
 };
 
