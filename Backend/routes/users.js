@@ -291,6 +291,19 @@ router.put('/:id/friends/delete', getUserById, async (req, res) => {
   }
 });
 
+// get the number of restaurants the user has been to
+router.get('/:id/restaurant-count', getUserById, (req, res) => {
+  res.json({
+    restaurantCount: res.user.haveBeenTo.length,
+  });
+});
+
+// get the number of friends the user has
+router.get('/:id/friend-count', getUserById, (req, res) => {
+  res.json({
+    friendCount: res.user.friends.length,
+  });
+});
 
 
 // Middleware for commonly used queries

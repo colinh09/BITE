@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import UsersLists from './pages/UserLists';
 import MapPage from './pages/MapPage';
+import TasteProfile from './pages/TasteProfile';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/lists" element={<UsersLists />} />
           <Route path="/map" element={<MapPage />} />
+          <Route path="/tasteprofile" element={<TasteProfile />} />
         </Routes>
       </div>
     </Router>

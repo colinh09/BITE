@@ -29,6 +29,18 @@ const UserSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Restaurant',
   }],
+  dietaryRestrictions: {
+    type: [String],
+    default: [],
+  },
+  city: {
+    type: String,
+    required: true,
+  },
+  state: {
+    type: String,
+    required: true,
+  },
 });
 
 const User = mongoose.model('User', UserSchema, 'users');

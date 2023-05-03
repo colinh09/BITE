@@ -15,6 +15,9 @@ const UserLists = () => {
         <Link to="/map">
           <button>Go to Map</button>
         </Link>
+        <Link to="/tasteprofile">
+          <button>To Taste Profile</button>
+        </Link>
       </div>
       <EditableLists userId={userId} idToken={idToken} />
     </div>
