@@ -1,14 +1,29 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../assets/munchr.png';
+import { getAuth, signOut } from 'firebase/auth';
 import './Navbar.css';
 
 const Navbar = () => {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const isActive = (path) => {
-      return location.pathname === path;
+        return location.pathname === path;
     };
+
+    const logout = async () => {
+        const auth = getAuth();
+        try {
+            await signOut(auth);
+            localStorage.removeItem('idToken');
+            localStorage.removeItem('userId');
+            navigate('/');
+        } catch (error) {
+            console.error('Error signing out:', error);
+        }
+    };
+
     return (
         <nav className="navbar">
         <div className="navbar-logo" style={{ backgroundImage: `url(${logo})` }}></div>
@@ -46,6 +61,14 @@ const Navbar = () => {
             </NavLink>
             </li>
         </ul>
+        <div className="logout-container">
+            <button
+                onClick={logout}
+                className={`navbar-link logout-button ${isActive('/logout') ? 'active-link' : ''}`}
+            >
+                Logout
+            </button>
+        </div>
         </nav>
     );
 };

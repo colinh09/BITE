@@ -42,7 +42,6 @@ const RegisterPage = () => {
         });
         const savedUser = await response.json();
         console.log('User created:', savedUser);
-        // Redirect to the login page or the desired authenticated page
       } catch (error) {
         console.error('Error creating user:', error);
       }
@@ -65,6 +64,34 @@ const RegisterPage = () => {
   const cities = [
     'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose'
   ];
+
+  const customSelectStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      borderColor: state.isFocused ? '#F3684A' : '#F3684A',
+      boxShadow: state.isFocused ? '0 0 0 2px rgba(243,104,74,0.5)' : '',
+      '&:hover': {
+        borderColor: '#F3684A',
+      },
+    }),
+    multiValue: (provided, state) => ({
+      ...provided,
+      backgroundColor: '#F3684A',
+    }),
+    multiValueLabel: (provided, state) => ({
+      ...provided,
+      color: '#FFFFFF',
+    }),
+    multiValueRemove: (provided, state) => ({
+      ...provided,
+      color: '#FFFFFF',
+      '&:hover': {
+        backgroundColor: '#F3684A',
+        color: '#FFFFFF',
+      },
+    }),
+  };
+
   return (
     <div className="register-container">
       <div className="logo" style={{ backgroundImage: `url(${logo})` }}></div>
@@ -101,6 +128,8 @@ const RegisterPage = () => {
         }))}
         onChange={handleDietaryRestrictionsChange}
         className="select-field"
+        styles={customSelectStyles}
+        placeholder="Select Your Dietary Restrictions"
       />
       <select value={city} onChange={(e) => setCity(e.target.value)} className="input-field">
         <option value="">Select City</option>

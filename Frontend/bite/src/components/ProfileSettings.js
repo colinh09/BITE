@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import Select from 'react-select';
 import './ProfileSettings.css';
+import { getAuth, signInWithEmailAndPassword, updatePassword } from 'firebase/auth';
 
 const ProfileSettings = ({ userId, idToken, showSettings }) => {
   const [user, setUser] = useState({});
@@ -71,12 +72,56 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
           },
           body: JSON.stringify(updatedUser),
         });
+        if (newPassword) {
+          const auth = getAuth();
+          signInWithEmailAndPassword(auth, user.email, password)
+            .then((userCredential) => {
+              const user = userCredential.user;
+              updatePassword(user, newPassword)
+                .then(() => {
+                  console.log('Password updated in Firebase');
+                })
+                .catch((error) => {
+                  console.error('Error updating password in Firebase:', error);
+                });
+            })
+            .catch((error) => {
+              console.error('Error signing in with email and password:', error);
+            });
+        }
       } else {
         alert('Incorrect password. Please try again.');
       }
     } catch (error) {
       console.error(error);
     }
+  };
+
+  const customSelectStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      borderColor: state.isFocused ? '#F3684A' : '#F3684A',
+      boxShadow: state.isFocused ? '0 0 0 2px rgba(243,104,74,0.5)' : '',
+      '&:hover': {
+        borderColor: '#F3684A',
+      },
+    }),
+    multiValue: (provided, state) => ({
+      ...provided,
+      backgroundColor: '#F3684A',
+    }),
+    multiValueLabel: (provided, state) => ({
+      ...provided,
+      color: '#FFFFFF',
+    }),
+    multiValueRemove: (provided, state) => ({
+      ...provided,
+      color: '#FFFFFF',
+      '&:hover': {
+        backgroundColor: '#F3684A',
+        color: '#FFFFFF',
+      },
+    }),
   };
 
   return (
@@ -114,6 +159,8 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
           }))}
           onChange={handleDietaryRestrictionsChange}
           className="select-field"
+          styles={customSelectStyles}
+          placeholder="Select Your Dietary Restrictions"
         />
         <select value={city} onChange={(e) => setCity(e.target.value)} className="input-field">
           <option value="">Select City</option>
