@@ -10,6 +10,8 @@ const EditableLists = ({ userId, idToken }) => {
     const [searchInput, setSearchInput] = useState('');
     const [listType, setListType] = useState('');
 
+    const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+
     const listTypes = [
         { value: 'wants-to-try', label: 'Wants to Try' },
         { value: 'have-been-to', label: 'Have Been To' },
@@ -18,7 +20,7 @@ const EditableLists = ({ userId, idToken }) => {
 
     const fetchLists = async () => {
         try {
-            const wantsToTryRes = await fetch(`api/users/${userId}/wants-to-try`, {
+            const wantsToTryRes = await fetch(apiUrl + `api/users/${userId}/wants-to-try`, {
                 headers: {
                 Authorization: `Bearer ${idToken}`,
                 },
@@ -26,7 +28,7 @@ const EditableLists = ({ userId, idToken }) => {
             const wantsToTryData = await wantsToTryRes.json();
             setWantsToTry(wantsToTryData);
 
-            const haveBeenToRes = await fetch(`api/users/${userId}/have-been-to`, {
+            const haveBeenToRes = await fetch(apiUrl + `api/users/${userId}/have-been-to`, {
                 headers: {
                 Authorization: `Bearer ${idToken}`,
                 },
@@ -36,7 +38,7 @@ const EditableLists = ({ userId, idToken }) => {
           } catch (error) {
               console.error("Error fetching lists:", error);
           }
-          const favoritesRes = await fetch(`api/users/${userId}/favorites`, {
+          const favoritesRes = await fetch(apiUrl + `api/users/${userId}/favorites`, {
               headers: {
               Authorization: `Bearer ${idToken}`,
               },
@@ -47,7 +49,7 @@ const EditableLists = ({ userId, idToken }) => {
 
     const fetchFilteredRestaurants = useCallback(async (inputValue) => {
         try {
-          const res = await fetch(`api/restaurants/search?q=${encodeURIComponent(inputValue)}`, {
+          const res = await fetch(apiUrl + `api/restaurants/search?q=${encodeURIComponent(inputValue)}`, {
             headers: {
               Authorization: `Bearer ${idToken}`,
             },
@@ -73,7 +75,7 @@ const EditableLists = ({ userId, idToken }) => {
 
     const addToList = async (listType, restaurantId) => {
         try {
-            await fetch(`api/users/${userId}/${listType}/add`, {
+            await fetch(apiUrl + `api/users/${userId}/${listType}/add`, {
                 method: "PUT",
                 headers: {
                 "Content-Type": "application/json",
@@ -89,7 +91,7 @@ const EditableLists = ({ userId, idToken }) => {
 
     const deleteFromList = async (listType, restaurantId) => {
         try {
-            await fetch(`api/users/${userId}/${listType}/delete`, {
+            await fetch(apiUrl + `api/users/${userId}/${listType}/delete`, {
                 method: "PUT",
                 headers: {
                 "Content-Type": "application/json",

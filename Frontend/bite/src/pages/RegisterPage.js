@@ -13,6 +13,8 @@ const RegisterPage = () => {
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
 
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+
   const registerUserWithFirebase = async (email, password) => {
     const auth = getAuth();
     try {
@@ -32,7 +34,7 @@ const RegisterPage = () => {
     if (userCredential) {
       const idToken = await userCredential.user.getIdToken();
       try {
-        const response = await fetch('/api/users/', {
+        const response = await fetch(apiUrl + '/api/users/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

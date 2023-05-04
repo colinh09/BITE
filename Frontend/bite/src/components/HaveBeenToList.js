@@ -7,9 +7,11 @@ const HaveBeenToList = ({ userId, idToken }) => {
     fetchHaveBeenToList(userId, idToken);
   }, [userId, idToken]);
 
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+  
   const fetchHaveBeenToList = async (userId, idToken) => {
     try {
-      const response = await fetch(`/api/users/${userId}/have-been-to`, {
+      const response = await fetch(apiUrl + `/api/users/${userId}/have-been-to`, {
         headers: {
           Authorization: `Bearer ${idToken}`,
         },

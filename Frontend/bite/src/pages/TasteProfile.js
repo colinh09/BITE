@@ -7,12 +7,14 @@ function TasteProfile() {
   const [user, setUser] = useState(null);
   const [showSettings, setShowSettings] = useState(false);
 
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+
   useEffect(() => {
     const fetchData = async () => {
       const userId = localStorage.getItem('userId');
       const idToken = localStorage.getItem('idToken');
 
-      const response = await fetch(`api/users/${userId}`, {
+      const response = await fetch(apiUrl + `api/users/${userId}`, {
         headers: { 'Authorization': `Bearer ${idToken}` },
       });
 

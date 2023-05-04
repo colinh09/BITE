@@ -37,6 +37,8 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
     libraries: ["places"],
   });
 
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+
   const onLoad = (mapInstance) => {
     setMap(mapInstance);
   };
@@ -52,7 +54,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
       };
 
       const reviewsRes = await fetch(
-        `/api/ratings/restaurant/${restaurantId}/reviews`,
+        apiUrl + `/api/ratings/restaurant/${restaurantId}/reviews`,
         requestOptions
       );
       const reviewsData = await reviewsRes.json();
@@ -64,7 +66,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
 
   const fetchFilteredRestaurants = useCallback(async (inputValue) => {
     try {
-        const res = await fetch(`api/restaurants/search?q=${encodeURIComponent(inputValue)}`, {
+        const res = await fetch(apiUrl + `api/restaurants/search?q=${encodeURIComponent(inputValue)}`, {
             headers: {
             Authorization: `Bearer ${idToken}`,
             },

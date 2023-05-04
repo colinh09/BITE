@@ -7,9 +7,11 @@ const FavoritesList = ({ userId, idToken }) => {
     fetchFavoritesList(userId, idToken);
   }, [userId, idToken]);
 
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+
   const fetchFavoritesList = async (userId, idToken) => {
     try {
-      const response = await fetch(`/api/users/${userId}/favorites`, {
+      const response = await fetch(apiUrl + `/api/users/${userId}/favorites`, {
         headers: {
           Authorization: `Bearer ${idToken}`,
         },

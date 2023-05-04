@@ -13,9 +13,11 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
 
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+
   useEffect(() => {
     const fetchUser = async () => {
-      const userRes = await fetch(`/api/users/${userId}`, {
+      const userRes = await fetch(apiUrl + `/api/users/${userId}`, {
         headers: { 'Authorization': `Bearer ${idToken}` },
       });
       const userData = await userRes.json();
@@ -45,7 +47,7 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
   const handlePasswordValidation = async (e) => {
     e.preventDefault();
     try {
-      const validationRes = await fetch(`/api/users/${userId}/validate-password`, {
+      const validationRes = await fetch(apiUrl + `/api/users/${userId}/validate-password`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +66,7 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
           city: city || user.city,
           state: state || user.state,
         };
-        await fetch(`/api/users/${userId}`, {
+        await fetch(apiUrl + `/api/users/${userId}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',
