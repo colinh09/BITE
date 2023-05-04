@@ -6,7 +6,7 @@
     "/api": {
       "target": "${REACT_APP_PUBLIC_URL}"
     }
-  }
+  },
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.16.5",
