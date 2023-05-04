@@ -7,8 +7,8 @@ const HaveBeenToList = ({ userId, idToken }) => {
     fetchHaveBeenToList(userId, idToken);
   }, [userId, idToken]);
 
-  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
-  
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
+
   const fetchHaveBeenToList = async (userId, idToken) => {
     try {
       const response = await fetch(apiUrl + `/api/users/${userId}/have-been-to`, {

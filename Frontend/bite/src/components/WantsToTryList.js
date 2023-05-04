@@ -3,7 +3,7 @@ import RestaurantList from './RestaurantList';
 
 const WantsToTryList = ({ userId }) => {
   const [wantsToTry, setWantsToTry] = useState([]);
-  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
   useEffect(() => {
     const fetchWantsToTry = async () => {
       const response = await fetch(apiUrl + `/api/users/${userId}/wants-to-try`, {

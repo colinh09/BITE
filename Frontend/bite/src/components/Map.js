@@ -37,7 +37,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
     libraries: ["places"],
   });
 
-  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
   const onLoad = (mapInstance) => {
     setMap(mapInstance);

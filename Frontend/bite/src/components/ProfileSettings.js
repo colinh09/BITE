@@ -13,7 +13,7 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
 
-  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
   useEffect(() => {
     const fetchUser = async () => {

@@ -7,7 +7,7 @@ function TasteProfile() {
   const [user, setUser] = useState(null);
   const [showSettings, setShowSettings] = useState(false);
 
-  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
   useEffect(() => {
     const fetchData = async () => {

@@ -7,7 +7,7 @@ const FavoritesList = ({ userId, idToken }) => {
     fetchFavoritesList(userId, idToken);
   }, [userId, idToken]);
 
-  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
   const fetchFavoritesList = async (userId, idToken) => {
     try {

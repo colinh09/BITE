@@ -10,7 +10,7 @@ const EditableLists = ({ userId, idToken }) => {
     const [searchInput, setSearchInput] = useState('');
     const [listType, setListType] = useState('');
 
-    const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+    const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
     const listTypes = [
         { value: 'wants-to-try', label: 'Wants to Try' },

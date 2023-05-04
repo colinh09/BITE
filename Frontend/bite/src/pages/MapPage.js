@@ -9,7 +9,7 @@ function MapPage() {
   const userId = localStorage.getItem("userId");
   const idToken = localStorage.getItem("idToken");
 
-  const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+  const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
   useEffect(() => {
     if (userId) {
