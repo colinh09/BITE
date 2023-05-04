@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 import './LoginPage.css';
 import logo from '../assets/munchr.png';
 
+const apiUrl = process.env.REACT_APP_PUBLIC_URL || '';
+
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const getUserByEmail = async (email, idToken) => {
     try {
-      const response = await fetch(`api/users/by-email/${email}`, {
+      const response = await fetch(apiUrl + `api/users/by-email/${email}`, {
         headers: {
           Authorization: `Bearer ${idToken}`,
         },
