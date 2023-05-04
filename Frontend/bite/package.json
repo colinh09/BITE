@@ -2,7 +2,11 @@
   "name": "bite",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://bite.herokuapp.com/",
+  "proxy": {
+    "/api": {
+      "target": "${REACT_APP_PUBLIC_URL}"
+    }
+  }
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -23,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "envsub --syntax dollar package.json package.json && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
