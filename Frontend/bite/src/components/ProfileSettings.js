@@ -17,7 +17,7 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const userRes = await fetch(apiUrl + `/api/users/${userId}`, {
+      const userRes = await fetch(apiUrl + `api/users/${userId}`, {
         headers: { 'Authorization': `Bearer ${idToken}` },
       });
       const userData = await userRes.json();
