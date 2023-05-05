@@ -1,0 +1,74 @@
+/* EditableLists.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .tab-button {
+    width: 165px;
+    height: 45px;
+    border-radius: 7px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+  }
+  
+  .tab-button-selected {
+    background: #F3684A;
+    color: #FFFFFF;
+  }
+  
+  .tab-button:not(.tab-button-selected) {
+    background: #FFFFFF;
+    color: #F3684A;
+    border: 2px solid #F3684A;
+  }
+  
+  .list-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px;
+  }
+  
+  .list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .list-table th,
+  .list-table td {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .delete-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F3684A;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .add-to-list-button {
+    margin-left: 20px;
+  }
+  

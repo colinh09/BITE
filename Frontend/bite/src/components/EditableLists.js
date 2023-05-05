@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Select from 'react-select';
 import '../App.css';
+import "./EditableLists.css"; 
+
 const EditableLists = ({ userId, idToken }) => {
     const [wantsToTry, setWantsToTry] = useState([]);
     const [haveBeenTo, setHaveBeenTo] = useState([]);
@@ -9,6 +11,7 @@ const EditableLists = ({ userId, idToken }) => {
     const [selectedRestaurant, setSelectedRestaurant] = useState(null);
     const [searchInput, setSearchInput] = useState('');
     const [listType, setListType] = useState('');
+    const [activeTab, setActiveTab] = useState('wants-to-try');
 
     const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
@@ -18,9 +21,13 @@ const EditableLists = ({ userId, idToken }) => {
         { value: 'favorites', label: 'Favorites' },
     ];
 
+    const handleTabClick = (tab) => {
+      setActiveTab(tab);
+    };    
+
     const fetchLists = async () => {
         try {
-            const wantsToTryRes = await fetch(apiUrl + `api/users/${userId}/wants-to-try`, {
+            const wantsToTryRes = await fetch(`api/users/${userId}/wants-to-try`, {
                 headers: {
                 Authorization: `Bearer ${idToken}`,
                 },
@@ -28,7 +35,7 @@ const EditableLists = ({ userId, idToken }) => {
             const wantsToTryData = await wantsToTryRes.json();
             setWantsToTry(wantsToTryData);
 
-            const haveBeenToRes = await fetch(apiUrl + `api/users/${userId}/have-been-to`, {
+            const haveBeenToRes = await fetch(`api/users/${userId}/have-been-to`, {
                 headers: {
                 Authorization: `Bearer ${idToken}`,
                 },
@@ -38,7 +45,7 @@ const EditableLists = ({ userId, idToken }) => {
           } catch (error) {
               console.error("Error fetching lists:", error);
           }
-          const favoritesRes = await fetch(apiUrl + `api/users/${userId}/favorites`, {
+          const favoritesRes = await fetch(`api/users/${userId}/favorites`, {
               headers: {
               Authorization: `Bearer ${idToken}`,
               },
@@ -49,7 +56,7 @@ const EditableLists = ({ userId, idToken }) => {
 
     const fetchFilteredRestaurants = useCallback(async (inputValue) => {
         try {
-          const res = await fetch(apiUrl + `api/restaurants/search?q=${encodeURIComponent(inputValue)}`, {
+          const res = await fetch(`api/restaurants/search?q=${encodeURIComponent(inputValue)}`, {
             headers: {
               Authorization: `Bearer ${idToken}`,
             },
@@ -75,7 +82,7 @@ const EditableLists = ({ userId, idToken }) => {
 
     const addToList = async (listType, restaurantId) => {
         try {
-            await fetch(apiUrl + `api/users/${userId}/${listType}/add`, {
+            await fetch(`api/users/${userId}/${listType}/add`, {
                 method: "PUT",
                 headers: {
                 "Content-Type": "application/json",
@@ -91,7 +98,7 @@ const EditableLists = ({ userId, idToken }) => {
 
     const deleteFromList = async (listType, restaurantId) => {
         try {
-            await fetch(apiUrl + `api/users/${userId}/${listType}/delete`, {
+            await fetch(`api/users/${userId}/${listType}/delete`, {
                 method: "PUT",
                 headers: {
                 "Content-Type": "application/json",
@@ -104,10 +111,6 @@ const EditableLists = ({ userId, idToken }) => {
             console.error(`Error deleting restaurant from ${listType}:`, error);
         }
     };
-
-    // useEffect(() => {
-    //     fetchRestaurants();
-    // }, []);
 
     useEffect(() => {
         fetchLists();
@@ -135,75 +138,122 @@ const EditableLists = ({ userId, idToken }) => {
         setSelectedRestaurant(selectedOption);
     };
 
-    const handleAddToList = (listType) => {
-        if (selectedRestaurant) {
-            addToList(listType, selectedRestaurant.value);
-            setSelectedRestaurant(null);
-        }
+    const handleAddToList = () => {
+      if (selectedRestaurant) {
+        addToList(activeTab, selectedRestaurant.value);
+        setSelectedRestaurant(null);
+      }
     };
 
-
-    return (
-        <div>
-          <h1>Manage Your Lists</h1>
-          <Select
-            value={selectedRestaurant}
-            onInputChange={handleInputChange}
-            inputValue={searchInput}
-            onChange={handleSelectChange}
-            options={restaurants}
-            isClearable
-            placeholder="Select a restaurant"
-          />
-          <Select
-            value={listTypes.find((option) => option.value === listType)}
-            onChange={handleListTypeChange}
-            options={listTypes}
-            isClearable
-            placeholder="Select a list"
-          />
-          <button onClick={() => handleAddToList(listType)} disabled={!listType || !selectedRestaurant}>
-            Add to List
-          </button>
-          {[
-        { title: 'Wants to Try', data: wantsToTry },
-        { title: 'Have Been To', data: haveBeenTo },
-        { title: 'Favorites', data: favorites }
-      ].map((list) => (
-        <div key={list.title}>
-          <h1>{list.title}</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Location</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Array.isArray(list.data) ? (
-                list.data.map((restaurant) => (
+    const renderList = (listData) => {
+      return (
+        <table className="list-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Array.isArray(listData)
+              ? listData.map((restaurant) => (
                   <tr key={restaurant._id}>
                     <td>{restaurant.name}</td>
                     <td>{restaurant.location}</td>
                     <td>
-                      <button onClick={() => deleteFromList(list.title.toLowerCase().replace(/ /g, '-'), restaurant._id)}>
+                      <button
+                        className="delete-button"
+                        onClick={() =>
+                          deleteFromList(activeTab, restaurant._id)
+                        }
+                      >
                         Delete
                       </button>
                     </td>
                   </tr>
                 ))
-              ) : (
-                <tr>
-                  <td colSpan="3">No data available</td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
-      ))}
-    </div>
+              : null}
+          </tbody>
+        </table>
       );
     };
+      
+
+    return (
+      <div className="container">
+        <h1>Manage Your Lists</h1>
+        <div className="tab-buttons">
+          <button
+            className={`tab-button ${
+              activeTab === "wants-to-try" ? "tab-button-selected" : ""
+            }`}
+            onClick={() => handleTabClick("wants-to-try")}
+          >
+            Wants to Try
+          </button>
+          <button
+            className={`tab-button ${
+              activeTab === "have-been-to" ? "tab-button-selected" : ""
+            }`}
+            onClick={() => handleTabClick("have-been-to")}
+          >
+            Have Been To
+          </button>
+          <button
+            className={`tab-button ${
+              activeTab === "favorites" ? "tab-button-selected" : ""
+            }`}
+            onClick={() => handleTabClick("favorites")}
+          >
+            Favorites
+          </button>
+        </div>
+        <div className="list-container">
+        <Select
+          className="search-box"
+          options={restaurants}
+          value={selectedRestaurant}
+          onChange={handleSelectChange}
+          onInputChange={handleInputChange}
+          noOptionsMessage={() => "No restaurants found"}
+          placeholder="Search for restaurants"
+          isLoading={searchInput && restaurants.length === 0}
+        />
+        <button
+          className="add-to-list-button"
+          onClick={handleAddToList}
+          disabled={!selectedRestaurant}
+        >
+          Add to List
+        </button>
+        </div>
+        {activeTab === "wants-to-try" && (
+          <div>
+            <h2>Wants to Try</h2>
+            <div className="list-table-container">
+              {renderList(wantsToTry)}
+            </div>
+          </div>
+        )}
+        {activeTab === "have-been-to" && (
+          <div>
+            <h2>Have Been To</h2>
+            <div className="list-table-container">
+              {renderList(haveBeenTo)}
+            </div>
+          </div>
+        )}
+        {activeTab === "favorites" && (
+          <div>
+            <h2>Favorites</h2>
+            <div className="list-table-container">
+              {renderList(favorites)}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
 
 export default EditableLists;
