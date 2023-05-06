@@ -152,7 +152,7 @@ const EditableLists = ({ userId, idToken }) => {
             <tr>
               <th>Name</th>
               <th>Location</th>
-              <th>Action</th>
+              <th>Remove Restaurant</th>
             </tr>
           </thead>
           <tbody>

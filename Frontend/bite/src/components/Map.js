@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useCallback} from "react";
-import Select from 'react-select';
+import React, { useState, useEffect, useCallback } from "react";
+import Select from "react-select";
+import styles from "../pages/MapPage.css";
+import ReviewForm from './ReviewForm';
 import {
   GoogleMap,
   Marker,
@@ -8,7 +10,7 @@ import {
 } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "80%",
+  width: "100%",
   height: "100vh",
 };
 
@@ -36,8 +38,78 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
     googleMapsApiKey: "AIzaSyCpNT8X2EQ48kkPJEvAuLCWBYqPkyApfC0",
     libraries: ["places"],
   });
+  const [view, setView] = useState("map");
+  const [friends, setFriends] = useState([]);
+  const [searchFriends, setSearchFriends] = useState('');
+  const [friendCode, setFriendCode] = useState('');
+  const [showReviewForm, setShowReviewForm] = useState(false);
+
 
   const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
+
+  const refreshFriends = useCallback(async () => {
+    try {
+      const requestOptions = {
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${idToken}`,
+        },
+      };
+  
+      const res = await fetch(apiUrl + `api/users/${userId}`, requestOptions);
+      const userData = await res.json();
+      console.log(userData);
+      const friendsIds = userData.friends;
+      
+      const friendsDataPromises = friendsIds.map(async (friendId) => {
+        const friendRes = await fetch(apiUrl + `api/users/${friendId}`, requestOptions);
+        return friendRes.json();
+      });
+  
+      const friendsData = await Promise.all(friendsDataPromises);
+      setFriends(friendsData);
+  
+    } catch (error) {
+      console.error("Error fetching friends data:", error);
+    }
+  }, [userId, idToken]);
+
+  useEffect(() => {
+    refreshFriends();
+  }, [userId, idToken, view, refreshFriends]);
+  
+
+  // useEffect(() => {
+  //   const fetchFriends = async () => {
+  //     try {
+  //       const requestOptions = {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //           "Authorization": `Bearer ${idToken}`,
+  //         },
+  //       };
+    
+  //       const res = await fetch(apiUrl + `api/users/${userId}`, requestOptions);
+  //       const userData = await res.json();
+  //       console.log(userData);
+  //       const friendsIds = userData.friends;
+        
+  //       const friendsDataPromises = friendsIds.map(async (friendId) => {
+  //         const friendRes = await fetch(apiUrl + `api/users/${friendId}`, requestOptions);
+  //         return friendRes.json();
+  //       });
+    
+  //       const friendsData = await Promise.all(friendsDataPromises);
+  //       setFriends(friendsData);
+    
+  //     } catch (error) {
+  //       console.error("Error fetching friends data:", error);
+  //     }
+  //   };    
+
+  //   fetchFriends();
+  // }, [userId, idToken, view]);
+
 
   const onLoad = (mapInstance) => {
     setMap(mapInstance);
@@ -54,7 +126,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
       };
 
       const reviewsRes = await fetch(
-        apiUrl + `/api/ratings/restaurant/${restaurantId}/reviews`,
+        apiUrl + `api/ratings/restaurant/${restaurantId}/reviews`,
         requestOptions
       );
       const reviewsData = await reviewsRes.json();
@@ -63,6 +135,34 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
       console.error("Error fetching reviews data:", error);
     }
   };
+
+  useEffect(() => {
+    let marker;
+  
+    if (selectedSearchResult && map) {
+      marker = new window.google.maps.Marker({
+        position: selectedSearchResult.geometry.location,
+        label: selectedSearchResult.label,
+        map,
+        icon: {
+          url: `http://maps.google.com/mapfiles/ms/icons/yellow-dot.png`,
+        },
+      });
+  
+      marker.addListener("click", () => {
+        setSelectedRestaurant(selectedSearchResult);
+        console.log(selectedSearchResult.value);
+        fetchReviews(selectedSearchResult.value); 
+      });
+    }
+  
+    return () => {
+      if (marker) {
+        marker.setMap(null);
+      }
+    };
+  }, [selectedSearchResult, map, fetchReviews]);
+  
 
   const fetchFilteredRestaurants = useCallback(async (inputValue) => {
     try {
@@ -100,27 +200,106 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
       setSearchInput(inputValue);
   };
 
-  const handleSearchSelectChange = (selectedOption) => {
-    setSelectedSearchResult({
-      ...selectedOption,
-      _id: selectedOption.value,
-      name: selectedOption.label,
-      latitude: selectedOption.geometry.location.lat,
-      longitude: selectedOption.geometry.location.lng,
-      location: selectedOption.location,
-    });
-    setShowSelectedSearchResult(true);
-    setShowInfoWindow(true);
-    if (map) {
-      map.panTo(selectedOption.geometry.location);
-      map.setZoom(15);
+  const handleSearchSelectChange = async (selectedOption) => {
+    try {
+      const requestOptions = {
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${idToken}`,
+        },
+      };
+  
+      const res = await fetch(apiUrl + `api/restaurants/${selectedOption.value}`, requestOptions);
+      const fullRestaurantData = await res.json();
+  
+      setSelectedSearchResult({
+        ...fullRestaurantData,
+        value: selectedOption.value,
+        label: selectedOption.label,
+        geometry: {
+          location: {
+            lat: selectedOption.geometry.location.lat,
+            lng: selectedOption.geometry.location.lng,
+          },
+        },
+      });
+      setShowSelectedSearchResult(true);
+      setShowInfoWindow(true);
+      if (map) {
+        map.panTo(selectedOption.geometry.location);
+        map.setZoom(15);
+      }
+    } catch (error) {
+      console.error("Error fetching restaurant data:", error);
     }
   };
   
   
+  const addFriend = async () => {
+    try {
+      const requestOptions = {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${idToken}`,
+        },
+        body: JSON.stringify({ friendId: friendCode }),
+      };
   
+      await fetch(apiUrl + `api/users/${userId}/friends/add`, requestOptions);
+      setFriendCode('');
+      refreshFriends(); 
+    } catch (error) {
+      console.error("Error adding friend:", error);
+    }
+  };
+  
+  const deleteFriend = async (friendId) => {
+    try {
+      const requestOptions = {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${idToken}`,
+        },
+        body: JSON.stringify({ friendId }),
+      };
+
+      await fetch(apiUrl + `api/users/${userId}/friends/delete`, requestOptions);
+      refreshFriends(); // Call refreshFriends after deleting a friend
+    } catch (error) {
+      console.error("Error deleting friend:", error);
+    }
+  };
+
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      borderRadius: '7px',
+      borderColor: state.isFocused ? '#F3684A' : '#F3684A',
+      boxShadow: state.isFocused ? '0 0 0 1px #F3684A' : 'none',
+      '&:hover': {
+        borderColor: '#F3684A',
+      },
+      height: '63px',
+      width: '461px',
+      minHeight: '63px',
+      padding: '5px',
+    }),
+    placeholder: (provided, state) => ({
+      ...provided,
+      color: '#F3684A',
+      fontSize: '20px',
+      fontWeight: '500',
+      lineHeight: '29px',
+    }),
+  };
 
   const renderListMarkers = (list, mapInstance, color) => {
+    if (!Array.isArray(list)) {
+      console.error("Input to renderListMarkers is not an array:", list);
+      return null;
+    }
     return list.map((restaurant) => (
       <Marker
         key={restaurant._id}
@@ -128,7 +307,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
           lat: restaurant.latitude,
           lng: restaurant.longitude,
         }}
-        title = ""
+        title=""
         label={restaurant.name}
         map={mapInstance}
         icon={{
@@ -141,6 +320,11 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
         }}
       />
     ));
+  };
+  
+
+  const handleButtonClick = (newView) => {
+    setView(newView);
   };
 
   useEffect(() => {
@@ -165,6 +349,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
 
       marker.addListener("click", () => {
         setSelectedRestaurant(selectedSearchResult);
+        console.log(selectedSearchResult.value);
         fetchReviews(selectedSearchResult.value); // Assuming the restaurant ID is stored in the value property
       });
 
@@ -182,45 +367,13 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
     return <div>Loading map...</div>;
   }
 
-  return (
-    <div>
-      <div className="map-toggle">
-        <label>
-          <input
-            type="checkbox"
-            checked={showWantsToTry}
-            onChange={() => setShowWantsToTry(!showWantsToTry)}
-          />{" "}
-          Wants to Try
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={showHaveBeenTo}
-            onChange={() => setShowHaveBeenTo(!showHaveBeenTo)}
-          />{" "}
-          Have Been To
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={showFavorites}
-            onChange={() => setShowFavorites(!showFavorites)}
-          />{" "}
-          Favorites
-        </label>
-      </div>
-      <div className="map-search">
-        <Select
-          value={selectedSearchResult}
-          onInputChange={handleSearchInputChange}
-          inputValue={searchInput}
-          onChange={handleSearchSelectChange}
-          options={searchResults}
-          isClearable
-          placeholder="Search for restaurants"
-        />
-      </div>
+  const filteredFriends = friends ? friends.filter((friend) =>
+    friend.username && friend.username.toLowerCase().includes(searchFriends.toLowerCase())
+  ) : [];
+
+
+  const renderMap = () => (
+    <>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={defaultCenter}
@@ -242,7 +395,8 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
           }
           onCloseClick={() => {
             setSelectedRestaurant(null);
-            setShowInfoWindow(true); // i think setting this to true always is better because its not intrusive at all
+            setShowInfoWindow(false);
+            setShowInfoWindow(true);
           }}
         >
           <div>
@@ -272,11 +426,123 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
                 </div>
               ))}
             </div>
+            <button onClick={handleReviewFormToggle}>Add Review</button>
+            {showReviewForm && (
+              <ReviewForm
+                restaurantId={selectedRestaurant._id}
+                userId={userId}
+                userName={localStorage.getItem("username")}
+                handleClose={handleReviewFormToggle}
+                onReviewSubmit={onReviewSubmit}
+              />
+            )}
           </div>
         </InfoWindow>
       )}
 
       </GoogleMap>
+      <div className="map-search">
+        <Select
+          value={selectedSearchResult}
+          inputValue={searchInput}
+          onInputChange={handleSearchInputChange}
+          onChange={handleSearchSelectChange}
+          options={searchResults}
+          placeholder="Search for a restaurant...     "
+          styles={customStyles}
+        />
+      </div>
+      <div className="map-toggle">
+        <label>
+          <input
+            type="checkbox"
+            checked={showWantsToTry}
+            onChange={() => setShowWantsToTry(!showWantsToTry)}
+          />{" "}
+          Wants to Try
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={showHaveBeenTo}
+            onChange={() => setShowHaveBeenTo(!showHaveBeenTo)}
+          />{" "}
+          Have Been To
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={showFavorites}
+            onChange={() => setShowFavorites(!showFavorites)}
+          />{" "}
+          Favorites
+        </label>
+      </div>
+    </>
+  );
+
+  
+  const renderFriends = () => (
+    <div>
+      <div>
+        <input
+          type="text"
+          value={searchFriends}
+          onChange={(e) => setSearchFriends(e.target.value)}
+          placeholder="Search friends"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          value={friendCode}
+          onChange={(e) => setFriendCode(e.target.value)}
+          placeholder="Enter friend code"
+        />
+        <button onClick={addFriend}>Add Friend</button>
+      </div>
+      <ul>
+        {filteredFriends.map((friend) => (
+          <li key={friend._id}>
+            {friend.username}{" "}
+            <button onClick={() => deleteFriend(friend._id)}>Delete</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+
+  const onReviewSubmit = (review) => {
+    fetchReviews(selectedRestaurant._id); // Refresh the reviews for the current restaurant
+    setShowReviewForm(false); // Close the review form after submission
+  };
+
+  const handleReviewFormToggle = () => {
+    setShowReviewForm(!showReviewForm);
+  };
+  
+
+  return (
+    <div>
+      <div className="button-container">
+        <button
+          onClick={() => handleButtonClick("map")}
+          className={`button ${
+            view === "map" ? "selected-button" : "unselected-button"
+          }`}
+        >
+          Restaurant
+        </button>
+        <button
+          onClick={() => handleButtonClick("friends")}
+          className={`button ${
+            view === "friends" ? "selected-button" : "unselected-button"
+          }`}
+        >
+          Friends
+        </button>
+      </div>
+      {view === "map" ? renderMap() : renderFriends()}
     </div>
   );
 }

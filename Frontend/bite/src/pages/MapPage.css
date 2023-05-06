@@ -1,5 +1,73 @@
-/* MapPage.module.css */
 .MapPage {
-    height: 100vh; /* or any fixed height */
-  }
-  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-toggle {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  z-index: 2;
+  color: #F3684A;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.map-search {
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  height: 63px;
+  background: #FFFFFF;
+  border: 2px solid #F3684A;
+  border-radius: 7px;
+  z-index: 2;
+  display: flex;
+}
+
+.map-search-input {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F3684A;
+}
+
+.button-container {
+  position: absolute;
+  top: 12%;
+  right: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.selected-button {
+  background-color: #F3684A;
+  color: #FFFFFF;
+}
+
+.unselected-button {
+  background: #FFFFFF;
+  color: #F3684A;
+}
+
+.button {
+  width: 154px;
+  height: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  border: 2px solid #F3684A;
+  border-radius: 7px;
+  z-index: 2;
+  cursor: pointer;
+  margin-left: 10px;
+}
