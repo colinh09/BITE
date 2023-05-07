@@ -22,7 +22,7 @@ const defaultCenter = {
 function Map({ wantsToTry, haveBeenTo, favorites }) {
   const userId = localStorage.getItem("userId");
   const idToken = localStorage.getItem("idToken");
-
+  let debounceTimeoutId;
   const [map, setMap] = useState(null);
   const [showWantsToTry, setShowWantsToTry] = useState(true);
   const [showHaveBeenTo, setShowHaveBeenTo] = useState(true);
@@ -43,6 +43,9 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
   const [searchFriends, setSearchFriends] = useState('');
   const [friendCode, setFriendCode] = useState('');
   const [showReviewForm, setShowReviewForm] = useState(false);
+  const [searchResultsFriends, setSearchResultsFriends] = useState([]);
+  const [debouncedSearchFriends, setDebouncedSearchFriends] = useState('');
+
 
 
   const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
@@ -77,45 +80,12 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
   useEffect(() => {
     refreshFriends();
   }, [userId, idToken, view, refreshFriends]);
-  
-
-  // useEffect(() => {
-  //   const fetchFriends = async () => {
-  //     try {
-  //       const requestOptions = {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //           "Authorization": `Bearer ${idToken}`,
-  //         },
-  //       };
-    
-  //       const res = await fetch(apiUrl + `api/users/${userId}`, requestOptions);
-  //       const userData = await res.json();
-  //       console.log(userData);
-  //       const friendsIds = userData.friends;
-        
-  //       const friendsDataPromises = friendsIds.map(async (friendId) => {
-  //         const friendRes = await fetch(apiUrl + `api/users/${friendId}`, requestOptions);
-  //         return friendRes.json();
-  //       });
-    
-  //       const friendsData = await Promise.all(friendsDataPromises);
-  //       setFriends(friendsData);
-    
-  //     } catch (error) {
-  //       console.error("Error fetching friends data:", error);
-  //     }
-  //   };    
-
-  //   fetchFriends();
-  // }, [userId, idToken, view]);
-
 
   const onLoad = (mapInstance) => {
     setMap(mapInstance);
   };
 
-  const fetchReviews = async (restaurantId) => {
+  const fetchReviews = useCallback(async (restaurantId) => {
     try {
       const requestOptions = {
         method: "GET",
@@ -124,17 +94,18 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
           "Authorization": `Bearer ${idToken}`,
         },
       };
-
+  
       const reviewsRes = await fetch(
         apiUrl + `api/ratings/restaurant/${restaurantId}/reviews`,
         requestOptions
       );
       const reviewsData = await reviewsRes.json();
+      // console.log(reviewsData);
       setRestaurantReviews(reviewsData);
     } catch (error) {
       console.error("Error fetching reviews data:", error);
     }
-  };
+  }, [idToken, apiUrl]);
 
   useEffect(() => {
     let marker;
@@ -359,6 +330,14 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
     }
   }, [selectedSearchResult, showSelectedSearchResult, map, fetchReviews]);
 
+  useEffect(() => {
+    if (debouncedSearchFriends) {
+      searchUsers(debouncedSearchFriends);
+    } else {
+      setSearchResultsFriends([]);
+    }
+  }, [debouncedSearchFriends]);
+
   if (loadError) {
     return <div>Error loading map</div>;
   }
@@ -419,9 +398,11 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
               <h4>Reviews:</h4>
               {restaurantReviews.map((review) => (
                 <div key={review._id}>
-                  <p>User: {review.user_name}</p>
-                  <p>Rating: {review.rating}</p>
-                  <p>Comment: {review.comment}</p>
+                  <p>User: {review.username}</p>
+                  <p>Review: {review.review_content}</p>
+                  <p>Star Rating: {review.star_rating}</p>
+                  <p>Price Rating: {review.price_level}</p>
+                  {/* <p>Repeat Visit: {review.repeat_visit}</p> */}
                   <hr />
                 </div>
               ))}
@@ -481,16 +462,91 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
     </>
   );
 
+  async function getUserData(userId) {
+    try {
+      const response = await fetch(apiUrl + `api/users/${userId}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${idToken}`,
+        },
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const user = await response.json();
+      return user;
+    } catch (error) {
+      console.error("Failed to fetch user data:", error);
+      return null;
+    }
+  }
+  
+
+  async function fetchAllUsers() {
+    const response = await fetch(apiUrl + "api/users", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${idToken}`,
+      },
+    });
+    const data = await response.json();
+    const usernames = data.map((user) => user.username);
+    return usernames;
+  }
+  
+  function searchUsernames(usernames, query) {
+    return usernames.filter((username) => username.toLowerCase().includes(query.toLowerCase()));
+  }
+
+  function areFriends(user1, user2) {
+    return user1.friends.some((friend) => friend.username === user2.username);
+  }
+
+async function searchUsers(query) {
+  const usernames = await fetchAllUsers();
+  const filteredUsernames = searchUsernames(usernames, query);
+
+  const searchResults = [];
+  for (const username of filteredUsernames) {
+    const userResponse = await fetch(apiUrl + `api/users/by-username/${username}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${idToken}`,
+      },
+    });
+    const user = await userResponse.json();
+    const loggedInUser = await getUserData(userId);
+    if (areFriends(loggedInUser, user)) {
+      user.isFriend = true;
+    } else {
+      user.isFriend = false;
+    }
+    searchResults.push(user);
+  }
+  return searchResults;
+}
+
+  
   
   const renderFriends = () => (
     <div>
       <div>
-        <input
-          type="text"
-          value={searchFriends}
-          onChange={(e) => setSearchFriends(e.target.value)}
-          placeholder="Search friends"
-        />
+      <input
+        type="text"
+        value={searchFriends}
+        onChange={(e) => {
+          setSearchFriends(e.target.value);
+          clearTimeout(debounceTimeoutId);
+          debounceTimeoutId = setTimeout(async () => {
+            const searchResults = await searchUsers(e.target.value);
+            setSearchResults(searchResults);
+          }, 300);
+        }}
+        placeholder="Search users"
+      />
       </div>
       <div>
         <input
@@ -502,21 +558,85 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
         <button onClick={addFriend}>Add Friend</button>
       </div>
       <ul>
-        {filteredFriends.map((friend) => (
-          <li key={friend._id}>
-            {friend.username}{" "}
-            <button onClick={() => deleteFriend(friend._id)}>Delete</button>
+      {searchResults.map((user) => {
+        return (
+          <li key={user._id}>
+            {user.username}{" "}
+            {user.isFriend ? (
+              <span>Already a friend</span>
+            ) : (
+              <button
+                onClick={() => {
+                  setFriendCode(user._id);
+                  console.log("FRIEND CODE FRIEND CODE:" + friendCode);
+                  console.log("user id user id:" + user._id);
+                  addFriend();
+                }}
+              >
+                Add as friend
+              </button>
+            )}
           </li>
-        ))}
+        );
+      })}
       </ul>
     </div>
   );
+  
 
-  const onReviewSubmit = (review) => {
-    fetchReviews(selectedRestaurant._id); // Refresh the reviews for the current restaurant
-    setShowReviewForm(false); // Close the review form after submission
+  const fetchUsername = async (userId) => {
+    const idToken = localStorage.getItem("idToken");
+    try {
+      const response = await fetch(apiUrl + "api/users/" + userId, {
+        headers: {
+          Authorization: `Bearer ${idToken}`,
+        },
+      });
+  
+      if (!response.ok) {
+        throw new Error("Failed to fetch the user's information.");
+      }
+  
+      const user = await response.json();
+      return user.username;
+    } catch (error) {
+      console.error("Error fetching the user's information:", error);
+      return null;
+    }
+  };  
+
+  const onReviewSubmit = async (userId, restaurantId, reviewContent, starRating, priceLevel, repeatVisit, publicReview) => {
+    const newRating = {
+      user_id: userId,
+      restaurant_id: restaurantId,
+      review_content: reviewContent,
+      star_rating: starRating,
+      price_level: priceLevel,
+      repeat_visit: repeatVisit,
+      public_review: publicReview,
+      username: fetchUsername(userId),
+    };
+    const idToken = localStorage.getItem("idToken");
+    try {
+      const response = await fetch(apiUrl + "api/ratings", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${idToken}`,
+        },
+        body: JSON.stringify(newRating),
+      });
+  
+      if (!response.ok) {
+        throw new Error("Failed to submit the review.");
+      }
+      // Refresh the reviews for the current restaurant
+      fetchReviews(selectedRestaurant._id);
+    } catch (error) {
+      console.error("Error submitting the review:", error);
+    }
+    setShowReviewForm(false);
   };
-
   const handleReviewFormToggle = () => {
     setShowReviewForm(!showReviewForm);
   };

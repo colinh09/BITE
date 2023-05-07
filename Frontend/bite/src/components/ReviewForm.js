@@ -10,8 +10,17 @@ const ReviewForm = ({ userId, restaurantId, onReviewSubmit }) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    onReviewSubmit({ userId, restaurantId, reviewContent, starRating, priceLevel, repeatVisit, publicReview });
+    onReviewSubmit(
+      userId,
+      restaurantId,
+      reviewContent,
+      starRating,
+      priceLevel,
+      repeatVisit,
+      publicReview
+    );
   };
+  
   
 
   return (

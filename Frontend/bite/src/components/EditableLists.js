@@ -33,6 +33,7 @@ const EditableLists = ({ userId, idToken }) => {
                 },
             });
             const wantsToTryData = await wantsToTryRes.json();
+            console.log(wantsToTryData);
             setWantsToTry(wantsToTryData);
 
             const haveBeenToRes = await fetch(apiUrl + `api/users/${userId}/have-been-to`, {
@@ -81,21 +82,23 @@ const EditableLists = ({ userId, idToken }) => {
     }, [idToken]);
 
     const addToList = async (listType, restaurantId) => {
-        try {
-            await fetch(apiUrl + `api/users/${userId}/${listType}/add`, {
-                method: "PUT",
-                headers: {
-                "Content-Type": "application/json",
-                Authorization: `Bearer ${idToken}`,
-                },
-                body: JSON.stringify({ restaurantId }),
-            });
-            fetchLists();
-        } catch (error) {
-            console.error(`Error adding restaurant to ${listType}:`, error);
-        }
+      try {
+        console.log(restaurantId);
+        await fetch(apiUrl + `api/users/${userId}/${listType}/add`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${idToken}`,
+          },
+          body: JSON.stringify({ restaurantId }),
+        });
+        fetchLists();
+      } catch (error) {
+        console.error(`Error adding restaurant to ${listType}:`, error);
+      }
     };
-
+    
+  
     const deleteFromList = async (listType, restaurantId) => {
         try {
             await fetch(apiUrl + `api/users/${userId}/${listType}/delete`, {
@@ -146,6 +149,8 @@ const EditableLists = ({ userId, idToken }) => {
     };
 
     const renderList = (listData) => {
+      console.log('Rendered list data:', listData);
+
       return (
         <table className="list-table">
           <thead>
