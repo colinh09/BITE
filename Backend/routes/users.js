@@ -93,22 +93,22 @@ router.get('/:id/ratings', getUserById, async (req, res) => {
 // get user's wantsToTry list
 router.get('/:id/wants-to-try', getUserById, async (req, res) => {
   try {
-    const wantsToTry = await Restaurant.find({ _id: { $in: res.user.wantsToTry } });
+    const wantsToTry = await Restaurant.find({ _id: { $in: res.user.wantsToTry.map(entry => entry._id) } }).sort({ timestamp: -1 });
     res.json(wantsToTry);
+    console.log(wantsToTry);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 });
 
+
 // add a restaurant to wantsToTry
 router.put('/:id/wants-to-try/add', getUserById, async (req, res) => {
   const restaurantId = req.body.restaurantId;
   try {
-    if (!res.user.wantsToTry) {
-      res.user.wantsToTry = [];
-    }
-    if (!res.user.wantsToTry.includes(restaurantId)) {
-      res.user.wantsToTry.push(restaurantId);
+    const existingRestaurant = res.user.wantsToTry.find(r => r.restaurantId === restaurantId);
+    if (!existingRestaurant) {
+      res.user.wantsToTry.push({ _id: restaurantId, timestamp: new Date() });
       const updatedUser = await res.user.save();
       res.json(updatedUser);
     } else {
@@ -119,12 +119,14 @@ router.put('/:id/wants-to-try/add', getUserById, async (req, res) => {
   }
 });
 
+
 // delete a restaurant from wantsToTry
 router.put('/:id/wants-to-try/delete', getUserById, async (req, res) => {
   const restaurantId = req.body.restaurantId;
   try {
-    if (res.user.wantsToTry && res.user.wantsToTry.includes(restaurantId)) {
-      res.user.wantsToTry.pull(restaurantId);
+    const restaurantIndex = res.user.wantsToTry.findIndex(entry => entry._id == restaurantId);
+    if (restaurantIndex !== -1) {
+      res.user.wantsToTry.splice(restaurantIndex, 1);
       const updatedUser = await res.user.save();
       res.json(updatedUser);
     } else {
@@ -138,22 +140,21 @@ router.put('/:id/wants-to-try/delete', getUserById, async (req, res) => {
 // get user's haveBeenTo list
 router.get('/:id/have-been-to', getUserById, async (req, res) => {
   try {
-    const haveBeenTo = await Restaurant.find({ _id: { $in: res.user.haveBeenTo } });
+    const haveBeenTo = await Restaurant.find({ _id: { $in: res.user.haveBeenTo.map(entry => entry._id) } }).sort({ timestamp: -1 });
     res.json(haveBeenTo);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 });
 
+
 // add a restaurant to haveBeenTo
 router.put('/:id/have-been-to/add', getUserById, async (req, res) => {
   const restaurantId = req.body.restaurantId;
   try {
-    if (!res.user.haveBeenTo) {
-      res.user.haveBeenTo = [];
-    }
-    if (!res.user.haveBeenTo.includes(restaurantId)) {
-      res.user.haveBeenTo.push(restaurantId);
+    const existingRestaurant = res.user.haveBeenTo.find(r => r.restaurantId === restaurantId);
+    if (!existingRestaurant) {
+      res.user.haveBeenTo.push({ _id: restaurantId, timestamp: new Date() });
       const updatedUser = await res.user.save();
       res.json(updatedUser);
     } else {
@@ -168,8 +169,9 @@ router.put('/:id/have-been-to/add', getUserById, async (req, res) => {
 router.put('/:id/have-been-to/delete', getUserById, async (req, res) => {
   const restaurantId = req.body.restaurantId;
   try {
-    if (res.user.haveBeenTo && res.user.haveBeenTo.includes(restaurantId)) {
-      res.user.haveBeenTo.pull(restaurantId);
+    const restaurantIndex = res.user.haveBeenTo.findIndex(entry => entry._id == restaurantId);
+    if (restaurantIndex !== -1) {
+      res.user.haveBeenTo.splice(restaurantIndex, 1);
       const updatedUser = await res.user.save();
       res.json(updatedUser);
     } else {
@@ -180,10 +182,11 @@ router.put('/:id/have-been-to/delete', getUserById, async (req, res) => {
   }
 });
 
+
 // get user's favorites list
 router.get('/:id/favorites', getUserById, async (req, res) => {
   try {
-    const favorites = await Restaurant.find({ _id: { $in: res.user.favorites } });
+    const favorites = await Restaurant.find({ _id: { $in: res.user.favorites.map(entry => entry._id) } }).sort({ timestamp: -1 });
     res.json(favorites);
   } catch (err) {
     res.status(500).json({ message: err.message });
@@ -194,11 +197,9 @@ router.get('/:id/favorites', getUserById, async (req, res) => {
 router.put('/:id/favorites/add', getUserById, async (req, res) => {
   const restaurantId = req.body.restaurantId;
   try {
-    if (!res.user.favorites) {
-      res.user.favorites = [];
-    }
-    if (!res.user.favorites.includes(restaurantId)) {
-      res.user.favorites.push(restaurantId);
+    const existingRestaurant = res.user.favorites.find(r => r.restaurantId === restaurantId);
+    if (!existingRestaurant) {
+      res.user.favorites.push({ _id: restaurantId, timestamp: new Date() });
       const updatedUser = await res.user.save();
       res.json(updatedUser);
     } else {
@@ -210,11 +211,12 @@ router.put('/:id/favorites/add', getUserById, async (req, res) => {
 });
 
 // delete a restaurant from favorites
-router.put('/:id/favorites/delete', getUserById, async (req, res) => {
+router.put('/:id/have-been-to/delete', getUserById, async (req, res) => {
   const restaurantId = req.body.restaurantId;
   try {
-    if (res.user.favorites && res.user.favorites.includes(restaurantId)) {
-      res.user.favorites.pull(restaurantId);
+    const restaurantIndex = res.user.favorites.findIndex(entry => entry._id == restaurantId);
+    if (restaurantIndex !== -1) {
+      res.user.favorites.splice(restaurantIndex, 1);
       const updatedUser = await res.user.save();
       res.json(updatedUser);
     } else {
@@ -224,7 +226,6 @@ router.put('/:id/favorites/delete', getUserById, async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
-
 // view a friend's haveBeenTo, wantToTry, and favorites lists
 router.get('/:id/friends/:friendId/lists', getUserById, async (req, res) => {
   const friendId = req.params.friendId;

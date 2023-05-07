@@ -61,7 +61,18 @@ router.get('/', async (req, res) => {
 
 // POST a new rating
 router.post('/', async (req, res) => {
-  const newRating = new Rating(req.body);
+  const user = await User.findById(req.body.user_id);
+  if (!user) {
+    return res.status(400).json({ message: 'User not found' });
+  }
+
+  const currentTime = new Date();
+
+  const newRating = new Rating({
+    ...req.body,
+    username: user.username,
+    created_at: currentTime,
+  });
 
   try {
     const savedRating = await newRating.save();
@@ -70,6 +81,7 @@ router.post('/', async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 });
+
 
 // GET a specific rating
 router.get('/:id', getRatingById, (req, res) => {

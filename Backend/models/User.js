@@ -17,22 +17,42 @@ const UserSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
   }],
-  wantsToTry: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Restaurant',
-  }],
-  haveBeenTo: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Restaurant',
-  }],
-  favorites: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Restaurant',
-  }],
-  dietaryRestrictions: {
-    type: [String],
-    default: [],
-  },
+  wantsToTry: [
+    {
+      restaurant: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Restaurant',
+      },
+      timestamp: {
+        type: Date,
+        default: Date.now,
+      },
+    },
+  ],
+  haveBeenTo: [
+    {
+      restaurant: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Restaurant',
+      },
+      timestamp: {
+        type: Date,
+        default: Date.now,
+      },
+    },
+  ],
+  favorites: [
+    {
+      restaurant: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Restaurant',
+      },
+      timestamp: {
+        type: Date,
+        default: Date.now,
+      },
+    },
+  ],
   city: {
     type: String,
     required: true,
