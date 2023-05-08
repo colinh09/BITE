@@ -211,7 +211,7 @@ router.put('/:id/favorites/add', getUserById, async (req, res) => {
 });
 
 // delete a restaurant from favorites
-router.put('/:id/have-been-to/delete', getUserById, async (req, res) => {
+router.put('/:id/favorites/delete', getUserById, async (req, res) => {
   const restaurantId = req.body.restaurantId;
   try {
     const restaurantIndex = res.user.favorites.findIndex(entry => entry._id == restaurantId);
