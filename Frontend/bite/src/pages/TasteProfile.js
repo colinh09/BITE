@@ -32,7 +32,7 @@ function TasteProfile() {
         <div className="profile-info">
             <h1 className="welcome-message">Hello {user.username}.</h1>
             <p className="welcome-subtitle">Below are your taste profile and stats!</p>
-            <p><span className="key">Dietary Restrictions:</span> {user.dietaryRestrictions.join(', ') || 'None'}</p>
+            <p><span className="key">Dietary Restrictions:</span> {user.dietaryRestrictions ? user.dietaryRestrictions.join(', ') : 'None'}</p>
             <p><span className="key">City:</span> {user.city}</p>
             <p><span className="key">State:</span> {user.state}</p>
             <p><span className="key">Number of Friends:</span> {user.friends.length}</p>

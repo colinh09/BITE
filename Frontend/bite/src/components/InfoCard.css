@@ -125,6 +125,7 @@
   line-height: '30px';
   color: '#000000';
   margin-top: '5px';
+  text-align: left;
 }
 
 .wrapword2 {
@@ -143,4 +144,5 @@
   color: '#000000';
   margin: 0;
   padding-bottom: 5px;
+  text-align: left;
 }

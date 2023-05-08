@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+/* app.css */
+
+
+body {
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

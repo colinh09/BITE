@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import Select from 'react-select';
 import './RegisterPage.css';
 import logo from '../assets/munchr.png';
+import { Link, useNavigate } from 'react-router-dom';
 
 const RegisterPage = () => {
   const [username, setUsername] = useState('');
@@ -12,7 +12,7 @@ const RegisterPage = () => {
   const [dietaryRestrictions, setDietaryRestrictions] = useState([]);
   const [city, setCity] = useState('');
   const [state, setState] = useState('');
-
+  const navigate = useNavigate();
   const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
 
   const registerUserWithFirebase = async (email, password) => {
@@ -44,6 +44,7 @@ const RegisterPage = () => {
         });
         const savedUser = await response.json();
         console.log('User created:', savedUser);
+        navigate('/');
       } catch (error) {
         console.error('Error creating user:', error);
       }
@@ -51,6 +52,7 @@ const RegisterPage = () => {
       alert('Error registering user with Firebase');
     }
   };
+  
 
   const handleDietaryRestrictionsChange = (selectedOptions) => {
     setDietaryRestrictions(selectedOptions.map((option) => option.value));
