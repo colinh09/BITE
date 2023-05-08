@@ -257,7 +257,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
         borderColor: '#F3684A',
       },
       height: '63px',
-      width: '461px',
+      width: '380px',
       minHeight: '63px',
       padding: '5px',
     }),

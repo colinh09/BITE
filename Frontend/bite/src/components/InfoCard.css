@@ -32,7 +32,7 @@
 .add-review{
   display: flex;
   align-items: flex-start;
-  width: 24%;
+  width: 31%;
   color: #F3684A;
   background: #FFFFFF;
   border: 2px solid #F3684A;
@@ -125,4 +125,22 @@
   line-height: '30px';
   color: '#000000';
   margin-top: '5px';
+}
+
+.wrapword2 {
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-wrap;       /* css-3 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+  word-break: break-all;
+  white-space: normal;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18;
+  line-height: '30px';
+  color: '#000000';
+  margin: 0;
+  padding-bottom: 5px;
 }

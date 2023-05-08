@@ -10,14 +10,14 @@
     margin-top: 70px;
     font-family: 'Inter';
     font-style: normal;
-    font-size: 65px;
+    font-size: 50px;
     color: #F3684A;
   }
   
   .title {
     font-family: 'Inter';
     font-style: normal;
-    font-size: 60px;
+    font-size: 38px;
     color: #F3684A;
   }
   
@@ -61,7 +61,7 @@
   }
   
   .profile-icon {
-    font-size: 80px;
+    font-size: 50px;
     color: #F3684A;
     border-radius: 100px;
   }
@@ -69,7 +69,7 @@
   .username {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 29px;
     color: #000000;
     margin-left: 10px;
@@ -78,14 +78,14 @@
   .update-content-lists {
     display: flex;
     align-items: center;
-    margin-left: 105px;
-    font-size: 25px;
+    margin-left: 65px;
+    font-size: 18px;
   }
   
   .update-content-reviews {
     display: flex;
     align-items: center;
-    margin-left: 105px;
+    margin-left: 65px;
   }
   
   .update-content-reviews-elements {
@@ -95,7 +95,7 @@
   }
   
   .review-title {
-    font-size: 25px;
+    font-size: 18px;
     margin: 0;
   }
   
@@ -105,13 +105,13 @@
   }
   
   .location-price {
-    font-size: 18px;
+    font-size: 14px;
     font-style: italic;
     margin: 0;
   }
   
   .review-content {
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 10px;
     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */

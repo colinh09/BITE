@@ -12,13 +12,13 @@ const InfoCard = ({ selectedRestaurant, restaurantReviews, handleReviewFormToggl
         <h3 style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 25, lineHeight: '44px', color: '#000000', 'padding-left': '2px' }}>
           {selectedRestaurant.label || selectedRestaurant.name}
         </h3>
-        <p style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 16, lineHeight: '29px', color: '#000000', 'margin': '0', 'padding-left': '2px'}}>
+        <p className = "wrapword2">
           Location: {selectedRestaurant.location || "No location data available"}
         </p>
-        <p style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 16, lineHeight: '29px', color: '#000000', 'margin': '0', 'padding-left': '2px' }}>
+        <p className = "wrapword2">
           Average Rating: {selectedRestaurant.average_user_rating || "No user rating data"}
         </p>
-        <p style={{ fontFamily: 'Inter', fontWeight: 700, fontSize: 16, lineHeight: '29px', color: '#000000', 'margin': '0', 'padding-left': '2px' }}>
+        <p className = "wrapword2">
           Average Price Rating: {selectedRestaurant.average_price_rating ? (
               [...Array(parseInt(selectedRestaurant.average_price_rating))].map((_, index) => (
                 <MdAttachMoney key={index} className="money-icon" />

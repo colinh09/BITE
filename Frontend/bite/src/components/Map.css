@@ -1,8 +1,19 @@
-.friends-container {
+.modal-content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px;
     width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .friends-container {
+    width: 90%;
     font-family: 'Inter';
     font-style: normal;
-}
+  }
   
 .friends-title {
     font-family: 'Inter', sans-serif;
@@ -11,8 +22,8 @@
     line-height: 29px;
     color: #000000;
     margin-bottom: 16px;
-    margin-top: 3%;
-    font-size: 60px;
+    margin-top: 65px;
+    font-size: 45px;
     color: #F3684A;
     margin-bottom: 5%;
 }

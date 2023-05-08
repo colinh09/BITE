@@ -10,20 +10,18 @@
   display: flex;
   position: absolute;
   bottom: 3%;
-  right: 3%;
+  right: 4%;
   z-index: 2;
   color: #F3684A;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 16px;
   background: #FFFFFF;
   padding: 10px;
   border: 2px solid #F3684A;
   border-radius: 7px;
 }
-
-
 
 .map-search {
   position: absolute;
@@ -31,7 +29,7 @@
   background: #FFFFFF;
   z-index: 101;
   display: flex;
-  width: 461px;
+  width: 380px;
 }
 
 
@@ -39,14 +37,14 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 29px;
   color: #F3684A;
 }
 
 .button-container {
   position: absolute;
-  top: 7%;
+  top: 60px;
   right: 1%;
   display: flex;
   flex-direction: row;
@@ -63,12 +61,12 @@
 }
 
 .button {
-  width: 165px;
-  height: 45px;
+  width: 140px;
+  height: 40px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   border: 2px solid #F3684A;
   border-radius: 7px;
