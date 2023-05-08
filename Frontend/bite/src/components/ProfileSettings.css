@@ -19,6 +19,8 @@
   margin-bottom: 1rem;
   padding: 0 15px;
   font-size: 18px;
+  font-family: 'Inter';
+  font-style: normal;
 }
 
 .register-button {
@@ -54,4 +56,17 @@
 .select-field {
   width: 100%;
   margin-bottom: 1rem;
+}
+
+.update-button {
+  color: #FFFFFF;
+  background: #F3684A;
+  border: 2px solid #F3684A;
+  border-radius: 7px;
+  padding: 10px 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Inter';
+  font-style: normal;
 }

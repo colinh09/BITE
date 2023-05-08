@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
+import { MdAccountCircle, MdStar, MdAttachMoney } from 'react-icons/md';
 
 const HomePage = () => {
   const userId = localStorage.getItem('userId');
   const idToken = localStorage.getItem('idToken');
   const [reviews, setReviews] = useState([]);
-  const [updates, setUpdates] = useState({
-    'NEW': [],
-    'ONE WEEK AGO': [],
-    'ONE MONTH AGO': [],
-  });
+  const [updates, setUpdates] = useState(null);
+  const [friends, setFriends] = useState([]);
+  const [loading, setLoading] = useState(true);
   
   
   const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
@@ -20,7 +19,7 @@ const HomePage = () => {
     'ONE MONTH AGO': [],
   };
 
-  async function fetchRestaurantName(restaurantId, idToken) {
+  async function fetchRestaurant(restaurantId, idToken) {
     try {
       const response = await fetch(apiUrl + `api/restaurants/${restaurantId}`, {
         headers: {
@@ -30,15 +29,29 @@ const HomePage = () => {
   
       if (response.ok) {
         const restaurant = await response.json();
-        return restaurant.name;
+        return restaurant;
+      } else if (response.status === 404) {
+        console.warn(`Restaurant with ID ${restaurantId} not found.`);
+        return {
+          _id: restaurantId,
+          name: 'Unknown Restaurant',
+          location: 'Unknown Location',
+        };
       } else {
-        throw new Error('Failed to fetch restaurant name');
+        throw new Error('Failed to fetch restaurant');
       }
     } catch (error) {
       console.error(error);
-      return null;
+      return {
+        _id: restaurantId,
+        name: 'Unknown Restaurant',
+        location: 'Unknown Location',
+      };
     }
   }
+  
+  
+  
   
   async function getUserFriends(userId, idToken) {
     try {
@@ -47,10 +60,10 @@ const HomePage = () => {
           'Authorization': `Bearer ${idToken}`,
         },
       });
-
+  
       if (response.ok) {
         const user = await response.json();
-        return user.friends;
+        return user.friends
       } else {
         throw new Error('Failed to fetch user friends');
       }
@@ -59,6 +72,7 @@ const HomePage = () => {
       return [];
     }
   }
+  
 
   async function getRecentRatings(friendId, timeFrames, idToken) {
     const response = await fetch(apiUrl + `api/users/${friendId}/ratings`, {
@@ -95,7 +109,6 @@ const HomePage = () => {
         'Authorization': `Bearer ${idToken}`,
       },
     });
-  
     if (!response.ok) {
       throw new Error('Failed to fetch friend list updates');
     }
@@ -104,35 +117,33 @@ const HomePage = () => {
     const listTypes = ['haveBeenTo', 'wantsToTry', 'favorites'];
   
     const recentUpdates = {};
-  
     for (const [minTimeFrame, maxTimeFrame] of timeFrames) {
       const timeFrameLabel = timeFrames.find(([min, max]) => min === minTimeFrame && max === maxTimeFrame)[2];
       recentUpdates[timeFrameLabel] = [];
   
       for (const listType of listTypes) {
-        const updatedLists = await Promise.all(
-          allLists[listType].map(async (restaurant) => {
-            const updateDate = new Date(restaurant.timestamp);
-            const now = new Date();
-            const diffTime = now - updateDate;
-            const diffDays = diffTime / (1000 * 60 * 60 * 24);
-            const isWithinTimeFrame = diffDays >= minTimeFrame && diffDays <= maxTimeFrame;
-            if (isWithinTimeFrame) {
-              // Fetch the restaurant name here
-              const restaurantName = await fetchRestaurantName(restaurant._id, idToken);
-              return { ...restaurant, name: restaurantName };
-            }
-            return null;
-          }),
-        );
-        
-        const filteredUpdatedLists = updatedLists.filter(update => update);
-        
+        const updatedListsPromises = allLists[listType].map(async (restaurant) => {
+          const updateDate = new Date(restaurant.timestamp);
+          const now = new Date();
+          const diffTime = now - updateDate;
+          const diffDays = diffTime / (1000 * 60 * 60 * 24);
+          const isWithinTimeFrame = diffDays >= minTimeFrame && diffDays <= maxTimeFrame;
+          if (isWithinTimeFrame) {
+            const restaurantObj = await fetchRestaurant(restaurant._id, idToken);
+            return { ...restaurant, name: restaurantObj.name, location: restaurantObj.location };
+          }
+          return null;
+        });
+  
+        const updatedLists = await Promise.all(updatedListsPromises);
+        const filteredUpdatedLists = updatedLists.filter(update => update !== null && update.name !== 'Unknown Restaurant' && update.location !== 'Unknown Location');   
+        console.log(filteredUpdatedLists)
         recentUpdates[timeFrameLabel].push(
           ...filteredUpdatedLists.map((update) => ({
             friendId,
             listType: listType,
             restaurant: update.name,
+            location: update.location,
           })),
         );
       }
@@ -143,74 +154,148 @@ const HomePage = () => {
   
   
   
+  
   useEffect(() => {
     (async () => {
-      const friends = await getUserFriends(userId, idToken);
-      if (friends.length === 0) {
-        setUpdates(null);
+      let fetchedFriendIds = await getUserFriends(userId, idToken);
+      if (fetchedFriendIds.length === 0) {
+        setUpdates([]);
+        setLoading(false);
         return;
       }
-      const timeFrames = [
-        [0, 1, 'NEW'],
-        [1, 7, 'ONE WEEK AGO'],
-        [7, 30, 'ONE MONTH AGO'],
-      ];
-      
-      const allUpdatesByTimeFrame = {
-        'NEW': [],
-        'ONE WEEK AGO': [],
-        'ONE MONTH AGO': [],
+  
+      // Fetch friends' usernames
+      const fetchedFriends = await Promise.all(
+        fetchedFriendIds.map(async (friendId) => {
+          const response = await fetch(apiUrl + `api/users/${friendId}`, {
+            headers: {
+              'Authorization': `Bearer ${idToken}`,
+            },
+          });
+  
+          if (response.ok) {
+            const user = await response.json();
+            return { id: friendId, username: user.username };
+          } else {
+            throw new Error(`Failed to fetch username for friend with ID ${friendId}`);
+          }
+        })
+      );
+      setFriends(fetchedFriends);
+  
+      // Calculate updates and set updates state
+      const calculateUpdates = async (currentFriends) => {
+        const timeFrames = [
+          [0, 1, 'NEW'],
+          [1, 7, 'THIS WEEK'],
+          [7, 30, 'THIS MONTH'],
+        ];
+        
+  
+        const allUpdatesByTimeFrame = {
+          'NEW': [],
+          'THIS WEEK': [],
+          'THIS MONTH': [],
+        };
+  
+        for (const friend of currentFriends) {
+          const friendId = friend.id;
+          const username = friend.username;
+          const recentRatings = await getRecentRatings(friendId, timeFrames, idToken);
+          const recentListUpdates = await getRecentListUpdates(friendId, timeFrames, idToken);
+          for (const timeFrameLabel in recentListUpdates) {
+            const reviewUpdates = await Promise.all(
+              recentRatings[timeFrameLabel].map(async (rating) => {
+                const restaurant = await fetchRestaurant(rating.restaurant_id, idToken);
+                return {
+                  type: 'review',
+                  friendId,
+                  username,
+                  timeFrame: timeFrameLabel,
+                  rating: {
+                    ...rating,
+                    restaurant_name: restaurant.name,
+                    restaurant_location: restaurant.location,
+                    restaurant_price: restaurant.average_price_rating,
+                    restaurant_rating: restaurant.average_user_rating,
+                  },
+                };
+              }),
+            );
+            allUpdatesByTimeFrame[timeFrameLabel].push(...reviewUpdates);
+          
+            const listUpdates = recentListUpdates[timeFrameLabel].map((update) => ({
+              type: 'list-update',
+              listType: update.listType,
+              friendId,
+              username,
+              timeFrame: timeFrameLabel,
+              rating: {
+                restaurant_name: update.restaurant,
+                restaurant_location: update.location,
+              },
+            }));
+            allUpdatesByTimeFrame[timeFrameLabel].push(...listUpdates);
+            }          
+          }
+        console.log(allUpdatesByTimeFrame);
+        setUpdates(allUpdatesByTimeFrame);
+        setLoading(false);
       };
   
-      for (const friendId of friends) {
-        const recentRatings = await getRecentRatings(friendId, timeFrames, idToken);
-        const recentListUpdates = await getRecentListUpdates(friendId, timeFrames, idToken);
-        // console.log(recentListUpdates);
-        for (const timeFrameLabel in recentListUpdates) {
-          allUpdatesByTimeFrame[timeFrameLabel].push(
-            ...recentRatings[timeFrameLabel].map((rating) => ({
-              type: 'review',
-              friendId,
-              timeFrame: timeFrameLabel,
-              rating,
-            })),
-            ...recentListUpdates[timeFrameLabel].map((update) => ({
-              type: 'listUpdate',
-              friendId,
-              timeFrame: timeFrameLabel,
-              ...update,
-            })),
-          );
-        }
-      }
-      console.log(allUpdatesByTimeFrame);
-      setUpdates(allUpdatesByTimeFrame);
+      calculateUpdates(fetchedFriends);
     })();
-  }, []);
+  }, [userId, idToken]);
   
+  if (loading) {
+    return <div>Loading...</div>;
+  }
   
+  if (updates.length === 0) {
+    return <div>Add friends to see updates!</div>;
+  }
   
   return (
     <div className="home-page">
       <h1>Recent Friend Activity</h1>
-      {updates === null && <p>No friends yet.</p>}
       <div className="updates-container">
-      {Object.entries(updates).map(([timeFrameLabel, updatesInSection]) => (
+        {Object.entries(updates).map(([timeFrameLabel, updatesInSection]) => (
           <div key={timeFrameLabel} className={`time-frame-section ${timeFrameLabel.replace(' ', '-').toLowerCase()}`}>
-            <h2>{timeFrameLabel.toUpperCase()}</h2>
+            <h1 className = "title">{timeFrameLabel.toUpperCase()}</h1>
             {updatesInSection.map((update, index) => (
               <div key={index} className={`update-item ${update.type === 'review' ? 'review' : 'list-update'}`}>
-                <p>Friend ID: {update.friendId}</p>
+                <div className="username-container">
+                  <MdAccountCircle className="profile-icon" />
+                  <p className="username">{update.username}</p>
+                </div>
                 {update.type === 'review' ? (
+                    <>
+                      <div className="update-content-reviews">
+                        <div className="update-content-reviews-elements">
+                          <h3 className="review-title">
+                            {update.username} has rated {update.rating.restaurant_name} {' '} {update.rating.star_rating} stars out of 5 stars
+                          </h3>
+                          <h3 className="location-price">
+                            {update.rating.restaurant_location} |{' '}
+                            {[...Array(parseInt(update.rating.star_rating))].map((_, index) => (
+                              <MdStar key={index} className="star-icon" />
+                            ))}{' '}
+                            |{' '}
+                            {[...Array(parseInt(update.rating.price_level))].map((_, index) => (
+                              <MdAttachMoney key={index} className="money-icon" />
+                            ))}
+                          </h3>
+                          <h3 className="review-content">{update.rating.review_content}</h3>
+                        </div>
+                      </div>
+                    </>
+                  ) : (
                   <>
-                    <p>Rating: {update.rating.star_rating}</p>
-                    <p>Review: {update.rating.review_content}</p>
-                  </>
-                ) : (
-                  <>
-                    <p>
-                      {update.friendId} has added {update.restaurant} to their {update.listType} list.
-                    </p>
+                  <div className="update-content-lists">
+                      <p>
+                        {update.username} has added {update.rating.restaurant_name} to their {update.listType} list.
+                      </p>
+                  </div>
                   </>
                 )}
               </div>
@@ -221,5 +306,6 @@ const HomePage = () => {
     </div>
   );
 };
+  
 
 export default HomePage;

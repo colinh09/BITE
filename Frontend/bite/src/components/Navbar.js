@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import logo from '../assets/munchr.png';
+import logo from '../assets/munchr_logo_white.png';
 import { getAuth, signOut } from 'firebase/auth';
 import './Navbar.css';
 

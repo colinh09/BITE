@@ -34,7 +34,7 @@ const LoginPage = () => {
       localStorage.setItem('idToken', idToken);
       const user = await getUserByEmail(email, idToken);
       localStorage.setItem('userId', user._id);
-      window.location.href = '/lists';
+      window.location.href = '/Home';
     } catch (error) {
       alert('Invalid email or password');
     }

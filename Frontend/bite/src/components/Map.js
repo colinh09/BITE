@@ -1,7 +1,13 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { MdPerson, MdPersonAdd, MdOutlineClose, MdAccountCircle} from 'react-icons/md';
 import Select from "react-select";
 import styles from "../pages/MapPage.css";
+import "./Map.css";
 import ReviewForm from './ReviewForm';
+import NotEditableLists from './NotEditableLists';
+import InfoCard from './InfoCard';
+
+
 import {
   GoogleMap,
   Marker,
@@ -45,10 +51,16 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
   const [showReviewForm, setShowReviewForm] = useState(false);
   const [searchResultsFriends, setSearchResultsFriends] = useState([]);
   const [debouncedSearchFriends, setDebouncedSearchFriends] = useState('');
-
-
+  const [displayedUserList, setDisplayedUserList] = useState(null);
+  const [showNotEditableLists, setShowNotEditableLists] = useState(false);
+  const [selectedUserId, setSelectedUserId] = useState(null);
 
   const apiUrl = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000/';
+
+  const updateSearchResults = async () => {
+    const searchResults = await searchUsers(searchFriends);
+    setSearchResults(searchResults);
+  };
 
   const refreshFriends = useCallback(async () => {
     try {
@@ -71,15 +83,24 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
   
       const friendsData = await Promise.all(friendsDataPromises);
       setFriends(friendsData);
-  
+      updateSearchResults();
     } catch (error) {
       console.error("Error fetching friends data:", error);
     }
-  }, [userId, idToken]);
+  }, [userId, idToken, searchFriends]);
 
   useEffect(() => {
     refreshFriends();
   }, [userId, idToken, view, refreshFriends]);
+
+  useEffect(() => {
+    async function fetchAndSetAllUsers() {
+      const searchResults = await searchUsers("");
+      setSearchResults(searchResults);
+    }
+  
+    fetchAndSetAllUsers();
+  }, []);
 
   const onLoad = (mapInstance) => {
     setMap(mapInstance);
@@ -122,7 +143,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
   
       marker.addListener("click", () => {
         setSelectedRestaurant(selectedSearchResult);
-        console.log(selectedSearchResult.value);
+        setShowInfoWindow(true);
         fetchReviews(selectedSearchResult.value); 
       });
     }
@@ -182,6 +203,8 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
   
       const res = await fetch(apiUrl + `api/restaurants/${selectedOption.value}`, requestOptions);
       const fullRestaurantData = await res.json();
+      setSelectedRestaurant(fullRestaurantData);
+      fetchReviews(fullRestaurantData._id);
   
       setSelectedSearchResult({
         ...fullRestaurantData,
@@ -206,7 +229,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
   };
   
   
-  const addFriend = async () => {
+  const addFriend = async (friendCodeToAdd) => {
     try {
       const requestOptions = {
         method: "PUT",
@@ -214,7 +237,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${idToken}`,
         },
-        body: JSON.stringify({ friendId: friendCode }),
+        body: JSON.stringify({ friendId: friendCodeToAdd }),
       };
   
       await fetch(apiUrl + `api/users/${userId}/friends/add`, requestOptions);
@@ -224,29 +247,10 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
       console.error("Error adding friend:", error);
     }
   };
-  
-  const deleteFriend = async (friendId) => {
-    try {
-      const requestOptions = {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${idToken}`,
-        },
-        body: JSON.stringify({ friendId }),
-      };
-
-      await fetch(apiUrl + `api/users/${userId}/friends/delete`, requestOptions);
-      refreshFriends(); // Call refreshFriends after deleting a friend
-    } catch (error) {
-      console.error("Error deleting friend:", error);
-    }
-  };
 
   const customStyles = {
     control: (provided, state) => ({
       ...provided,
-      borderRadius: '7px',
       borderColor: state.isFocused ? '#F3684A' : '#F3684A',
       boxShadow: state.isFocused ? '0 0 0 1px #F3684A' : 'none',
       '&:hover': {
@@ -321,7 +325,7 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
       marker.addListener("click", () => {
         setSelectedRestaurant(selectedSearchResult);
         console.log(selectedSearchResult.value);
-        fetchReviews(selectedSearchResult.value); // Assuming the restaurant ID is stored in the value property
+        fetchReviews(selectedSearchResult.value);
       });
 
       return () => {
@@ -359,68 +363,9 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
         zoom={10}
         onLoad={onLoad}
       >
-        {map && showWantsToTry && renderListMarkers(wantsToTry, map, "blue")}
-        {map && showHaveBeenTo && renderListMarkers(haveBeenTo, map, "green")}
-        {map && showFavorites && renderListMarkers(favorites, map, "red")}
-        {showInfoWindow && selectedRestaurant && (
-        <InfoWindow
-          position={
-            selectedRestaurant.geometry
-              ? selectedRestaurant.geometry.location
-              : {
-                  lat: selectedRestaurant.latitude,
-                  lng: selectedRestaurant.longitude,
-                }
-          }
-          onCloseClick={() => {
-            setSelectedRestaurant(null);
-            setShowInfoWindow(false);
-            setShowInfoWindow(true);
-          }}
-        >
-          <div>
-            <div>
-              <h3>{selectedRestaurant.label || selectedRestaurant.name}</h3>
-              <p>
-                Location:{" "}
-                {selectedRestaurant.location || "No location data available"}
-              </p>
-              <p>
-                Price Rating:{" "}
-                {selectedRestaurant.average_price_rating || "No price rating data"}
-              </p>
-              <p>
-                User Rating:{" "}
-                {selectedRestaurant.average_user_rating || "No user rating data"}
-              </p>
-            </div>
-            <div>
-              <h4>Reviews:</h4>
-              {restaurantReviews.map((review) => (
-                <div key={review._id}>
-                  <p>User: {review.username}</p>
-                  <p>Review: {review.review_content}</p>
-                  <p>Star Rating: {review.star_rating}</p>
-                  <p>Price Rating: {review.price_level}</p>
-                  {/* <p>Repeat Visit: {review.repeat_visit}</p> */}
-                  <hr />
-                </div>
-              ))}
-            </div>
-            <button onClick={handleReviewFormToggle}>Add Review</button>
-            {showReviewForm && (
-              <ReviewForm
-                restaurantId={selectedRestaurant._id}
-                userId={userId}
-                userName={localStorage.getItem("username")}
-                handleClose={handleReviewFormToggle}
-                onReviewSubmit={onReviewSubmit}
-              />
-            )}
-          </div>
-        </InfoWindow>
-      )}
-
+        {map && showWantsToTry && renderListMarkers(wantsToTry, map, "purple")}
+        {map && showHaveBeenTo && renderListMarkers(haveBeenTo, map, "pink")}
+        {map && showFavorites && renderListMarkers(favorites, map, "blue")}
       </GoogleMap>
       <div className="map-search">
         <Select
@@ -432,32 +377,43 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
           placeholder="Search for a restaurant...     "
           styles={customStyles}
         />
+        {selectedRestaurant && showInfoWindow && (
+          <InfoCard
+            selectedRestaurant={selectedRestaurant}
+            restaurantReviews={restaurantReviews}
+            handleReviewFormToggle={handleReviewFormToggle}
+            onReviewSubmit={onReviewSubmit}
+            showReviewForm={showReviewForm}
+            showInfoWindow={showInfoWindow}
+            setShowInfoWindow={setShowInfoWindow}
+          />
+        )}
       </div>
       <div className="map-toggle">
-        <label>
-          <input
-            type="checkbox"
-            checked={showWantsToTry}
-            onChange={() => setShowWantsToTry(!showWantsToTry)}
-          />{" "}
-          Wants to Try
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={showHaveBeenTo}
-            onChange={() => setShowHaveBeenTo(!showHaveBeenTo)}
-          />{" "}
-          Have Been To
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={showFavorites}
-            onChange={() => setShowFavorites(!showFavorites)}
-          />{" "}
-          Favorites
-        </label>
+      <label style={{color: 'purple'}}>
+        <input
+          type="checkbox"
+          checked={showWantsToTry}
+          onChange={() => setShowWantsToTry(!showWantsToTry)}
+        />{" "}
+        Wants to Try
+      </label>
+      <label style={{color: 'pink'}}>
+        <input
+          type="checkbox"
+          checked={showHaveBeenTo}
+          onChange={() => setShowHaveBeenTo(!showHaveBeenTo)}
+        />{" "}
+        Have Been To
+      </label>
+      <label style={{color: 'blue'}}>
+        <input
+          type="checkbox"
+          checked={showFavorites}
+          onChange={() => setShowFavorites(!showFavorites)}
+        />{" "}
+        Favorites
+      </label>
       </div>
     </>
   );
@@ -496,17 +452,27 @@ function Map({ wantsToTry, haveBeenTo, favorites }) {
     return usernames;
   }
   
-  function searchUsernames(usernames, query) {
-    return usernames.filter((username) => username.toLowerCase().includes(query.toLowerCase()));
+  function searchUsernames(usernames, query, loggedInUserId) {
+    return usernames.filter(
+      (username) =>
+        username.userId !== loggedInUserId &&
+        username.toLowerCase().includes(query.toLowerCase())
+    );
   }
+  
 
-  function areFriends(user1, user2) {
-    return user1.friends.some((friend) => friend.username === user2.username);
+  function areFriends(loggedInUser, displayedUser) {
+    const isFriend = loggedInUser.friends.some((friendId) => {
+      return friendId === displayedUser._id;
+    });
+    return isFriend;
   }
+  
+  
 
 async function searchUsers(query) {
   const usernames = await fetchAllUsers();
-  const filteredUsernames = searchUsernames(usernames, query);
+  const filteredUsernames = searchUsernames(usernames, query, userId);
 
   const searchResults = [];
   for (const username of filteredUsernames) {
@@ -519,70 +485,126 @@ async function searchUsers(query) {
     });
     const user = await userResponse.json();
     const loggedInUser = await getUserData(userId);
+    console.log(loggedInUser);
     if (areFriends(loggedInUser, user)) {
       user.isFriend = true;
     } else {
       user.isFriend = false;
-    }
+    }    
     searchResults.push(user);
   }
   return searchResults;
 }
 
+const removeFriend = async (friendIdToRemove) => {
+  try {
+    const requestOptions = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${idToken}`,
+      },
+      body: JSON.stringify({ friendId: friendIdToRemove }),
+    };
+
+    await fetch(apiUrl + `api/users/${userId}/friends/delete`, requestOptions);
+    refreshFriends();
+  } catch (error) {
+    console.error("Error removing friend:", error);
+  }
+};
+
   
   
-  const renderFriends = () => (
-    <div>
-      <div>
-      <input
-        type="text"
-        value={searchFriends}
-        onChange={(e) => {
-          setSearchFriends(e.target.value);
-          clearTimeout(debounceTimeoutId);
-          debounceTimeoutId = setTimeout(async () => {
-            const searchResults = await searchUsers(e.target.value);
-            setSearchResults(searchResults);
-          }, 300);
-        }}
-        placeholder="Search users"
-      />
+const renderFriends = () => (
+  <div className="friends-container">
+    {displayedUserList ? (
+      <div className="modal-container">
+        <div className="modal-content">
+          <NotEditableLists
+            userId={displayedUserList}
+            idToken={idToken}
+            onClose={() => setDisplayedUserList(null)}
+          />
+        </div>
       </div>
+    ) : (
       <div>
-        <input
-          type="text"
-          value={friendCode}
-          onChange={(e) => setFriendCode(e.target.value)}
-          placeholder="Enter friend code"
-        />
-        <button onClick={addFriend}>Add Friend</button>
+        <h2 className="friends-title">Explore Friends!</h2>
+        <div className="friends-inputs">
+          <p className="paragraph">Search For Users</p>
+          <input
+            type="text"
+            className="search-friends"
+            value={searchFriends}
+            onChange={(e) => {
+              setSearchFriends(e.target.value);
+              clearTimeout(debounceTimeoutId);
+              debounceTimeoutId = setTimeout(async () => {
+                const searchResults = await searchUsers(e.target.value);
+                setSearchResults(searchResults);
+              }, 300);
+            }}
+            placeholder="Type a username..."
+          />
+        </div>
+        <ul className="user-list">
+          {searchResults.map((user) => {
+            return (
+              <li key={user._id} className="user-item">
+                <span className="user-info">
+                  <MdAccountCircle
+                    size={50}
+                    color="#F3684A"
+                    onClick={() => {
+                      setDisplayedUserList(user._id);
+                    }}
+                    className = "user-icons-profile"
+                  />
+                  <span
+                    className="username"
+                    onClick={() => {
+                      setDisplayedUserList(user._id);
+                    }}
+                  >
+                    {user.username}
+                  </span>
+                </span>
+                <span className="user-icons">
+                  {user.isFriend ? (
+                    <>
+                      <MdPerson size={35} color="#F3684A" />
+                      <button onClick={() => removeFriend(user._id)}>
+                        <MdOutlineClose size={35} color="#F3684A" />
+                      </button>
+                    </>
+                  ) : (
+                    <button
+                      className="add-friend-btn"
+                      onClick={async () => {
+                        setFriendCode(user._id);
+                        console.log("FRIEND CODE FRIEND CODE:" + friendCode);
+                        console.log("user id user id:" + user._id);
+                        await addFriend(user._id);
+                      }}
+                    >
+                      <MdPersonAdd size={35} color="#F3684A" />
+                    </button>
+                  )}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
       </div>
-      <ul>
-      {searchResults.map((user) => {
-        return (
-          <li key={user._id}>
-            {user.username}{" "}
-            {user.isFriend ? (
-              <span>Already a friend</span>
-            ) : (
-              <button
-                onClick={() => {
-                  setFriendCode(user._id);
-                  console.log("FRIEND CODE FRIEND CODE:" + friendCode);
-                  console.log("user id user id:" + user._id);
-                  addFriend();
-                }}
-              >
-                Add as friend
-              </button>
-            )}
-          </li>
-        );
-      })}
-      </ul>
-    </div>
-  );
-  
+    )}
+  </div>
+);
+
+
+
+
+
 
   const fetchUsername = async (userId) => {
     const idToken = localStorage.getItem("idToken");

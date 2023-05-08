@@ -47,7 +47,7 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
   const handlePasswordValidation = async (e) => {
     e.preventDefault();
     try {
-      const validationRes = await fetch(apiUrl + `/api/users/${userId}/validate-password`, {
+      const validationRes = await fetch(apiUrl + `api/users/${userId}/validate-password`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const ProfileSettings = ({ userId, idToken, showSettings }) => {
           city: city || user.city,
           state: state || user.state,
         };
-        await fetch(apiUrl + `/api/users/${userId}`, {
+        await fetch(apiUrl + `api/users/${userId}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',

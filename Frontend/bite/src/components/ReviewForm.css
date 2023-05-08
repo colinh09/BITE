@@ -1,0 +1,53 @@
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    font-family: 'Inter';
+    font-style: normal;
+  }
+  
+  .review-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .review-textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .rating-section,
+  .price-section,
+  .checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .rating-label,
+  .price-label,
+  .checkbox-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    background-color: #f3684a;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

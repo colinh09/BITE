@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Select from 'react-select';
 import '../App.css';
 import "./EditableLists.css"; 
+import { MdPerson, MdPersonAdd, MdOutlineClose, MdAccountCircle} from 'react-icons/md';
 
 const EditableLists = ({ userId, idToken }) => {
     const [wantsToTry, setWantsToTry] = useState([]);
@@ -157,7 +158,6 @@ const EditableLists = ({ userId, idToken }) => {
             <tr>
               <th>Name</th>
               <th>Location</th>
-              <th>Remove Restaurant</th>
             </tr>
           </thead>
           <tbody>
@@ -167,14 +167,12 @@ const EditableLists = ({ userId, idToken }) => {
                     <td>{restaurant.name}</td>
                     <td>{restaurant.location}</td>
                     <td>
-                      <button
-                        className="delete-button"
-                        onClick={() =>
-                          deleteFromList(activeTab, restaurant._id)
-                        }
-                      >
-                        Delete
-                      </button>
+                    <button
+                      className="delete-button"
+                      onClick={() => deleteFromList(activeTab, restaurant._id)}
+                    >
+                      <MdOutlineClose />
+                    </button>
                     </td>
                   </tr>
                 ))
@@ -215,23 +213,23 @@ const EditableLists = ({ userId, idToken }) => {
           </button>
         </div>
         <div className="list-container">
-        <Select
-          className="search-box"
-          options={restaurants}
-          value={selectedRestaurant}
-          onChange={handleSelectChange}
-          onInputChange={handleInputChange}
-          noOptionsMessage={() => "No restaurants found"}
-          placeholder="Search for restaurants"
-          isLoading={searchInput && restaurants.length === 0}
-        />
-        <button
-          className="add-to-list-button"
-          onClick={handleAddToList}
-          disabled={!selectedRestaurant}
-        >
-          Add to List
-        </button>
+          <Select
+            className="search-box"
+            options={restaurants}
+            value={selectedRestaurant}
+            onChange={handleSelectChange}
+            onInputChange={handleInputChange}
+            noOptionsMessage={() => "No restaurants found"}
+            placeholder="Search for restaurants"
+            isLoading={searchInput && restaurants.length === 0}
+          />
+          <button
+            className="add-to-list-button"
+            onClick={handleAddToList}
+            disabled={!selectedRestaurant}
+          >
+            Add to List
+          </button>
         </div>
         {activeTab === "wants-to-try" && (
           <div>

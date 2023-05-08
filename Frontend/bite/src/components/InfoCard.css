@@ -1,0 +1,128 @@
+.info-card {
+  position: absolute;
+  top: 63px;
+  left: 0.1%;
+  background-color: #FFFAFA;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  max-width: 461px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  width: 95%;
+  opacity: 0.95;
+  height: calc(100vh - 143px);
+}
+
+.info-card-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+}
+
+
+.add-review{
+  display: flex;
+  align-items: flex-start;
+  width: 24%;
+  color: #F3684A;
+  background: #FFFFFF;
+  border: 2px solid #F3684A;
+}
+
+.restaurant-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.money-icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.review-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.location-price {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.review-separator {
+  border-top: 1px solid #cccccc;
+  margin: 20px 0;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.review-content {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  white-space: pre-wrap;
+}
+
+.username {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.price-star-rating {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F3684A;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapword {
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-wrap;       /* css-3 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+  word-break: break-all;
+  white-space: normal;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18;
+  line-height: '30px';
+  color: '#000000';
+  margin-top: '5px';
+}

@@ -5,6 +5,8 @@
   padding: 1rem;
   max-width: 1300px;
   margin: 0 auto;
+  font-family: 'Inter';
+  font-weight: 500;
 }
 
 .taste-profile h1 {
@@ -17,7 +19,6 @@
   font-size: 24px;
   margin-bottom: 3rem;
   text-align: left;
-  padding-left: 1rem;
 }
 
 .taste-profile .key {
@@ -25,7 +26,7 @@
 }
 
 .welcome-message {
-  text-align: center;
+  text-align: left;
 }
 
 .welcome-subtitle {
@@ -42,10 +43,10 @@
 
 .profile-info {
   flex: 1;
-  margin-right: 3rem;
 }
 
 .profile-settings {
   flex: 1;
   margin-left: 5rem;
 }
+

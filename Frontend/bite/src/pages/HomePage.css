@@ -2,45 +2,126 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    font-family: 'Inter';
+    font-style: normal;
+  }
   
-h1 {
-margin-top: 50px;
-font-size: 48px;
-}
-
-.updates-container {
-display: flex;
-flex-direction: column;
-gap: 50px;
-margin-top: 30px;
-width: 100%;
-}
-
-.time-frame-section {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.time-frame-section h2 {
-font-family: 'Inter', sans-serif;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-color: #F3684A;
-}
-
-.update-item {
-background-color: #f3f3f3;
-border-radius: 5px;
-padding: 20px;
-margin-top: 20px;
-width: 80%;
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.review p,
-.list-update p {
-margin: 0;
-}
+  h1 {
+    margin-top: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 65px;
+    color: #F3684A;
+  }
+  
+  .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 60px;
+    color: #F3684A;
+  }
+  
+  .updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+  }
+  
+  .time-frame-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
+  }
+  
+  .time-frame-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F3684A;
+  }
+  
+  .update-item {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .username-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    font-size: 80px;
+    color: #F3684A;
+    border-radius: 100px;
+  }
+  
+  .username {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 29px;
+    color: #000000;
+    margin-left: 10px;
+  }
+  
+  .update-content-lists {
+    display: flex;
+    align-items: center;
+    margin-left: 105px;
+    font-size: 25px;
+  }
+  
+  .update-content-reviews {
+    display: flex;
+    align-items: center;
+    margin-left: 105px;
+  }
+  
+  .update-content-reviews-elements {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .review-title {
+    font-size: 25px;
+    margin: 0;
+  }
+  
+  .star-icon,
+  .money-icon {
+    vertical-align: middle;
+  }
+  
+  .location-price {
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  .review-content {
+    font-size: 18px;
+    margin-top: 10px;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
+    font-family: 'Inter';
+    font-weight: 500;
+  }
+  
