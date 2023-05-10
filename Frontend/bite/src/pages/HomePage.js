@@ -248,12 +248,13 @@ const HomePage = () => {
   }, [userId, idToken]);
   
   if (loading) {
-    return <div>Loading...</div>;
-  }
-  
-  if (updates.length === 0) {
-    return <div>Add friends to see updates!</div>;
-  }
+    return <div className="loading-message">Loading...</div>;
+}
+
+if (updates.length === 0) {
+    return <div className="no-updates-message">Add friends to see updates!</div>;
+}
+
   
   return (
     <div className="home-page">

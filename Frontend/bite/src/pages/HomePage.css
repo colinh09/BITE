@@ -126,3 +126,12 @@
     text-align: left;
   }
   
+  .loading-message, .no-updates-message {
+    text-decoration: solid;
+    font-size: 80px;
+    color: #F3684A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }

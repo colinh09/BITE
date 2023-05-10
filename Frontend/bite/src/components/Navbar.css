@@ -7,8 +7,13 @@
     width: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 1rem;
+}
+
+.navbar-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    color: inherit;
 }
 
 .navbar-logo {
@@ -26,7 +31,6 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .navbar-link {
@@ -34,8 +38,10 @@
     color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
-    text-align: center;
-    padding: 10px
+    text-align: left;
+    padding: 15px;
+    font-family: 'Inter';
+    font-weight: 500;
 }
 
 .navbar-links li {
